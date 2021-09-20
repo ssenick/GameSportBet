@@ -1,0 +1,17 @@
+[
+	{
+		"type": "Прематч",
+		"value": 501.9,
+		"color": "#8D00CF"
+	},
+	{
+		"type": "Live",
+		"value": 301.9,
+		"color": "#FF00C7"
+	},
+	{
+		"type": "Express",
+		"value": 201.1,
+		"color": "#DE00AD"
+	}
+]

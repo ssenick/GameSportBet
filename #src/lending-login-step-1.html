@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Лендинг / Вход / Шаг №1"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<div class="page__container _container">
+					<div class="page__body">
+						<div class="landing-login">
+							<div class="landing-login__body">
+								<div class="landing-login__breadcrumbs breadcrumbs-landing-login">
+									<ul class="breadcrumbs-landing-login__list _caption">
+										<li>
+											<div class="breadcrumbs-landing-login__item _active">Заполнить профиль</div>
+										</li>
+										<li>
+											<div class="breadcrumbs-landing-login__item">Получение пронозов</div>
+										</li>
+										<li>
+											<div class="breadcrumbs-landing-login__item">С чего начать</div>
+										</li>
+									</ul>
+								</div>
+								<div class="landing-login__header">
+									<h4 class="landing-login__title">Добро пожаловать</h4>
+									<div class="landing-login__text _body">Заполните данные профиля</div>
+								</div>
+								<form action="" class="landing-login__form form-landing-login">
+									<div class="form-landing-login__input input">
+										<label for="i_1" class="input__label">Имя</label>
+										<div class="input__line">
+											<input id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="Тимур Фёдоров" class="input__value">
+										</div>
+									</div>
+									<div class="form-landing-login__input input">
+										<label for="i_2" class="input__label">Email*</label>
+										<div class="input__line">
+											<input id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="debra.holt@example.com" class="input__value _email _req">
+										</div>
+										<div class="input__email-link">Подтвердите почту, перейдите по ссылке в письме. <a href="">Отправить письмо повторно.</a></div>
+									</div>
+									<div class="form-landing-login__input input">
+										<label for="i_3" class="input__label">Телефон</label>
+										<div class="input__line">
+											<input id="i_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="+7 (903) 134-55-26" class="input__value _phone">
+										</div>
+									</div>
+									<div class="form-landing-login__input input">
+										<label for="i_4" class="input__label">Пароль*</label>
+										<div class="input__line">
+											<input id="i_4" autocomplete="off" type="password" name="form[]" data-error="Минимум 8 символов" data-value="пароль" class="input__value _req">
+											<button type="button" class="input__button _search-button _search-open button button_icon-dark _icon-8 _viewpass"><span tabindex="-1"></span></button>
+										</div>
+									</div>
+									<div class="form-landing-login__info _body">
+										* - обязательные поля.
+									</div>
+									<div class="form-landing-login__footer">
+										<button type="submit" class="form-landing-login__button button button_contained _ripple"><span>Продолжить</span></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

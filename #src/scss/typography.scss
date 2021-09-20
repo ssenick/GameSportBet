@@ -1,0 +1,111 @@
+// HEADERS ===========================================================
+h1,
+._headline-1 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 125%;
+}
+h2,
+._headline-2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 133%;
+}
+h3,
+._headline-3 {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 127%;
+}
+h4,
+._headline-4 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 130%;
+}
+h5,
+._headline-5 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 133%;
+}
+h6,
+._headline-6 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 137%;
+}
+//============================================
+._subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: math.div(20, 16) * 100%;
+	&_small {
+		font-size: 14px;
+		line-height: math.div(18, 14) * 100%;
+	}
+}
+._overline {
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 140%;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+._caption {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 133%;
+	&_small {
+		font-size: 10px;
+		line-height: 140%;
+	}
+}
+._body {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	a {
+		color: $link;
+		text-decoration: underline;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	p {
+		&:not(:last-child) {
+			padding: 0px 0px 30px 0px;
+		}
+	}
+	&_strong {
+		font-weight: 600;
+		line-height: 112%;
+	}
+	&_small {
+		font-size: 14px;
+		line-height: 171%;
+		font-weight: 400;
+	}
+	&_small-strong {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 114%;
+	}
+	&_xs {
+		font-size: 12px;
+		line-height: 150%;
+		font-weight: 400;
+	}
+	&_xs-strong {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 108%;
+	}
+
+	&_title {
+		margin: 0px 0px math.div(11px, 20px) * 1em 0px;
+	}
+}
+// MOBILE ================================================================================================

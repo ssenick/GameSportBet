@@ -1,0 +1,81 @@
+<div class="header__main main-header">
+	<a href="" class="main-header__logo">
+		<img src="img/logo.svg" alt="">
+	</a>
+	@@include('_header-search.html',{})
+	<div class="main-header__actions actions-header">
+		<button type="button" class="actions-header__item actions-header__item_theme button button_icon _icon-18"><span tabindex="-1"></span></button>
+		<button type="button" class="actions-header__item actions-header__item_lang button button_icon"><span tabindex="-1">RU</span></button>
+		@@if(user === true){
+		<button type="button" class="actions-header__item actions-header__item_notify button button_icon _icon-91"><span tabindex="-1"></span><small></small></button>
+		}
+	</div>
+	@@if(user !== true){
+	<div class="main-header__auth auth-header">
+		<button data-popup="111" type="submit" class="auth-header__button button button_outlined-gray button_icon-gradient button_icon-left _ripple _popup-link"><span class="_icon-73">Войти</span></button>
+		<button data-popup="222" type="submit" class="auth-header__button button button_contained _ripple _popup-link"><span>Регистрация</span></button>
+	</div>
+	}
+	@@if(user === true){
+	<div class="main-header__user user-main-header">
+		<button type="button" class="user-main-header__button button button_outlined-gray button_icon-gradient button_icon-left _ripple"><span class="_icon-73">Валентин Константинович</span></button>
+		<div class="user-main-header__info info-user-header">
+			<div class="info-user-header__section type-user-header">
+				<div class="type-user-header__label _info-user-label">Статус</div>
+				<div class="type-user-header__body">
+					<div class="type-user-header__status _icon-32">Аналитик <span data-tippy-content="Процент удачных прогнозов" class="_icon-48 _tip _tip_text"></span></div>
+					<div data-tippy-content="Подсказка" class="type-user-header__vip">VIP</div>
+				</div>
+			</div>
+			<div class="info-user-header__section balance-user-header">
+				<div class="balance-user-header__item">
+					<div class="balance-user-header__label _info-user-label">Баланс</div>
+					<div class="balance-user-header__value">999 999 ₽</div>
+				</div>
+				<div class="balance-user-header__item">
+					<div class="balance-user-header__label _info-user-label">Баланс</div>
+					<div data-tippy-content="Подсказка" class="balance-user-header__value balance-user-header__value_icon _icon-52">300 000</div>
+				</div>
+			</div>
+			<div class="info-user-header__section awards-user-header">
+				<div class="awards-user-header__label _info-user-label">Последние достижения</div>
+				<div class="awards-user-header__items">
+					<div data-tippy-content="Подсказка" class="awards-user-header__item awards-user-header__item_done">
+						<span><img src="img/icons/cup.png" alt=""></span>
+					</div>
+					<div data-tippy-content="Подсказка" class="awards-user-header__item awards-user-header__item_done">
+						<span><img src="img/icons/cup.png" alt=""></span>
+					</div>
+					<div data-tippy-content="Подсказка" class="awards-user-header__item">
+						<svg width="100%" height="100%" class="awards-user-header__circle">
+							<circle stroke-dasharray="90 100" class="awards-user-header__ring" cx="-16" cy="16" r="16" fill="transparent" stroke-width="3"></circle>
+						</svg>
+						<span><img src="img/icons/cup.png" alt=""></span>
+					</div>
+					<div data-tippy-content="Подсказка" class="awards-user-header__item">
+						<svg width="100%" height="100%" class="awards-user-header__circle">
+							<circle stroke-dasharray="50 100" class="awards-user-header__ring" cx="-16" cy="16" r="16" fill="transparent" stroke-location="inside" stroke-width="3"></circle>
+						</svg>
+						<span><img src="img/icons/cup.png" alt=""></span>
+					</div>
+					<div data-tippy-content="Подсказка" class="awards-user-header__item">
+						<svg width="100%" height="100%" class="awards-user-header__circle">
+							<circle stroke-dasharray="15 100" class="awards-user-header__ring" cx="-16" cy="16" r="16" fill="transparent" stroke-location="inside" stroke-width="3"></circle>
+						</svg>
+						<span><img src="img/icons/cup.png" alt=""></span>
+					</div>
+				</div>
+			</div>
+			<nav class="info-user-header__section menu-user-header">
+				<ul class="menu-user-header__list _body_small">
+					<li><a href="" class="menu-user-header__link _link">Мой профиль</a></li>
+					<li><a href="" class="menu-user-header__link _link">Моя аналитика</a></li>
+					<li><a href="" class="menu-user-header__link _link">Настройки</a></li>
+					<li><a href="#promocode" class="menu-user-header__link _link _popup-link">Ввести промокод</a></li>
+					<li><a href="" class="menu-user-header__link _gradient-link">Выход</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	}
+</div>

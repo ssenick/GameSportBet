@@ -1,0 +1,144 @@
+//====================================================================================================
+.header {
+	position: relative;
+	z-index: 50;
+	// .header__mach-line
+	&__mach-line {
+	}
+	// .header__main
+	&__main {
+		position: relative;
+		z-index: 2;
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+//====================================================================================================
+.menu {
+	background-color: $bg-03;
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	// .menu__item
+	&__item {
+		position: relative;
+		&:hover {
+			.menu__sub-menu {
+				transform: translate(0px, 0px);
+				opacity: 1;
+				visibility: visible;
+				pointer-events: auto;
+			}
+			.menu__link {
+				span {
+					@extend ._gradient-link;
+				}
+				background-color: $bg-02;
+			}
+		}
+	}
+	// .menu__link
+	&__link {
+		display: flex;
+		min-height: 50px;
+		justify-content: center;
+		align-items: center;
+		color: $primary-light;
+		padding: 0px 24px;
+		@extend ._body_small;
+		span {
+		}
+		&:active {
+			background-color: $bg-01 !important;
+		}
+	}
+	// .menu__sub-menu
+	&__sub-menu {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		pointer-events: none;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		padding: 8px 0px 0px 0px;
+		transform: translate(0px, 10px);
+	}
+	// .menu__sub-list
+	&__sub-list {
+		padding: 4px;
+		border-radius: 4px;
+		background-color: $bg-03;
+	}
+	// .menu__sub-item
+	&__sub-item {
+	}
+	// .menu__sub-link
+	&__sub-link {
+		min-height: 48px;
+		display: flex;
+		white-space: nowrap;
+		align-items: center;
+		padding: 0px 24px;
+		@extend ._body_small;
+		color: $primary-light;
+		&:hover {
+			background-color: $bg-02;
+			span {
+				@extend ._gradient-link;
+			}
+		}
+	}
+}
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}

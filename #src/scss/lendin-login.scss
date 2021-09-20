@@ -1,0 +1,496 @@
+.landing-login {
+	padding: 32px;
+	// .landing-login__body
+	&__body {
+		max-width: 672px;
+		margin: 0px auto;
+		background-color: $bg-03;
+		border-radius: 4px;
+		padding: 32px;
+	}
+
+	// .landing-login__breadcrumbs
+	&__breadcrumbs {
+		margin: 0px 0px 30px 0px;
+		&_64 {
+			margin: 0px 0px 64px 0px;
+		}
+	}
+	// .landing-login__header
+	&__header {
+		text-align: center;
+	}
+	// .landing-login__title
+	&__title {
+		&:not(:last-child) {
+			margin: 0px 0px math.div(16px, 20px) * 1em 0px;
+		}
+	}
+	// .landing-login__text
+	&__text {
+	}
+	// .landing-login__form
+	&__form {
+		padding: 32px 0px 0px 0px;
+		max-width: 384px;
+		margin: 0px auto;
+	}
+	// .landing-login__push
+	&__push {
+	}
+	// .landing-login__finish
+	&__finish {
+	}
+}
+//========================================================================================================================================================
+.breadcrumbs-landing-login {
+	// .breadcrumbs-landing-login__list
+	&__list {
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 26px;
+		li {
+			position: relative;
+			&:not(:last-child) {
+				&::before {
+					content: "—";
+					position: absolute;
+					top: 0;
+					opacity: 0.5;
+					right: -6px;
+					transform: translate(100%, 0px);
+				}
+			}
+		}
+	}
+	// .breadcrumbs-landing-login__item
+	&__item {
+		opacity: 0.5;
+
+		&._active {
+			opacity: 1;
+		}
+	}
+}
+//========================================================================================================================================================
+.form-landing-login {
+	display: grid;
+	gap: 24px;
+	// .form-landing-login__input
+	&__input {
+	}
+	// .form-landing-login__info
+	&__info {
+	}
+	// .form-landing-login__footer
+	&__footer {
+		text-align: center;
+		padding: 24px 0px 0px 0px;
+	}
+	// .form-landing-login__button
+	&__button {
+	}
+	// .form-landing-login__activate
+	&__activate {
+		padding: 8px 0px 0px 0px;
+		text-align: center;
+	}
+}
+//========================================================================================================================================================
+.steps-landing-login {
+	padding: 48px 0px 0px 0px;
+	max-width: 456px;
+	margin: 0px auto;
+	// .steps-landing-login__items
+	&__items {
+		display: grid;
+		gap: 64px;
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 17px;
+			height: 100vh;
+			width: 2px;
+			border-left: 2px dashed $secondary-50;
+		}
+	}
+	// .steps-landing-login__footer
+	&__footer {
+		padding: 48px 0px 0px 0px;
+		text-align: center;
+	}
+}
+.item-steps-landing-login {
+	display: grid;
+	grid-template-columns: 68px 100px 1fr;
+	align-items: center;
+	gap: 32px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 36px;
+		height: calc(50% - 18px);
+		background-color: $bg-03;
+		left: 0;
+		display: none;
+	}
+	&:first-child {
+		&::before {
+			display: block;
+			top: 0;
+		}
+	}
+	&:last-child {
+		&::before {
+			display: block;
+			bottom: 0;
+		}
+	}
+	// .item-steps-landing-login__number
+	&__number {
+		background-color: $bg-03;
+		position: relative;
+		span {
+			height: 36px;
+			width: 36px;
+			border-radius: 50%;
+			border: 2px solid $bg-05;
+			color: $secondary;
+			display: flex;
+			font-size: 18px;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	// .item-steps-landing-login__icon
+	&__icon {
+	}
+	// .item-steps-landing-login__body
+	&__body {
+	}
+	// .item-steps-landing-login__title
+	&__title {
+		margin: 0px 0px math.div(18px, 16px) * 1em 0px;
+	}
+	// .item-steps-landing-login__text
+	&__text {
+	}
+}
+//========================================================================================================================================================
+.bk-landing-login {
+	padding: 32px 0px 0px 0px;
+	max-width: 490px;
+	margin: 0px auto;
+	// .bk-landing-login__main
+	&__main {
+		display: grid;
+		grid-template-columns: math.div(256, 490) * 100% math.div(210, 490) * 100%;
+		gap: 24px;
+		&:not(:last-child) {
+			margin: 0px 0px 32px 0px;
+		}
+	}
+	// .bk-landing-login__buttons
+	&__buttons {
+		display: grid;
+		grid-template-columns: math.div(256, 490) * 100% math.div(210, 490) * 100%;
+		grid-template-rows: auto auto;
+		column-gap: 24px;
+		row-gap: 16px;
+		&:not(:last-child) {
+			margin: 0px 0px 64px 0px;
+		}
+	}
+	// .bk-landing-login__code
+	&__code {
+	}
+	// .bk-landing-login__reg
+	&__reg {
+	}
+	&__list-bk {
+		grid-column: span 2;
+		justify-self: center;
+	}
+	// .bk-landing-login__set-price
+	&__set-price {
+		&:not(:last-child) {
+			margin: 0px 0px 41px 0px;
+		}
+	}
+	// .bk-landing-login__info
+	&__info {
+		&:not(:last-child) {
+			margin: 0px 0px 48px 0px;
+		}
+	}
+	// .bk-landing-login__footer
+	&__footer {
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 32px;
+	}
+}
+.main-bk-landing-login {
+	// .main-bk-landing-login__info
+	&__info {
+	}
+	// .main-bk-landing-login__logo
+	&__logo {
+		text-align: center;
+		max-width: 236px;
+		&:not(:last-child) {
+			margin: 0px 0px 35px 0px;
+		}
+		img {
+			margin: 0px auto;
+			max-width: 200px;
+		}
+	}
+	// .main-bk-landing-login__title
+	&__title {
+		margin: 0px 0px math.div(16px, 22px) * 1em 0px;
+	}
+	// .main-bk-landing-login__summs
+	&__summs {
+	}
+	// .main-bk-landing-login__list
+	&__list {
+	}
+}
+.summs-main-bk-landing-login {
+	display: inline-grid;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 10px;
+	// .summs-main-bk-landing-login__item
+	&__item {
+	}
+	// .summs-main-bk-landing-login__value
+	&__value {
+	}
+	// .summs-main-bk-landing-login__label
+	&__label {
+	}
+}
+.set-price-bk-landing-login {
+	// .set-price-bk-landing-login__header
+	&__header {
+		@extend .landing-login__header;
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .set-price-bk-landing-login__title
+	&__title {
+		@extend .landing-login__title;
+	}
+	// .set-price-bk-landing-login__text
+	&__text {
+	}
+
+	// .set-price-bk-landing-login__body
+	&__body {
+	}
+	// .set-price-bk-landing-login__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		gap: 32px;
+		&:not(:last-child) {
+			margin: 0px 0px 22px 0px;
+		}
+	}
+	// .set-price-bk-landing-login__item
+	&__item {
+	}
+	// .set-price-bk-landing-login__value
+	&__value {
+		// .set-price-bk-landing-login__value_coin
+		&_coin {
+			background: url("../img/icons/coins.png") left no-repeat;
+			padding: 0px 0px 0px 30px;
+		}
+	}
+	// .set-price-bk-landing-login__label
+	&__label {
+	}
+	// .set-price-bk-landing-login__range
+	&__range {
+		display: flex;
+		justify-content: space-between;
+		span {
+			pointer-events: none;
+			background-color: #fff;
+			opacity: 0.5;
+			height: 4px;
+			width: 4px;
+			border-radius: 50%;
+			position: relative;
+			z-index: 2;
+			&:first-of-type {
+				margin: 0px 0px 0px -8px;
+			}
+			&:last-of-type {
+				margin: 0px -8px 0px 0px;
+			}
+		}
+	}
+}
+.info-bk-landing-login {
+	padding: 32px;
+	background-color: $bg-02;
+	border-radius: 4px;
+	// .info-bk-landing-login__title
+	&__title {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px math.div(8px, 16px) * 1em 0px;
+		&::before {
+			color: $info;
+			margin: 0px 14px 0px 0px;
+			font-size: 20px;
+		}
+	}
+	// .info-bk-landing-login__text
+	&__text {
+	}
+}
+//========================================================================================================================================================
+.push-landing-login {
+	padding: 32px 0px 0px 0px;
+	text-align: center;
+	// .push-landing-login__image
+	&__image {
+		display: inline-block;
+		margin: 0px 0px 32px 0px;
+		position: relative;
+		&::before {
+			content: "";
+			background: url("../img/home/lending/login/push/arrow.svg") 0 0 no-repeat;
+			width: 59px;
+			height: 69px;
+			position: absolute;
+			left: -20px;
+			top: 0;
+			transform: translate(-100%, 0px);
+		}
+	}
+	// .push-landing-login__text
+	&__text {
+	}
+	// .push-landing-login__footer
+	&__footer {
+		padding: 48px 0px 0px 0px;
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+	}
+	// .push-landing-login__button
+	&__button {
+	}
+}
+//========================================================================================================================================================
+.app-landing-login {
+	padding: 32px 0px 0px 0px;
+	text-align: center;
+	// .push-landing-login__image
+	&__image {
+		display: inline-block;
+		margin: 0px 0px 32px 0px;
+		position: relative;
+	}
+	// .push-landing-login__text
+	&__text {
+	}
+	// .push-landing-login__footer
+	&__footer {
+		padding: 48px 0px 0px 0px;
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+	}
+	// .push-landing-login__button
+	&__button {
+	}
+}
+//========================================================================================================================================================
+.email-landing-login {
+	padding: 32px 0px 0px 0px;
+	text-align: center;
+	// .push-landing-login__image
+	&__image {
+		display: inline-block;
+		margin: 0px 0px 32px 0px;
+		position: relative;
+	}
+	// .push-landing-login__text
+	&__text {
+	}
+	// .push-landing-login__footer
+	&__footer {
+		padding: 48px 0px 0px 0px;
+		display: grid;
+		grid-auto-flow: column;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+	}
+	// .push-landing-login__button
+	&__button {
+	}
+}
+//========================================================================================================================================================
+.finish-landing-login {
+	text-align: center;
+	padding: 24px 0px 0px 0px;
+	display: grid;
+	gap: 64px;
+	// .finish-landing-login__block
+	&__block {
+		display: grid;
+		justify-content: center;
+		gap: 32px;
+	}
+	// .finish-landing-login__text
+	&__text {
+		display: grid;
+		gap: 32px;
+	}
+	// .finish-landing-login__button
+	&__button {
+		justify-self: center;
+	}
+	// .finish-landing-login__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+	}
+	// .finish-landing-login__item
+	&__item {
+	}
+	// .finish-landing-login__name
+	&__name {
+		margin: 0px 0px math.div(4px, 20px) * 1em 0px;
+	}
+	// .finish-landing-login__label
+	&__label {
+		margin: 0px 0px math.div(14px, 14px) * 1em 0px;
+	}
+	// .finish-landing-login__social
+	&__social {
+		justify-content: center;
+	}
+}

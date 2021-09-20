@@ -1,0 +1,1326 @@
+//!tournaments
+.tournaments {
+	// .tournaments__sort
+	&__sort {
+	}
+	// .tournaments__filter
+	&__filter {
+	}
+	// .tournaments__tablet
+	&__tablet {
+	}
+
+	.select {
+	}
+}
+.sort-tournaments {
+	// .sort-tournaments__items
+	@extend %element-bg;
+	padding: 24px;
+	&__items {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(3, 1fr) auto;
+	}
+	// .sort-tournaments__item
+	&__item {
+	}
+	// .sort-tournaments__calendar
+	&__calendar {
+	}
+}
+.filter-tournaments {
+	// .filter-tournaments__menu
+	&__menu {
+	}
+}
+
+.tablet-tournaments {
+	// .tablet-tournaments__body
+	&__body {
+		display: grid;
+		overflow: hidden;
+		grid-template-columns: auto 1fr repeat(5, auto) minmax(0, auto);
+		row-gap: 4px;
+	}
+	// .tablet-tournaments__title
+	&__title {
+		padding: 16px 10px;
+		background-color: $bg-03;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:not(:last-child) {
+			margin: 0px 0px 4px 0px;
+		}
+		&:nth-child(2) {
+			justify-content: start;
+		}
+		&_data {
+			padding: 0px 20px 0px 0px;
+		}
+		&_span-2 {
+			grid-column: span 2;
+		}
+	}
+	// .tablet-tournaments__item
+	&__item {
+		padding: 20px 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@extend %element-bg;
+		&_discipline {
+			border-radius: 4px 0 0 4px;
+			position: relative;
+		}
+		&_loading {
+			position: relative;
+			left: 2px;
+			width: 99.8%;
+			transform: translateY(-5px);
+			grid-column: span 8;
+			background-color: transparent !important;
+			padding: 0;
+		}
+		&_ratings {
+			border-radius: 0 4px 4px 0;
+		}
+		&_name {
+			justify-content: start;
+			grid-column: span 2;
+		}
+	}
+	// .tablet-tournaments__discipline
+	&__discipline {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		border-radius: 4px;
+		img {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+		}
+	}
+	// .tablet-tournaments__loading
+	&__loading {
+		display: none;
+		position: absolute;
+		background-color: #3b5c7b;
+		bottom: 0;
+		left: 2px;
+		height: 1px;
+		width: 100%;
+		transform: translate(0px, -100%);
+		span {
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #abc2db;
+		}
+	}
+	// .tablet-tournaments__name
+	&__name {
+		color: inherit;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $link;
+			}
+		}
+	}
+	// .tablet-tournaments__data
+	&__data {
+		margin: 0px 20px 0px 0px;
+	}
+	// .tablet-tournaments__prize
+	&__prize {
+	}
+	// .tablet-tournaments__teams
+	&__teams {
+	}
+	// .tablet-tournaments__winner
+	&__winner {
+	}
+	// .tablet-tournaments__ratings
+	&__ratings {
+	}
+	// .tablet-tournaments__footer
+	&__footer {
+		padding: 25px 0px 0px 0px;
+		text-align: center;
+	}
+	// .tablet-tournaments__button
+	&__button {
+	}
+}
+// .loading-tablet-tournaments
+.loading-tablet-tournaments {
+	background-color: #3b5c7b;
+	height: 1px;
+	width: 100%;
+	position: relative;
+	span {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #abc2db;
+	}
+}
+//========================================================================================================================================================
+//!tournament
+//========================================================================================================================================================
+//========================================================================================================================================================
+//? main-tournament
+.main-tournament {
+	display: grid;
+	row-gap: 24px;
+	// .main-tournament__status
+	&__status {
+	}
+	// .main-tournament__lebel
+	&__lebel-slider {
+		text-align: center;
+	}
+	// .main-tournament__slider
+	&__slider {
+		display: grid;
+		row-gap: 16px;
+	}
+	// .main-tournament__controls-slider
+	&__controls-slider {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1 1 auto;
+		padding: 0px 10px;
+	}
+	// .main-tournament__arrow
+	&__arrow {
+		// .main-tournament__arrow_prev
+		&_prev {
+		}
+		// .main-tournament__arrow_next
+		&_next {
+		}
+	}
+	// .main-tournament__dotts
+	&__dotts {
+	}
+	// .main-tournament__menu
+	&__menu {
+	}
+}
+.slider-main-tournament {
+	// .slider-main-tournament__slide
+	&__slide {
+		min-height: 100%;
+		display: grid;
+	}
+}
+.team-participant {
+	min-height: 100%;
+	width: 202.5px;
+	color: inherit;
+	@extend %element-bg;
+	padding: 16px;
+	display: grid;
+	grid-template-rows: minmax(32px, auto) 1fr minmax(28px, auto);
+	row-gap: 8px;
+	@media (any-hover: hover) {
+		&:hover {
+			.team-participant__name {
+				color: $link;
+			}
+			.team-participant__logo {
+				opacity: 0;
+				visibility: hidden;
+			}
+			.team-participant__list-team {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	// .team-participant__header
+	&__header {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		column-gap: 15px;
+		justify-items: center;
+		align-items: center;
+	}
+	// .team-participant__points
+	&__points {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .team-participant__name
+	&__name {
+		color: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: color 0.3s ease 0s;
+		text-align: center;
+	}
+	// .team-participant__rate
+	&__rate {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .team-participant__body
+	&__body {
+		min-height: 168px;
+		position: relative;
+	}
+	// .team-participant__logo
+	&__logo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 168px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+		img {
+			max-height: 120px;
+			max-width: 100%;
+		}
+	}
+	// .team-participant__list-team
+	&__list-team {
+		position: relative;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 2;
+		padding: 8px 11px;
+		background-color: $bg-02;
+		border-radius: 4px;
+		display: grid;
+		row-gap: 8px;
+		transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+	}
+	// .team-participant__item
+	&__item {
+		display: flex;
+		align-items: center;
+		min-height: 24px;
+	}
+	// .team-participant__avatar
+	&__avatar {
+		position: relative;
+		flex: 0 0 19px;
+		width: 19px;
+		height: 19px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		overflow: hidden;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	// .team-participant__nick
+	&__nick {
+		padding: 0px 0px 0px 8px;
+		transition: color 0.3s ease 0s;
+		color: inherit;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $link;
+			}
+		}
+	}
+	// .team-participant__footer
+	&__footer {
+		padding: 8px 0px 0px 0px;
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		justify-content: space-between;
+		column-gap: 5px;
+		justify-items: center;
+		align-items: center;
+	}
+	// .team-participant__statistics
+	&__statistics {
+	}
+	// .team-participant__percent
+	&__percent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .team-participant__country
+	&__country {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 30px;
+			max-height: 20px;
+		}
+	}
+}
+
+.menu-main-tournament {
+	// .menu-main-tournament__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: -2px 0;
+		li {
+			margin: 2px 24px 2px 0px;
+			&:last-child {
+				margin: 2px 0px 2px 0px;
+			}
+		}
+	}
+	// .menu-main-tournament__link
+	&__link {
+		display: flex;
+		align-items: center;
+		&::before {
+			color: inherit;
+			margin: 0px 4px 0px 0px;
+		}
+		&._active {
+			opacity: 1;
+		}
+	}
+}
+
+.status-main-tournament {
+	padding: 46px 40px;
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	align-content: stretch;
+	align-items: center;
+	gap: 32px;
+	@extend %element-bg;
+	border-radius: 4px;
+	overflow: hidden;
+	// .status-main-tournament__item
+	&__item {
+		display: grid;
+		grid-template-columns: 24px auto;
+		column-gap: 10px;
+		row-gap: 4px;
+		align-items: center;
+		&::before {
+			align-self: center;
+			grid-row: span 2;
+		}
+	}
+	// .status-main-tournament__game
+	&__game {
+		width: 24px;
+		height: 24px;
+		overflow: hidden;
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .status-main-tournament__content
+	&__content {
+	}
+	// .status-main-tournament__label
+	&__label {
+	}
+	// .status-main-tournament__value
+	&__value {
+	}
+	// .status-main-tournament__live
+	&__live {
+		grid-row: span 2;
+		grid-column: span 2;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 16px;
+		background-color: $live;
+		border-radius: 4px;
+		&::after {
+			border-radius: 50%;
+			content: "";
+			@extend %gradient-button;
+			width: 8px;
+			height: 8px;
+			margin: 0px 0px 0px 6px;
+			animation: live 0.8s infinite linear alternate;
+			@keyframes live {
+				0% {
+					opacity: 0.3;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+//========================================================================================================================================================
+//? broadcasts
+
+.broadcasts {
+	display: grid;
+	column-gap: 24px;
+	// .broadcasts__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .broadcasts__title
+	&__title {
+	}
+	// .broadcasts__arrow
+	&__arrow {
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid $bg-03;
+		border-radius: 4px;
+		@extend %element-bg;
+		&::before {
+			color: #e7045d;
+			font-size: 22px;
+			font-weight: 600;
+		}
+		//background: #171f32 url('../img/icons/arrow-mach-line.svg') center / 5.5px 9.5px no-repeat;
+		// .broadcasts__arrow_prev
+		&_prev {
+			left: 0;
+		}
+		// .broadcasts__arrow_prev
+		&_next {
+			right: 0;
+		}
+	}
+	// .broadcasts__slider
+	&__slider {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 40px 1fr 40px;
+		column-gap: 24px;
+		min-width: 0;
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+		.swiper-slide-active {
+			background-color: $bg-04;
+		}
+	}
+	// .broadcasts__items
+	&__items {
+	}
+	// .broadcasts__item
+	&__item {
+	}
+}
+.slider-broadcasts {
+	// .slider-broadcasts__slide
+	&__slide {
+	}
+}
+.slide-broadcasts {
+	cursor: pointer;
+	padding: 10px;
+	background-color: $bg-00;
+	border-radius: 4px;
+	min-width: 0;
+	transition: background-color 0.8s ease 0s;
+	&_live {
+		background-color: $live;
+	}
+	// .slide-broadcasts__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		justify-items: center;
+	}
+	// .slide-broadcasts__logo
+	&__logo {
+		padding: 10px;
+		width: 56px;
+		height: 56px;
+		border-radius: 4px;
+		background-color: $bg-03;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .slide-broadcasts__time
+	&__time {
+		padding: 0px 4px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	// .slide-broadcasts__value
+	&__value {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.slide-broadcasts-value {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 4px;
+	// .slide-broadcasts-value__item
+	&__item {
+	}
+}
+
+.broadcast {
+	display: grid;
+	grid-template-columns: 65.92% 31.758%;
+	gap: 32px;
+	// .broadcast__video
+	&__video {
+		position: relative;
+		min-height: 510px;
+	}
+	// .broadcast__image
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	// .broadcast__analitics
+	&__analitics {
+	}
+}
+//analitics
+.analitics-broadcast {
+	display: grid;
+	row-gap: 16px;
+	padding: 16px;
+	border-radius: 4px;
+	@extend %element-bg;
+	// .analitics-broadcast__item
+	&__item {
+	}
+	// .analitics-broadcast__teams
+	&__teams {
+	}
+	// .analitics-broadcast__maps
+	&__maps {
+		padding: 0px 8px;
+	}
+	// .analitics-broadcast__ratings
+	&__ratings {
+		padding: 0px 8px;
+	}
+	// .analitics-broadcast__buttons
+	&__buttons {
+		padding: 0px 8px;
+	}
+}
+.teams-analitics-broadcast {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	column-gap: 16px;
+	// .teams-analitics-broadcast__team
+	&__team {
+	}
+}
+.team-analitics-broadcast {
+	margin: 0px -16px;
+	padding: 0px 16px;
+	position: relative;
+	display: grid;
+	row-gap: 10px;
+	// .team-analitics-broadcast__top
+	&__top {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 16px;
+		align-items: center;
+		&_rev {
+		}
+	}
+	// .team-analitics-broadcast__name
+	&__name {
+		flex: 1 1 auto;
+		color: $link;
+	}
+	// .team-analitics-broadcast__logo
+	&__logo {
+		width: 45px;
+		border-radius: 4px;
+		padding: 10px;
+		background-color: $bg-03;
+		img {
+			max-width: 100%;
+		}
+	}
+	// .team-analitics-broadcast__bottom
+	&__bottom {
+		display: inline-grid;
+		//grid-auto-flow: column;
+		grid-template-columns: repeat(3, auto);
+		column-gap: 10px;
+		align-items: center;
+
+		justify-content: center;
+		//justify-items: center;
+	}
+	// .team-analitics-broadcast__value
+	&__value {
+	}
+	// .team-analitics-broadcast__statistics
+	&__statistics {
+	}
+	// .team-analitics-broadcast__rate
+	&__rate {
+	}
+	// .teams-analitics-broadcast__counter
+	&__counter {
+	}
+}
+
+.maps-analitics-broadcast {
+	// .maps-analitics-broadcast__label
+	&__label {
+		text-align: center;
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+	// .maps-analitics-broadcast__table
+	&__table {
+	}
+}
+.table-maps-analitics-broadcast {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+	gap: 2px;
+	// .table-maps-analitics-broadcast__item
+	&__item {
+		padding: 4px;
+		background-color: $bg-02;
+		width: 100%;
+		height: 100%;
+		@extend ._body_small-strong;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// .table-maps-analitics-broadcast__item_rev
+		&_rev {
+			flex-direction: row-reverse;
+			.table-maps-analitics-broadcast__logo {
+				margin: 0px 0px 0px 10px;
+			}
+		}
+	}
+	// .table-maps-analitics-broadcast_succes
+	&_succes {
+		background-color: $green-2;
+		color: #000;
+	}
+	// .table-maps-analitics-broadcast_fail
+	&_fail {
+		color: $fail;
+	}
+	// .table-maps-analitics-broadcast__logo
+	&__logo {
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+		margin: 0px 10px 0px 0px;
+		img {
+			max-width: 100%;
+		}
+	}
+	// .table-maps-analitics-broadcast__name
+	&__name {
+	}
+}
+
+.ratings-analitics-broadcast {
+	// .ratings-analitics-broadcast__label
+	&__label {
+		text-align: center;
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+	// .ratings-analitics-broadcast__tables
+	&__tables {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+	}
+}
+.table-ratings-analitics {
+	border-radius: 4px;
+	overflow: hidden;
+	&_rev {
+		.table-ratings-analitics__item {
+			justify-items: start;
+			grid-template-columns: minmax(36px, auto) 24px 1fr;
+			.table-ratings-analitics__name {
+				grid-column: 3;
+				grid-row: 1;
+			}
+			.table-ratings-analitics__image {
+				grid-column: 2;
+				grid-row: 1;
+			}
+			.table-ratings-analitics__value {
+				grid-column: 1;
+				grid-row: 1;
+			}
+		}
+	}
+	// .table-ratings-analitics__item
+	&__item {
+		display: grid;
+		padding: 4px 8px;
+		min-height: 32px;
+		grid-template-columns: 1fr 24px minmax(36px, auto);
+		background-color: $bg-03;
+		justify-items: self-end;
+		column-gap: 8px;
+		align-items: center;
+		&_bg {
+			background-color: $bg-02;
+		}
+	}
+	// .table-ratings-analitics__name
+	&__name {
+	}
+	// .table-ratings-analitics__image
+	&__image {
+		width: 24px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-width: 100%;
+			object-fit: contain;
+		}
+	}
+	// .table-ratings-analitics__value
+	&__value {
+	}
+}
+.buttons-analitics-broadcast {
+	padding: 12px 0px 0px 0px;
+	display: grid;
+	gap: 32px;
+	grid-auto-flow: column;
+	// .buttons-analitics-broadcast__item
+	&__item {
+	}
+}
+
+//========================================================================================================================================================
+//? rates
+
+.rates {
+	// .rates__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .rates__title
+	&__title {
+	}
+	// .rates__body
+	&__body {
+		display: grid;
+		row-gap: 16px;
+	}
+	// .rates__filter
+	&__filter {
+	}
+	// .rates__table
+	&__table {
+	}
+}
+.filter-rates {
+	// .filter-rates__menu
+	&__menu {
+	}
+}
+.table-rates {
+	display: grid;
+	grid-template-columns: 112px repeat(9, 1fr);
+	grid-template-rows: minmax(33px, auto) 1fr repeat(2, minmax(33px, auto));
+	// .table-rates__item
+	&__item {
+		@extend ._body_strong;
+	}
+	// .table-rates__commands
+	&__commands {
+		grid-row: span 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $bg-02;
+	}
+	// .table-rates__price
+	&__price {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $bg-button-hover-white;
+		&_bg {
+			background-color: $bg-button-hover-white-015;
+		}
+	}
+	// .table-rates__bookmaker
+	&__bookmaker {
+		height: 155px;
+		background-color: $bg-03;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		&_bg {
+			background-color: $bg-02;
+		}
+	}
+	// .table-rates__result
+	&__result {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $bg-02;
+		&_bg {
+			background-color: $bg-button-hover-white-015;
+		}
+	}
+	// .table-rates__value
+	&__value {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $bg-button-hover-white;
+		&_bg-01 {
+			background-color: $bg-03;
+		}
+		&_bg-02 {
+			background-color: $bg-02;
+		}
+		&_bg-03 {
+			background-color: $bg-button-hover-white-015;
+		}
+		span {
+			display: flex;
+			flex-direction: column-reverse;
+			padding: 4px;
+			font-size: 10px;
+			line-height: math.div(14px, 10px) * 100%;
+		}
+		._rate::before {
+			margin: 0;
+		}
+	}
+}
+
+.commands-table-rates {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	// .commands-table-rates__command
+	&__command {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			flex: 1 1 100%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .commands-table-rates__vs
+	&__vs {
+		color: $bg-04;
+		text-align: center;
+	}
+}
+.bookmaker-table-rates {
+	transform: rotate(-90deg);
+	width: 100%;
+	min-height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 23px;
+	// no-p
+	&_no-p{
+		padding:5px;
+	}
+	// .bookmaker-table-rates__logo
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//========================================================================================================================================================
+//? nets
+.nets {
+	display: grid;
+	gap: 24px;
+	// .nets__header
+	&__header {
+		display: grid;
+		gap: 16px;
+	}
+	// .nets__title
+	&__title {
+	}
+	// .nets__filter
+	&__filter {
+	}
+	// .nets__body
+	&__body {
+		display: grid;
+		row-gap: 16px;
+	}
+	// .nets__groups
+	&__groups {
+	}
+	// .nets__matches
+	&__matches {
+	}
+}
+.filter-nets {
+	// .filter-nets__menu
+	&__menu {
+	}
+}
+.matches-nets {
+	// .matches-nets__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+	}
+	// .matches-nets__title
+	&__title {
+	}
+	// .matches-nets__row
+	&__row {
+	}
+	// .matches-nets__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+	}
+}
+.items-matches-nets {
+	// .items-matches-nets__list
+	&__list {
+		display: grid;
+		row-gap: 8px;
+	}
+}
+.item-matches-nets {
+	// .item-matches-nets__body
+	&__body {
+		display: flex;
+		padding: 8px 16px;
+		align-items: center;
+		@extend %element-bg;
+		border-radius: 4px;
+		@media (any-hover: hover){
+			&:hover{
+				background: linear-gradient(180deg, #030e1b 0%, #041324 100%);
+			}
+		}
+	}
+	// .item-matches-nets__time
+	&__time {
+	}
+	// .item-matches-nets__content
+	&__content {
+		padding: 0px 10px;
+		flex: 1 1 auto;
+		display: inline-grid;
+		//grid-auto-flow: column;
+		grid-template-columns: 1fr repeat(3, auto) 1fr;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+	}
+	// .item-matches-nets__name
+	&__name {
+		&:first-child {
+			text-align: right;
+		}
+	}
+	// .item-matches-nets__logo
+	&__logo {
+		width: 33px;
+		height: 33px;
+		padding: 3px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	// .item-matches-nets__counter
+	&__counter {
+		padding: 0px 6px;
+		display: inline-grid;
+		grid-template-columns: 20px auto 20px;
+		align-items: center;
+		gap: 0px;
+
+		span {
+			flex: 0 0 20px;
+			text-align: center;
+			padding: 0px 5px;
+		}
+	}
+}
+//========================================================================================================================================================
+//? matches-tournament =======
+
+.matches-tournament {
+	// .matches-tournament__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .matches-tournament__title
+	&__title {
+	}
+	// .matches-tournament__filter
+	&__filter {
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+	// .matches-tournament__items
+	&__items {
+	}
+}
+.filter-matches-tournament {
+	// .filter-matches-tournament__menu
+	&__menu {
+	}
+}
+
+//========================================================================================================================================================
+//?forecast-rating=======
+.forecast-rating {
+	// .forecast-rating__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .forecast-rating__title
+	&__title {
+	}
+	// .forecast-rating__row
+	&__row {
+		@extend .page__row;
+	}
+	// .forecast-rating__content
+	&__content {
+		@extend .page__content;
+	}
+	// .forecast-rating__items
+	&__items {
+	}
+	// .forecast-rating__table
+	&__table {
+	}
+	// .forecast-rating__footer
+	&__footer {
+		padding: 18px 0px 0px 0px;
+		display: flex;
+	}
+	&__column {
+		&:first-child {
+			display: inline-grid;
+			grid-template-columns: repeat(2, auto);
+			column-gap: 16px;
+		}
+		&:last-child {
+			flex: 1 1 auto;
+			text-align: right;
+		}
+	}
+	// .forecast-rating__button
+	&__button {
+	}
+	// .forecast-rating__sidebar
+	&__sidebar {
+	}
+}
+
+//========================================================================================================================================================
+//?.news-tournament ====
+.news-tournament {
+	// .news-tournament__banner
+	&__banner {
+	}
+	// .news-tournament__footer
+	&__footer {
+	}
+	// .news-tournament__button
+	&__button {
+	}
+}
+//========================================================================================================================================================
+//? comments-tournament ========
+.comments-tournament {
+	display: grid;
+	gap: 24px;
+	//.comments-tournament__header
+	.comments-tournament__header {
+	}
+	//.comments-tournament__row
+	.comments-tournament__row {
+		@extend .page__row;
+	}
+	// .comments-tournament__content
+	&__content {
+		@extend .page__content;
+	}
+	// .comments-tournament__sidebar
+	&__sidebar {
+		@extend .page__sidebar;
+	}
+}
+
+//========================================================================================================================================================
+//?groups
+.groups {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	// .groups__column
+	&__column {
+	}
+}
+.group-a {
+	// .group-a__table
+	&__table {
+	}
+}
+.group-b {
+	// .group-a__table
+	&__table {
+	}
+}
+.table-groups {
+	display: grid;
+	grid-template-columns: 1fr repeat(4, minmax(48px, auto)) minmax(59px, auto);
+	row-gap: 8px;
+
+	// .table-groups_team
+	&__team {
+		border-radius: 4px 0 0 4px;
+	}
+	// .table-groups__label
+	&__label {
+		@extend ._headline-6;
+	}
+	// .table-groups__title
+	&__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@extend ._label;
+		&_last {
+			padding: 0px 15px 0px 4px;
+		}
+	}
+	// .table-groups__item
+	&__item {
+		position: relative;
+		align-items: center;
+		@extend %element-bg;
+		padding: 8px 4px;
+		display: flex;
+		justify-content: center;
+		@extend ._body_small-strong;
+		&_last {
+			padding: 0px 15px 0px 4px;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+}
+.team-table-groups {
+	padding: 0px 0px 0px 12px;
+	display: grid;
+	grid-template-columns: minmax(20px, auto) auto 1fr;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	@extend ._body_small;
+	// .team-table-groups__number
+	&__number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .team-table-groups__logo
+	&__logo {
+		width: 32px;
+		height: 32px;
+		padding: 3px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	// .team-table-groups__name
+	&__name {
+	}
+}

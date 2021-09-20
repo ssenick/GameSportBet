@@ -1,0 +1,1519 @@
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.button {
+	color: inherit;
+	display: inline-flex;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0.01em;
+	min-height: 40px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	span {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+	}
+	&_small {
+		font-size: 14px;
+	}
+	&_contained {
+		padding: 0px 16px;
+		background: linear-gradient(94.6deg, #ff1b2d 2.36%, #df006b 98.71%);
+		border-radius: 4px;
+		color: #fff;
+		&::before {
+			content: "";
+			transition: opacity 0.3s ease 0s;
+			background-color: rgba(255, 255, 255, 0.2);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&:not(:disabled) {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&:active {
+			&:not(:disabled) {
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+		.ripple {
+			background-color: rgba(255, 255, 255, 0.3);
+		}
+	}
+	&_outlined {
+		padding: 0px 16px;
+		border-radius: 4px;
+		@extend %gradient-button;
+		color: #fff;
+		&::before,
+		&::after {
+			content: "";
+			border-radius: inherit;
+			position: absolute;
+			width: calc(100% - 4px);
+			height: calc(100% - 4px);
+			top: 2px;
+			left: 2px;
+		}
+		&::after {
+			@extend %element-bg;
+		}
+		&::before {
+			transition: opacity 0.3s ease 0s;
+			opacity: 0;
+			z-index: 2;
+			background: $bg-button-hover;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&:not(:disabled) {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.ripple {
+			@extend %fill-button;
+			opacity: 0.3;
+		}
+	}
+	&_outlined-gray {
+		padding: 0px 16px;
+		border-radius: 4px;
+		background-color: $bg-03;
+		color: #fff;
+		&::before,
+		&::after {
+			content: "";
+			border-radius: inherit;
+			position: absolute;
+			width: calc(100% - 4px);
+			height: calc(100% - 4px);
+			top: 2px;
+			left: 2px;
+		}
+		&::after {
+			@extend %element-bg;
+		}
+		&::before {
+			transition: opacity 0.3s ease 0s;
+			opacity: 0;
+			z-index: 2;
+			background: $bg-button-hover;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&:not(:disabled) {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.ripple {
+			@extend %fill-button;
+			opacity: 0.3;
+		}
+	}
+	&_text {
+		border-radius: 4px;
+		padding: 0px 8px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: $bg-button-hover;
+			opacity: 0;
+			transition: opacity 0.3s ease 0s;
+		}
+		&:not(:disabled) {
+			span {
+				@extend %gradient-button;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&:not(:disabled) {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&:disabled {
+			background-color: $bg-04;
+			span {
+				background: none;
+				color: $primary-light;
+			}
+		}
+		.ripple {
+			@extend %fill-button;
+			opacity: 0.3;
+		}
+	}
+	&_text-white {
+		border-radius: 4px;
+		padding: 0px 8px;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: $hover-white;
+			opacity: 0;
+			transition: opacity 0.3s ease 0s;
+		}
+		&:not(:disabled) {
+			span {
+				color: $primary-light;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				&:not(:disabled) {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&:disabled {
+			background-color: $bg-04;
+			span {
+				background: none;
+				color: $primary-light;
+			}
+		}
+		.ripple {
+			background-color: $select-white;
+		}
+	}
+	&_icon-gradient {
+		span {
+			&::before {
+				@extend %gradient-button;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	&_icon-left {
+		._icon-111 {
+			&::before {
+				font-size: 15px;
+				color: #36ade1;
+			}
+		}
+		span::before {
+			color: inherit;
+			margin: 0px 8px 0px 0px;
+		}
+	}
+	&_icon-right {
+		span {
+			flex-direction: row-reverse;
+		}
+		span::before {
+			color: inherit;
+			margin: 0px 0px 0px 8px;
+		}
+	}
+	&_icon-only {
+		padding: 0px 8px;
+		span::before {
+			color: inherit;
+			margin: 0;
+		}
+	}
+	&_icon {
+		transition: color 0.3s ease 0s;
+		position: relative;
+		width: 24px;
+		min-height: 24px;
+		&::before {
+			transition: color 0.3s ease 0s;
+		}
+		&:focus:not(:disabled) {
+			outline: none;
+			span::after {
+				transform: scale(1);
+				@extend %stroke-white;
+			}
+		}
+		&:active:not(:disabled) {
+		}
+		@media (any-hover: hover) {
+			&:hover:not(:disabled) {
+				color: $bg-06;
+				&::before {
+					color: $bg-06;
+				}
+			}
+		}
+		.ripple-icon {
+			content: "";
+			pointer-events: none;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -16px 0px 0px -16px;
+			border-radius: 50%;
+			background-color: $select-white;
+			transform: scale(0);
+			transition: transform 0.3s ease 0s;
+			animation: ripple-icon 0.5s ease;
+		}
+		small {
+			position: absolute;
+			top: -10%;
+			right: 15%;
+			width: 9px;
+			height: 9px;
+			@extend %gradient-button;
+			border-radius: 50%;
+		}
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&::after {
+				content: "";
+				position: absolute;
+				pointer-events: none;
+				transition: transform 0.3s ease 0s;
+				width: 32px;
+				height: 32px;
+				transform: scale(0);
+				top: 50%;
+				left: 50%;
+				margin: -16px 0px 0px -16px;
+				border-radius: 50%;
+				background-color: $hover-white;
+				@extend %stroke-white;
+			}
+		}
+	}
+	&_icon-dark {
+		transition: all 0.3s ease 0s;
+		position: relative;
+		width: 24px;
+		min-height: 24px;
+		&::before {
+			opacity: 0.5;
+			transition: all 0.3s ease 0s;
+		}
+		&:focus:not(:disabled) {
+			opacity: 1;
+			outline: none;
+			span::after {
+				transform: scale(1);
+				@extend %stroke-white;
+			}
+		}
+		&:active:not(:disabled) {
+		}
+		@media (any-hover: hover) {
+			&:hover:not(:disabled) {
+				color: $bg-06;
+				&::before {
+					opacity: 0.65;
+					color: $bg-06;
+				}
+			}
+		}
+		.ripple-icon {
+			content: "";
+			pointer-events: none;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -16px 0px 0px -16px;
+			border-radius: 50%;
+			background-color: $select-white;
+			transform: scale(0);
+			transition: transform 0.3s ease 0s;
+			animation: ripple-icon 0.5s ease;
+		}
+		small {
+			position: absolute;
+			top: -10%;
+			right: 15%;
+			width: 9px;
+			height: 9px;
+			@extend %gradient-button;
+			border-radius: 50%;
+		}
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&::after {
+				content: "";
+				position: absolute;
+				pointer-events: none;
+				transition: transform 0.3s ease 0s;
+				width: 32px;
+				height: 32px;
+				transform: scale(0);
+				top: 50%;
+				left: 50%;
+				margin: -16px 0px 0px -16px;
+				border-radius: 50%;
+				background-color: $hover-white;
+				@extend %stroke-white;
+			}
+		}
+	}
+	.ripple {
+		position: absolute;
+		border-radius: 50%;
+		transform: scale(0);
+		z-index: 4;
+		pointer-events: none;
+		animation: ripple 600ms linear;
+	}
+	&._ripple {
+		overflow: hidden;
+	}
+	@keyframes ripple {
+		to {
+			transform: scale(4);
+			opacity: 0;
+		}
+	}
+	&:disabled {
+		cursor: default;
+		opacity: 0.33;
+	}
+}
+@keyframes ripple-icon {
+	0% {
+		transform: scale(0);
+	}
+	40% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+//</BUTTONS>====================================================================================================
+
+//<SELECT (sel+tab)>====================================================================================================
+.select {
+	flex: 1 1 auto;
+	min-width: 140px;
+	// .select__item
+	&__item {
+		position: relative;
+	}
+	// .select__title
+	&__title {
+		width: 100%;
+		color: inherit;
+		background-color: $bg-02;
+		border: 2px solid $bg-01;
+		border-radius: 4px;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+	}
+	// .select__value
+	&__value {
+		flex: 1 1 auto;
+		min-height: 36px;
+		display: flex;
+		@extend ._subtitle;
+		padding: 5px 16px;
+		align-items: center;
+		> span {
+			flex: 1 1 auto;
+		}
+		span {
+			text-align: left;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			&::before {
+				color: inherit;
+				margin: 0px 8px 0px 0px;
+			}
+		}
+		small {
+			@extend ._caption;
+			margin: 0px 0px 0px 5px;
+		}
+		&:after {
+			content: "";
+			display: inline-block;
+			transition: all 0.3s ease 0s;
+			width: 24px;
+			height: 24px;
+			background: url("../img/icons/select.svg") center / 10px no-repeat;
+		}
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		height: 100%;
+	}
+	// .select__options
+	&__options {
+		position: absolute;
+		top: calc(100% - 2px);
+		border-radius: 0 0 4px 4px;
+		min-width: 100%;
+		left: 0;
+		background-color: $bg-03;
+		border: 2px solid $bg-01;
+		border-top: 0;
+		padding: 8px;
+	}
+	// .select__option
+	&__option {
+		text-align: left;
+		cursor: pointer;
+		width: 100%;
+		color: inherit;
+		height: 40px;
+		padding: 10px 16px;
+		border: 2px solid transparent;
+		@extend ._subtitle;
+		border-radius: 4px;
+		span {
+			display: flex;
+			width: 100%;
+			align-items: center;
+			&::before {
+				color: inherit;
+				width: 16px;
+				height: 16px;
+				flex: 0 0 16px;
+				margin: 0px 8px 0px 0px;
+			}
+		}
+		small {
+			@extend ._caption;
+			margin: 0px 0px 0px 5px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $bg-02;
+				border: 2px solid $bg-01;
+			}
+		}
+	}
+	&._active {
+		z-index: 5;
+	}
+	position: relative;
+	select {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:disabled + .select__item {
+			pointer-events: none;
+			opacity: 0.33;
+		}
+	}
+}
+//</SELECT>====================================================================================================
+
+//=<CALENDAR>=======================================================================================================================================================
+
+.calendar-input {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 5;
+	background-color: $bg-03;
+	border-radius: 4px;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	transform: translate(0px, 16px);
+	pointer-events: none;
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.35);
+	border: 2px solid #0f1526;
+	display: flex;
+	._calendar & {
+		transform: translate(0px, 8px);
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+	// .calendar-input__presets
+	&__presets {
+		padding: 16px;
+	}
+	// .calendar-input__item
+	&__item {
+	}
+}
+.presets-calendar {
+	display: grid;
+	gap: 4px;
+	// .presets-calendar__item
+	&__item {
+		white-space: nowrap;
+	}
+}
+.calendar {
+	width: 312px;
+	padding: 8px 16px 16px 16px;
+	background-color: $bg-03;
+	border-radius: 4px;
+	position: relative;
+	// .calendar__header
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+	// .calendar__select
+	&__select {
+	}
+	// .calendar__arrows
+	&__arrows {
+		display: inline-grid;
+		grid-auto-flow: column;
+		align-items: center;
+		gap: 0px;
+	}
+	// .calendar__arrow
+	&__arrow {
+		width: 40px;
+		height: 40px;
+		&::before {
+			color: $primary-light;
+		}
+	}
+	// .calendar__table
+	&__table {
+	}
+	&__month,
+	&__year {
+		background-color: $bg-03;
+		z-index: 2;
+	}
+	// .calendar__month
+	&__month {
+	}
+	// .calendar__year
+	&__year {
+	}
+}
+.select-calendar {
+	// .select-calendar__value
+	&__value {
+	}
+}
+.table-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 40px);
+	gap: 0px;
+	// .table-calendar__week
+	&__week {
+		text-align: center;
+		@extend ._caption;
+		color: $secondary;
+	}
+	// .table-calendar__day
+	&__day {
+		font-weight: 400;
+		&_choose {
+			border-radius: 50%;
+		}
+		&_range {
+			background-color: $bg-01;
+			border-radius: 0;
+		}
+	}
+}
+.my-calendar {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+	// .my-calendar__item
+	&__item {
+		padding: 0px 3px;
+		min-height: 32px;
+	}
+}
+
+//==</CALENDAR>======================================================================================================================================================
+
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.input {
+	// .input__label
+	&__label {
+		margin: 0px 0px 2px 0px;
+		display: block;
+		@extend ._body;
+	}
+	// .input__line
+	&__line {
+		background-color: $bg-02;
+		border: 2px solid $bg-01;
+		width: 100%;
+		padding: 0px 16px;
+		min-height: 40px;
+		border-radius: 4px;
+		display: flex;
+		align-items: flex-start;
+		transition: all 0.3s ease 0s;
+		position: relative;
+		&_icon {
+			&::before {
+				color: $primary-light;
+				flex: 0 0 24px;
+				height: 36px;
+				margin: 0px 8px 0px 0px;
+			}
+			&._icon-111 {
+				&::before {
+					font-size: 15px;
+					color: #36ade1;
+				}
+			}
+		}
+		&_area {
+			.input__button {
+				margin: 0px -8px 0px 0px;
+				&::before {
+					font-size: 20px;
+				}
+			}
+			.input__value {
+				@extend ._body;
+				resize: none;
+				min-height: 96px;
+				padding: 8px 32px 8px 0;
+				margin: 0px -32px 0px 0px;
+				scrollbar-color: $bg-05 $bg-01;
+				scrollbar-width: thin;
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+				&::-webkit-scrollbar-track {
+					background-color: $bg-01;
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: $bg-05;
+					border-radius: 4px;
+				}
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				border: 2px solid $bg-04;
+			}
+		}
+		&._disabled {
+			opacity: 0.5;
+			pointer-events: none;
+			.input__value,
+			.input__button {
+				&::before {
+					color: $primary-light;
+				}
+			}
+		}
+		&._selected {
+		}
+		&._focus {
+			border: 2px solid $primary-light;
+		}
+		&._error {
+			border: 2px solid $default-txt-hover;
+		}
+	}
+	&__value {
+		flex: 1 1 auto;
+		height: 36px;
+		width: 100%;
+		border-radius: 4px;
+		background-color: transparent;
+		color: $primary-light;
+		opacity: 0.5;
+		@extend ._subtitle;
+		transition: all 0.3s ease 0s;
+		&._selected,
+		&._focus {
+			opacity: 1;
+			outline: none;
+		}
+	}
+	&__error {
+		text-align: left;
+		padding: 2px 0px 0px 16px;
+		color: $fail;
+		@extend ._caption;
+		.search-header & {
+			top: 100%;
+			left: 0;
+			position: absolute;
+		}
+	}
+	&__button {
+		height: 36px;
+		&::before {
+			color: $primary-light;
+			font-size: 24px;
+		}
+	}
+	&__email-link {
+		//display: none;
+		@extend ._caption;
+		padding: 2px 0px 0px 16px;
+		color: $gold;
+		&._active {
+			display: block;
+		}
+		a {
+			@extend ._gradient-link;
+			display: block;
+		}
+	}
+	// .input__info
+	&__info {
+		padding: 2px 0px 0px 16px;
+		color: $secondary;
+		@extend ._caption;
+		&_white{
+			color: #fff;
+		}
+	}
+	// .input__counter
+	&__counter {
+		@extend ._caption;
+		color: $secondary;
+		margin: 4px 0px 0px 0px;
+		text-align: right;
+	}
+}
+//</INPUT>====================================================================================================
+
+//<CHECK (chk+tab)>====================================================================================================
+.checkbox {
+	position: relative;
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .checkbox__body {
+			.checkbox__icon {
+				&::after {
+					opacity: 0;
+				}
+				&::before {
+					opacity: 1;
+				}
+			}
+			&::before {
+				@extend %hover-gradient;
+			}
+		}
+		&:focus:not(:disabled) {
+			outline: none;
+		}
+		&:focus:not(:disabled) + .checkbox__body {
+			.checkbox__content {
+				&::before {
+					transform: scale(1);
+					@extend %stroke-white;
+				}
+			}
+		}
+		&:focus:not(:disabled):checked {
+			outline: none;
+		}
+		&:focus:not(:disabled):checked + .checkbox__body {
+			* {
+				outline: none;
+			}
+			.checkbox__content {
+				outline: none;
+				&::before {
+					border: 1px solid #ff1b2d;
+					@extend %hover-gradient;
+				}
+			}
+		}
+		&:disabled + .checkbox__body {
+			cursor: default;
+			.checkbox__icon {
+				&::after {
+					border: 2px solid $bg-05;
+				}
+			}
+			.checkbox__text {
+				opacity: 0.33;
+			}
+		}
+		&:checked:disabled + .checkbox__body {
+			.checkbox__icon {
+				opacity: 0.33;
+			}
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			.checkbox__input:not(:disabled) + .checkbox__body {
+				.checkbox__content {
+					&::before {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+	&__content {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		&::before {
+			content: "";
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			left: -8px;
+			top: -8px;
+			border-radius: 50%;
+			transform: scale(0);
+			transition: transform 0.3s ease 0s;
+			background-color: $hover-white;
+			pointer-events: none;
+		}
+	}
+	&__body {
+		display: inline-flex;
+		cursor: pointer;
+	}
+	&__image {
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+		overflow: hidden;
+		flex: 0 0 24px;
+		margin: 0px 8px 0px 0px;
+		img {
+			max-width: 100%;
+			max-height: 24px;
+		}
+	}
+	&__icon {
+		align-self: flex-start;
+		flex: 0 0 24px;
+		height: 24px;
+		position: relative;
+		z-index: 2;
+		&:not(:last-child) {
+			margin: 0px 8px 0px 0px;
+		}
+		&::before,
+		&::after {
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 18px;
+			height: 18px;
+			border-radius: 3px;
+			transition: opacity 0.2s ease 0s;
+		}
+		&::after {
+			content: "";
+			border: 2px solid $bg-06;
+		}
+		&::before {
+			opacity: 0;
+			color: $primary-dark;
+			font-size: 16px;
+			@extend %gradient-button;
+		}
+	}
+	&__text {
+		align-items: center;
+		position: relative;
+		@extend ._body;
+		flex: 1 1 auto;
+		&:before {
+			content: "";
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	&._error {
+	}
+	&._disabled {
+		pointer-events: none;
+	}
+	.ripple-icon {
+		content: "";
+		pointer-events: none;
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -16px 0px 0px -16px;
+		border-radius: 50%;
+		background-color: $select-white;
+		transform: scale(0);
+		transition: transform 0.3s ease 0s;
+		animation: ripple-icon 0.5s ease;
+	}
+}
+//</CHECK>====================================================================================================
+
+//<OPTIONS (opt+tab)>====================================================================================================
+.options {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	// .options__item
+	&__item {
+		position: relative;
+		&:active {
+			.options__input:not(:disabled) + .options__body {
+				&::before {
+					background-color: $select-white;
+				}
+			}
+			.options__input:checked:not(:disabled) + .options__body {
+				&::before {
+					@extend %select-gradient;
+				}
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				.options__input:not(:disabled) + .options__body {
+					&::before {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+		&._error {
+		}
+	}
+	// .options__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .options__body {
+			&::after {
+				opacity: 1;
+			}
+			.options__icon {
+				&::after {
+					opacity: 0;
+				}
+				&::before {
+					opacity: 1;
+				}
+			}
+			&::before {
+				@extend %hover-gradient;
+			}
+		}
+		&:focus + .options__body {
+			&::before {
+				transform: scale(1);
+				@extend %stroke-white;
+			}
+		}
+		&:focus:checked + .options__body {
+			&::before {
+				border: 1px solid #ff1b2d;
+				@extend %hover-gradient;
+			}
+		}
+		&:disabled + .options__body {
+			cursor: default;
+			.options__icon {
+				&::after {
+					border: 2px solid $bg-05;
+				}
+			}
+			.options__text {
+				opacity: 0.33;
+			}
+		}
+		&:checked:disabled + .options__body {
+			.options__icon {
+				opacity: 0.33;
+			}
+		}
+	}
+	&__body {
+		display: inline-flex;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			border-radius: 50%;
+		}
+		&::before {
+			width: 40px;
+			height: 40px;
+			left: -8px;
+			top: -8px;
+			transform: scale(0);
+			transition: transform 0.3s ease 0s;
+			background-color: $hover-white;
+		}
+		&::after {
+			border: 3px solid $primary-dark;
+			left: 5px;
+			transition: opacity 0.3s ease 0s;
+			top: 5px;
+			width: 14px;
+			height: 14px;
+			opacity: 0;
+			border-radius: 50%;
+			z-index: 3;
+		}
+	}
+	&__icon {
+		align-self: flex-start;
+		margin: 0px 8px 0px 0px;
+		flex: 0 0 24px;
+		height: 24px;
+		position: relative;
+		z-index: 2;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			transition: opacity 0.2s ease 0s;
+		}
+		&::after {
+			border: 2px solid $bg-06;
+		}
+		&::before {
+			opacity: 0;
+			@extend %gradient-button;
+		}
+	}
+	// .checkbox__text
+	&__text {
+		align-items: center;
+		position: relative;
+		@extend ._body;
+		&:before {
+			content: "";
+		}
+	}
+	a {
+		color: #fff;
+		text-decoration: underline;
+		@media (min-width: 992px) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&._error {
+		.checkbox__text {
+			&:before {
+				border: 1px solid #ee1212;
+			}
+		}
+	}
+}
+//</OPTIONS>====================================================================================================
+
+//<switcher>====================================================================================================
+.switcher {
+	display: inline-block;
+	position: relative;
+	@media (any-hover: hover) {
+		&:hover {
+			.switcher__input:not(:disabled) + .switcher__body {
+				.switcher__icon {
+					span {
+						&::before {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	// .switcher__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .switcher__body {
+			.switcher__icon {
+				left: 14px;
+				&::before {
+					opacity: 0;
+				}
+				&::after {
+					opacity: 1;
+				}
+				span {
+					&::before {
+						@extend %hover-gradient;
+					}
+				}
+			}
+		}
+		&:focus:not(:disabled) + .switcher__body {
+			.switcher__icon {
+				span {
+					&::before {
+						transform: scale(1);
+						background: $select-white;
+						@extend %stroke-white;
+					}
+				}
+			}
+		}
+		&:focus:checked:not(:disabled) + .switcher__body {
+			.switcher__icon {
+				span {
+					&::before {
+						transform: scale(1);
+						@extend %select-gradient;
+						border: 1px solid #ff1b2d;
+					}
+				}
+			}
+		}
+		&:disabled + .switcher__body {
+			opacity: 0.33;
+			cursor: default;
+		}
+	}
+	// .switcher__body
+	&__body {
+		width: 34px;
+		height: 14px;
+		display: block;
+		border-radius: 7px;
+		background-color: $bg-04;
+		cursor: pointer;
+		@media (any-hover: hover) {
+			&:hover {
+				.switcher__icon {
+					span {
+					}
+				}
+			}
+		}
+	}
+	// .switcher__icon
+	&__icon {
+		position: absolute;
+		left: 0;
+		top: -3px;
+		width: 20px;
+		height: 20px;
+		transition: left 0.3s ease 0s;
+		&::before,
+		&::after {
+			content: "";
+			border-radius: 50%;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			transition: opacity 0.3s ease 0s;
+		}
+		&::before {
+			background-color: $bg-06;
+		}
+		&::after {
+			opacity: 0;
+			@extend %gradient-button;
+		}
+		span {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				transition: all 0.3s ease 0s;
+				transform: scale(0);
+				border-radius: 50%;
+				background: $hover-white;
+			}
+		}
+	}
+	&:active {
+		.switcher__input:not(:disabled) + .switcher__body {
+			.switcher__icon {
+				span {
+					&::before {
+						background: $select-white;
+					}
+				}
+			}
+		}
+		.switcher__input:checked:not(:disabled) + .switcher__body {
+			.switcher__icon {
+				span {
+					&::before {
+						@extend %select-gradient;
+					}
+				}
+			}
+		}
+	}
+}
+//</switcher>====================================================================================================
+
+//<RATING>====================================================================================================
+.rating {
+	display: inline-grid;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 5px;
+	&_10 {
+		gap: 2px;
+		.rating__item {
+			width: 10px;
+			height: 10px;
+			img {
+				width: 10px;
+			}
+		}
+		.rating__value {
+			font-size: 10px;
+		}
+	}
+	&_24 {
+		gap: 8px;
+		.rating__item {
+			width: 24px;
+			height: 24px;
+			img {
+				width: 20px;
+			}
+		}
+		.rating__value {
+			font-size: 20px;
+		}
+	}
+	// .rating__item
+	&__item {
+		width: 16px;
+		height: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			width: 16px;
+		}
+	}
+	&__value {
+		padding: 2px 0px 0px 0px;
+		font-size: 16px;
+	}
+}
+/*
+.rating {
+	display: flex;
+	align-items: flex-end;
+	font-size: 20px;
+	line-height: 0.75;
+	transition: opacity 0.3s ease 0s;
+	color: $gold;
+}
+.rating.rating_sending {
+	opacity: 0.2;
+}
+.rating.rating_set .rating__active,
+.rating.rating_set .rating__item {
+	cursor: pointer;
+}
+.rating__body {
+	position: relative;
+	letter-spacing: 1px;
+}
+.rating__body::before {
+	content: "☆☆☆☆☆";
+	display: block;
+}
+.rating__active {
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.rating__active::before {
+	content: "★★★★★";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: $gold;
+}
+.rating__items {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.rating__item {
+	flex: 0 0 20%;
+	height: 100%;
+	opacity: 0;
+}
+.rating__value {
+	font-size: 50%;
+	line-height: 1;
+	padding: 0px 0px 0px 10px;
+	&_hide {
+		display: none;
+	}
+}
+*/
+//</RATING>====================================================================================================
+
+//<QUANTITY>====================================================================================================
+.quantity {
+	width: 88px;
+	height: 40px;
+	display: flex;
+	border: 1px solid rgba(166, 166, 166, 0.45);
+	// .quantity__button
+	&__button {
+		flex: 0 0 30px;
+		position: relative;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 0px -4.5px;
+			background-color: #a6a6a6;
+			width: 9px;
+			height: 1px;
+		}
+		@media (min-width: $md2+px) {
+			&:hover {
+				&::before,
+				&::after {
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+		// .quantity__button_plus
+		&_plus {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		// .quantity__button_minus
+		&_minus {
+		}
+	}
+	// .quantity__input
+	&__input {
+		flex: 1 1 auto;
+		input {
+			height: 100%;
+			color: #a6a6a6;
+			font-size: 12px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+//</QUANTITY>====================================================================================================
+
+//<RANGE>====================================================================================================
+
+//</RANGE>====================================================================================================

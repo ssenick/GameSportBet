@@ -1,0 +1,1012 @@
+//?  .available-for-bets
+.available-for-bets {
+	padding: 24px;
+	background-color: $bg-03;
+	border-radius: 4px;
+	display: grid;
+	gap: 16px;
+	// .available-for-bets__body
+	&__body {
+		display: grid;
+		gap: 8px;
+	}
+	// .available-for-bets__item
+	&__item {
+	}
+	// .available-for-bets__footer
+	&__footer {
+		text-align: center;
+	}
+	// .available-for-bets__button
+	&__button {
+	}
+}
+//?  social-block
+.social-block {
+	padding: 24px;
+	background-color: $bg-03;
+	border-radius: 4px;
+	display: grid;
+	gap: 36px;
+	// .social-block__body
+	&__body {
+		display: grid;
+		gap: 12px;
+	}
+	// .social-block__item
+	&__item {
+	}
+	// .social-block__footer
+	&__footer {
+		text-align: center;
+	}
+	// .social-block__button
+	&__button {
+	}
+}
+.balance-prompt {
+	padding: 24px;
+	background-color: $bg-03;
+	border-radius: 4px;
+	display: grid;
+	gap: 16px;
+	// .balance-prompt__body
+	&__body {
+		display: grid;
+		gap: 16px;
+	}
+	// .balance-prompt__item
+	&__item {
+	}
+	// .balance-prompt__footer
+	&__footer {
+		text-align: center;
+	}
+	// .balance-prompt__button
+	&__button {
+	}
+}
+
+//========================================================================================================================================================
+
+//! verification
+// ? verification
+.verification {
+	display: grid;
+	gap: 32px;
+	// .verification__header
+	&__header {
+	}
+	// .verification__items
+	&__items {
+		display: grid;
+		gap: 16px;
+	}
+	// .verification__item
+	&__item {
+	}
+	// .verification__footer
+	&__footer {
+	}
+	// .verification__button
+	&__button {
+	}
+}
+.item-verification {
+	position: relative;
+	background-color: $bg-02;
+	padding: 8px 16px;
+	border-radius: 4px;
+
+	// .item-verification__content
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	// .item-verification__text
+	&__text {
+		margin: 0px 20px 0px 0px;
+		position: relative;
+		z-index: 2;
+	}
+	// .item-verification__value
+	&__value {
+		@extend ._body;
+	}
+	// .item-verification__line
+	&__line {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: $success;
+		opacity: 0.1;
+		border-radius: 4px;
+		pointer-events: none;
+	}
+}
+//! income-statistics
+// ?.income-statistics
+.income-statistics {
+	display: grid;
+	gap: 32px;
+	// .income-statistics__header
+	&__header {
+	}
+	// .income-statistics__sections
+	&__sections {
+		display: grid;
+		gap: 48px;
+	}
+	// .income-statistics__section
+	&__section {
+	}
+}
+//?income-block
+.income-block {
+	display: grid;
+	gap: 16px;
+	// .income-block__header
+	&__header {
+		display: flex;
+		align-items: center;
+		padding: 7px 0px;
+		min-height: 40px;
+		justify-content: space-between;
+	}
+	// .income-block__title
+	&__title {
+		margin: 0px 20px 0px 0px;
+	}
+	// .income-block__link
+	&__link {
+	}
+	// .income-block__items
+	&__items {
+		display: grid;
+		grid-template-columns: minmax(96px, auto) minmax(124px, auto) auto 1fr;
+		align-items: center;
+		overflow: hidden;
+
+	}
+	// .income-block__item
+	&__item {
+		padding: 10px 8px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		min-height: 44px;
+		@extend ._body;
+		// .income-block__item_year
+		&_year {
+			padding: 9px 8px 9px 16px;
+			position: relative;
+			justify-content: center;
+		}
+		&_year-bg {
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .income-block__item_month
+		&_month {
+			justify-content: center;
+		}
+		// .income-block__item_value
+		&_value {
+			justify-content: flex-end;
+			margin: 0px 0px 0px 10px;
+		}
+
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	// .income-block__value
+	&__value {
+	}
+}
+
+// ?.total-subscriptions
+.total-subscriptions {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(132px, auto));
+	gap: 16px;
+	// .total-subscriptions__item
+	&__item {
+		background: $bg-02;
+		border-radius: 4px;
+		padding: 21px 16px;
+		text-align: center;
+		display: grid;
+		row-gap: 4px;
+	}
+	// .total-subscriptions__label
+	&__label {
+	}
+	// .total-subscriptions__value
+	&__value {
+	}
+}
+
+//!transaction-history
+//? transaction-history
+.transaction-history {
+	display: grid;
+	gap: 32px;
+	// .transaction-history__table
+	&__table {
+	}
+	// .transaction-history__input
+	&__input {
+		margin-left: auto;
+		max-width: 240px;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		.input__button {
+			&::before {
+				@extend %ic;
+				display: flex;
+				font-size: 24px;
+				color: $secondary;
+				justify-content: center;
+				align-items: center;
+				width: 24px;
+				height: 24px;
+			}
+		}
+		._search-open {
+			&::before {
+				@extend ._icon-108;
+				font-size: 18px;
+			}
+		}
+		._search-close {
+			&::before {
+				@extend ._icon-50;
+			}
+		}
+	}
+}
+//table-transaction-history
+.table-transaction-history {
+	// .table-transaction-history__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(6, auto) minmax(auto, 48px);
+		overflow: hidden;
+		> * {
+			&:nth-child(odd) {
+				+ .table-transaction-history__item {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .table-transaction-history__title
+	&__title {
+		padding: 6px 8px;
+		display: flex;
+		align-items: center;
+		&:first-child {
+			padding: 6px 8px 6px 16px;
+			justify-content: center;
+		}
+		&:last-child {
+			padding: 6px 16px 6px 8px;
+		}
+		&:nth-child(2),
+		&:nth-child(3) {
+			margin-right: 16px;
+			justify-content: center;
+		}
+		&:nth-child(4) {
+			margin: 0px 32px 0px 16px;
+		}
+		&:nth-child(5) {
+			margin: 0px 21px 0px 5px;
+		}
+		&:nth-child(6) {
+			margin: 0px 0px 0px 6px;
+		}
+	}
+	// .table-transaction-history__sort
+	&__sort {
+		@extend ._label;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&._active {
+			opacity: 1;
+			&::before {
+				@extend %ic;
+				width: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 24px;
+				font-size: 18px;
+				@extend ._icon-21;
+				color: inherit;
+			}
+		}
+		&._active_up {
+			&::before {
+				@extend ._icon-22;
+			}
+		}
+	}
+	// .table-transaction-history__item
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8px;
+		// .table-transaction-history__item_date
+		&_date {
+			padding: 8px 8px 8px 16px;
+			justify-content: center;
+
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .table-transaction-history__item_status
+		&_status {
+			padding: 8px 16px 8px 8px;
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	// .table-transaction-history__status
+	&__status {
+		height: 24px;
+		@extend %ic;
+		font-size: 24px;
+		width: 24px;
+		// .payout-history__status_yes
+		&_yes {
+			color: $success;
+			@extend ._icon-99;
+		}
+		&_no {
+			color: $fail;
+			@extend ._icon-100;
+		}
+		&_expectation {
+			color: $important;
+			@extend ._icon-69;
+		}
+	}
+	// .table-transaction-history__navi
+	&__navi {
+		text-align: center;
+	}
+}
+//! my-rates
+//? my-rates
+.my-rates {
+	display: grid;
+	gap: 64px;
+	// .my-rates__header
+	&__header {
+	}
+	// .my-rates__button
+	&__button {
+	}
+	// .my-rates__items
+	&__items {
+		display: grid;
+		gap: 64px;
+	}
+	// .my-rates__item
+	&__item {
+	}
+}
+//? .active-tariffs
+.active-tariffs {
+	display: grid;
+	gap: 32px;
+	// .active-tariffs__header
+	&__header {
+	}
+	// .active-tariffs__table
+	&__table {
+	}
+}
+.table-active-tariffs {
+	// .table-active-tariffs__items
+	&__items {
+		display: grid;
+		grid-template-columns: minmax(112px, auto) minmax(96px, auto) minmax(106px, auto) auto 1fr minmax(128px, auto);
+		overflow: hidden;
+		align-items: center;
+		> * {
+			&:nth-child(12n) {
+				+ .table-active-tariffs__item {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .table-active-tariffs__title
+	&__title {
+		display: flex;
+		align-items: center;
+		padding: 3px 8px;
+		&:first-child {
+			padding: 3px 8px 3px 16px;
+			justify-content: center;
+		}
+		&:nth-child(2) {
+			margin: 0px 0px 0px 12px;
+		}
+		&:nth-child(3) {
+			margin: 0px 0px 0px 5px;
+		}
+		&:nth-child(4) {
+			margin: 0px 0px 0px 9px;
+		}
+		&:nth-child(5) {
+			justify-content: center;
+		}
+		&:nth-child(6) {
+			padding: 3px 16px 3px 8px;
+			justify-content: flex-end;
+			margin: 0px 16px 0px 0px;
+		}
+	}
+	// .table-active-tariffs__sort
+	&__sort {
+		@extend ._label;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		justify-content: flex-end;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&._active {
+			opacity: 1;
+			&::before {
+				@extend %ic;
+				width: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 24px;
+				font-size: 18px;
+				@extend ._icon-21;
+				color: inherit;
+			}
+		}
+		&._active_up {
+			&::before {
+				@extend ._icon-22;
+			}
+		}
+	}
+	// .table-active-tariffs__item
+	&__item {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 8px;
+		// .table-active-tariffs__item_date
+		&_date {
+			padding: 8px 8px 8px 16px;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .table-active-tariffs__item_price
+		&_price {
+			justify-content: flex-end;
+		}
+		// .table-active-tariffs__item_users
+		&_users {
+			justify-content: center;
+		}
+		// .table-active-tariffs__item_actions
+		&_actions {
+			padding: 8px 16px 8px 8px;
+			justify-content: flex-end;
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	// .table-active-tariffs__actions
+	&__actions {
+		display: grid;
+		grid-template-columns: repeat(2, 24px);
+		column-gap: 16px;
+	}
+	// .table-active-tariffs__button
+	&__button {
+	}
+}
+//? archived-rates
+.archived-rates {
+	display: grid;
+	gap: 32px;
+	// .archived-rates__header
+	&__header {
+	}
+	// .archived-rates__table
+	&__table {
+	}
+}
+
+.table-archived-rates {
+	// .table-archived-rates__items
+	&__items {
+		display: grid;
+		grid-template-columns: minmax(112px, auto) minmax(96px, auto) minmax(106px, auto) auto 1fr auto auto;
+		overflow: hidden;
+		align-items: center;
+		> * {
+			&:nth-child(14n) {
+				+ .table-archived-rates__item {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .table-archived-rates__title
+	&__title {
+		display: flex;
+		align-items: center;
+		padding: 3px 8px;
+		&:first-child {
+			padding: 3px 8px 3px 16px;
+			justify-content: center;
+		}
+		&:nth-child(2) {
+			margin: 0px 0px 0px 12px;
+		}
+		&:nth-child(3) {
+			margin: 0px 0px 0px 5px;
+		}
+		&:nth-child(4) {
+			margin: 0px 0px 0px 9px;
+		}
+		&:nth-child(5) {
+			justify-content: center;
+		}
+		&:nth-child(6) {
+			justify-content: center;
+		}
+		&:nth-child(6) {
+			padding: 3px 16px 3px 8px;
+		}
+	}
+	// .table-archived-rates__sort
+	&__sort {
+		@extend ._label;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		justify-content: flex-end;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&._active {
+			opacity: 1;
+			&::before {
+				@extend %ic;
+				width: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 24px;
+				font-size: 18px;
+				@extend ._icon-21;
+				color: inherit;
+			}
+		}
+		&._active_up {
+			&::before {
+				@extend ._icon-22;
+			}
+		}
+	}
+	// .table-archived-rates__item
+	&__item {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 8px;
+		// .table-active-tariffs__item_date
+		&_date {
+			padding: 8px 8px 8px 16px;
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .table-active-tariffs__item_price
+		&_price {
+			justify-content: flex-end;
+		}
+		// .table-active-tariffs__item_users
+		&_users {
+			justify-content: center;
+		}
+		// .table-active-tariffs__item_status
+		&_status {
+			justify-content: center;
+		}
+		// .table-active-tariffs__item_actions
+		&_actions {
+			padding: 8px 16px 8px 8px;
+			justify-content: center;
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	// .table-archived-rates__actions
+	&__actions {
+	}
+	// .table-archived-rates__button
+	&__button {
+	}
+}
+
+//! .new-rate
+//?new-rate
+.new-rate {
+	display: grid;
+	gap: 64px;
+	// .new-rate__section
+	&__section {
+		display: grid;
+		gap: 32px;
+	}
+	// .new-rate__header
+	&__header {
+	}
+	// .new-rate__form
+	&__form {
+	}
+}
+.form-new-rate {
+	display: grid;
+	gap: 16px;
+	max-width: 557px;
+	// .form-new-rate__row
+	&__row {
+		display: grid;
+		grid-template-columns: minmax(auto, 240px) minmax(auto, 301px);
+		gap: 16px;
+	}
+	// .form-new-rate__input
+	&__input {
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+		max-width: 301px;
+	}
+	&__item {
+		max-width: 393px;
+		&_one {
+			max-width: 200px;
+		}
+	}
+	// .form-new-rate__checkbox
+	&__checkbox {
+		@media (any-hover: hover) {
+			white-space: nowrap;
+		}
+	}
+	// .form-new-rate__footer
+	&__footer {
+		padding: 8px 0px 0px 0px;
+	}
+}
+//? payment-formation
+.payment-formation {
+	// .payment-formation__header
+	&__header {
+	}
+	// .payment-formation__items
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, auto);
+		overflow: hidden;
+		align-items: center;
+		> * {
+			&:nth-child(6n) {
+				+ .payment-formation__item {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .payment-formation__title
+	&__title {
+		padding: 0px 16px;
+	}
+	// .payment-formation__sort
+	&__sort {
+		@extend ._label;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		justify-content: flex-end;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&._active {
+			opacity: 1;
+			&::before {
+				@extend %ic;
+				width: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 24px;
+				font-size: 18px;
+				@extend ._icon-21;
+				color: inherit;
+			}
+		}
+		&._active_up {
+			&::before {
+				@extend ._icon-22;
+			}
+		}
+	}
+	// .payment-formation__item
+	&__item {
+		padding: 8px 16px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		// .payment-formation__item_traffic
+		&_traffic {
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .payment-formation__item_commission
+		&_commission {
+			justify-content: center;
+		}
+		// .payment-formation__item_income
+		&_income {
+			justify-content: flex-end;
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}
+//! promo-codes
+.promo-codes {
+	display: grid;
+	gap: 48px;
+	// .promo-codes__section
+	&__section {
+		display: grid;
+		gap: 32px;
+	}
+	// .promo-codes__header
+	&__header {
+	}
+	// .promo-codes__form
+	&__form {
+	}
+	// .promo-codes__table
+	&__table {
+	}
+}
+
+.form-promo-codes {
+	display: grid;
+	gap: 24px;
+	max-width: 632px;
+	// .form-promo-codes__row
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
+	// .form-promo-codes__input
+	&__input {
+	}
+	// .form-promo-codes__footer
+	&__footer {
+		padding: 8px 0px 0px 0px;
+	}
+	// .form-promo-codes__button
+	&__button {
+	}
+}
+
+.table-promo-codes {
+	// .table-promo-codes__items
+	&__items {
+		display: grid;
+		align-items: center;
+		overflow: hidden;
+		grid-template-columns: 1fr auto repeat(2, minmax(125px, auto));
+		> * {
+			&:nth-child(8n) {
+				+ .table-promo-codes__item {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	// .table-promo-codes__title
+	&__title {
+		padding: 3px 16px;
+		display: flex;
+		align-items: center;
+		&:nth-child(2) {
+			justify-content: center;
+		}
+		&:nth-child(3) {
+			margin: 0px 0px 0px 12px;
+		}
+		&:nth-child(4) {
+			margin: 0px 0px 0px 6px;
+		}
+	}
+	// .table-promo-codes__sort
+	&__sort {
+		@extend ._label;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		transition: all 0.3s ease 0s;
+		justify-content: flex-end;
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&._active {
+			opacity: 1;
+			&::before {
+				@extend %ic;
+				width: 24px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 24px;
+				font-size: 18px;
+				@extend ._icon-21;
+				color: inherit;
+			}
+		}
+		&._active_up {
+			&::before {
+				@extend ._icon-22;
+			}
+		}
+	}
+	// .table-promo-codes__item
+	&__item {
+		padding: 8px 16px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		// .table-promo-codes__item_rating
+		&_rating {
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+				z-index: 1;
+			}
+		}
+		// .table-promo-codes__item_date
+		&_date {
+		}
+		// .table-promo-codes__item_activations
+		&_activations {
+			justify-content: flex-end;
+		}
+		// .table-promo-codes__item_value
+		&_value {
+			justify-content: flex-end;
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	// .table-promo-codes__rating
+	&__rating {
+		display: flex;
+		align-items: center;
+		span {
+			padding: 0px 0px 0px 16px;
+		}
+	}
+	// .table-promo-codes__link
+	&__link {
+	}
+	// .table-promo-codes__navi
+	&__navi {
+		text-align: center;
+	}
+}

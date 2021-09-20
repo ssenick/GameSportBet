@@ -1,0 +1,240 @@
+.forecasts-history {
+	// .forecasts-history__form
+	&__form {
+		&:not(:last-child) {
+			margin: 0px -9px 34px;
+		}
+	}
+	// .forecasts-history__items
+	&__items {
+		display: grid;
+		gap: 32px;
+		grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+		&:not(:last-child) {
+			margin: 0px 0px 65px 0px;
+		}
+	}
+}
+//========================================================================================================================================================
+.form-forecasts-history {
+	background-color: $bg-03;
+	display: grid;
+	grid-template-columns: math.div(366, 1336) * 100% 1fr;
+	gap: 40px;
+	padding: 24px 32px;
+	border-radius: 4px;
+	// .form-forecasts-history__main
+	&__main {
+	}
+
+	// .form-forecasts-history__items
+	&__items {
+		display: grid;
+		grid-template-columns: auto 1fr 1fr;
+		gap: 40px;
+	}
+
+	// .form-forecasts-history__item
+	&__item {
+	}
+	// .form-forecasts-history__title
+	&__title {
+		margin: 0px 0px math.div(16px, 20px) * 1em 0px;
+	}
+	// .form-forecasts-history__text
+	&__text {
+	}
+}
+//========================================================================================================================================================
+.forecasts-history-ditail {
+	// .forecasts-history-ditail__header
+	&__header {
+		&:not(:last-child) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .forecasts-history-ditail__body
+	&__body {
+		background-color: $bg-03;
+		border-radius: 4px;
+	}
+	// .forecasts-history-ditail__item
+	&__item {
+	}
+}
+.header-forecasts-history-ditail {
+	display: flex;
+
+	// .header-forecasts-history-ditail__main
+	&__main {
+		flex: 1 1 auto;
+		display: flex;
+	}
+	// .header-forecasts-history-ditail__title
+	&__title {
+		padding: 0px 32px 0px 0px;
+	}
+	// .header-forecasts-history-ditail__filter
+	&__filter {
+	}
+	// .header-forecasts-history-ditail__info
+	&__info {
+	}
+}
+.info-header-forecasts-history {
+	display: inline-grid;
+	grid-auto-flow: column;
+	align-items: center;
+	gap: 24px;
+	// .info-header-forecasts-history__date
+	&__date {
+		width: 40px;
+		text-align: center;
+	}
+
+	// .info-header-forecasts-history__label
+	&__label {
+	}
+	// .info-header-forecasts-history__item
+	&__item {
+		display: inline-grid;
+		grid-auto-flow: column;
+		align-items: center;
+		gap: 16px;
+	}
+	// .info-header-forecasts-history__type
+	&__type {
+	}
+	// .info-header-forecasts-history__summ
+	&__summ {
+	}
+	// .info-header-forecasts-history__search
+	&__search {
+		cursor: pointer;
+	}
+}
+//========================================================================================================================================================
+.item-forecasts-history-ditail {
+	// .item-forecasts-history-ditail__header
+	&__header {
+		padding: 30px 16px;
+		display: flex;
+	}
+	// .item-forecasts-history-ditail__date
+	&__date {
+	}
+	// .item-forecasts-history-ditail__info
+	&__info {
+		flex: 1 1 auto;
+	}
+	// .item-forecasts-history-ditail__body
+	&__table {
+	}
+	// .item-forecasts-history-ditail__spoller
+	&__spoller {
+		transition: transform 0.3s ease 0s;
+		&._active {
+			transform: rotate(-180deg);
+		}
+	}
+}
+.table-forecast-history {
+	padding: 0px 16px 72px 72px;
+	display: grid;
+	overflow: hidden;
+	grid-template-columns: repeat(3, auto) 1fr repeat(5, auto);
+	row-gap: 8px;
+	> * {
+		padding: 6px 15px;
+		&:nth-child(18n) {
+			+ .table-forecast-history__item {
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	// .table-forecast-history__title
+	&__title {
+		padding: 0px 15px;
+		text-align: center;
+		margin: 0px 0px -4px 0px;
+		@extend ._label;
+		@extend ._label_s;
+	}
+	// .table-forecast-history__item
+	&__item {
+		position: relative;
+		width: 100%;
+		min-height: 48px;
+		display: flex;
+		align-items: center;
+		&._table__status {
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: $bg-02;
+			}
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	// .table-forecast-history__date
+	&__time {
+		text-align: center;
+		flex: 1 1 auto;
+		@extend ._body;
+	}
+	&__type {
+		@extend ._body;
+	}
+	// .table-forecast-history__event
+	&__event {
+		@extend ._body;
+		display: flex;
+		align-items: center;
+		padding: 0px 0px 0px 20px;
+		img {
+			border-radius: 4px;
+			flex: 0 0 24px;
+			width: 24px;
+			margin: 0px 16px 0px 0px;
+		}
+	}
+	&__text {
+		@extend ._body_small;
+		text-align: center;
+		flex: 1 1 auto;
+	}
+	&__text-small {
+		@extend ._body_xs;
+	}
+	// .table-forecast-history__bet
+	&__bet {
+		@extend ._body_small;
+		display: flex;
+		flex: 1 1 auto;
+		justify-content: center;
+		a {
+			margin: 0px 0px 0px 8px;
+			&::before {
+				width: 16px;
+				flex: 0 0 16px;
+				height: 18px;
+				font-size: 16px;
+			}
+		}
+	}
+	&__profit {
+		flex: 1 1 auto;
+		@extend ._body_small-strong;
+	}
+}
+//========================================================================================================================================================

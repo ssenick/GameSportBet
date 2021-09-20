@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"История прогнозов"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header-user.html',{})
+		<main class="page">
+			<div class="page__conainer _container">
+				<div class="page__body page__body_3256">
+					<div class="page__main">
+						<nav class="page__nav navigation">
+							<ul class="navigation__list">
+								<li>
+									<a href="#" class="navigation__link _link ">Редактировать профиль</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link _active">История прогнозов</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">История уведомлений</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Настройки аккаунта</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Подключенные услуги</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Данные оплаты</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Вывод средств</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Уведомления</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Партнерская программа</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link ">Ввести промокод</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link navigation__link_exit">Выход</a>
+								</li>
+
+							</ul>
+						</nav>
+						<div class="page__content page__content_ml">
+							<!-- forecast-history -->
+							<section class="forecast-history">
+								<div class="forecast-history__header">
+									<h4 class="forecast-history__title">История прогнозов</h4>
+									<div class="forecast-history__subtitle _body">Мы всегда будем сообщать вам о важных изменениях, но вы выбираете, о чем еще хотите услышать.</div>
+								</div>
+								<!-- filter-forecast-history -->
+								<form action="#" class="forecast-history__filter filter-forecast-history">
+									<div class="filter-forecast-history__item">
+										<div class="filter-forecast-history__calendar input input_calendar">
+											<div class="input__line input__line_icon _icon-116">
+												<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="12.03.2021  -  14.04.2021" class="input__value _date">
+												<div class="calendar-input">
+													<div class="calendar-input__presets">
+														<ul class="presets-calendar">
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Сегодня</span></button></li>
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Вчера</span></button></li>
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Последние 7 дней</span></button></li>
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Последние 30 дней</span></button></li>
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Этот месяц</span></button></li>
+															<li><button type="button" class="presets-calendar__item button button_text-white _ripple"><span>Прошлый месяц</span></button></li>
+														</ul>
+													</div>
+													<div class="calendar-input__item">
+														<div class="calendar">
+															<div class="calendar__header">
+																<div class="calendar__select select-calendar">
+																	<div class="select-calendar__item">
+																		<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span
+																				class="_icon-85">Декабрь
+																				2021</span></button>
+																	</div>
+																	<div hidden="" class="select-calendar__item">
+																		<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span
+																				class="_icon-85">2021</span></button>
+																	</div>
+																</div>
+																<div class="calendar__arrows">
+																	<button type="button" class="calendar__arrow button button_icon _icon-83"><span tabindex="-1"></span></button>
+																	<button type="button" class="calendar__arrow button button_icon _icon-84"><span tabindex="-1"></span></button>
+																</div>
+															</div>
+															<div class="calendar__table">
+																<div class="table-calendar">
+																	<div class="table-calendar__week">пн</div>
+																	<div class="table-calendar__week">вт</div>
+																	<div class="table-calendar__week">ср</div>
+																	<div class="table-calendar__week">чт</div>
+																	<div class="table-calendar__week">пт</div>
+																	<div class="table-calendar__week">сб</div>
+																	<div class="table-calendar__week">вс</div>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>1</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>2</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>3</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>4</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>5</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>6</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>7</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>8</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>9</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>10</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>11</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_choose button button_contained _ripple"><span>12</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>13</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>14</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>15</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>16</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>17</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>18</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>19</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>20</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>21</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>22</span></button>
+																	<button type="button" class="table-calendar__day button button_contained _ripple"><span>23</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>24</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>25</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>26</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>27</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>28</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>29</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>30</span></button>
+																	<button type="button" class="table-calendar__day button button_contained _ripple"><span>31</span></button>
+																</div>
+															</div>
+															<div hidden="" class="calendar__month">
+																<div class="my-calendar">
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Январь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Февраль</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Март</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Апрель</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Май</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Июнь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Июль</span></button>
+																	<button type="button" class="my-calendar__item button button_contained _ripple"><span>Август</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Сентябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Октябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Ноябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Декабрь</span></button>
+																</div>
+															</div>
+															<div hidden="" class="calendar__year">
+																<div class="my-calendar">
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2010</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2011</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2012</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2013</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2014</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2015</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2016</span></button>
+																	<button type="button" class="my-calendar__item button button_contained _ripple"><span>2017</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2018</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2019</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2020</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2021</span></button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="calendar-input__item">
+														<div class="calendar">
+															<div class="calendar__header">
+																<div class="calendar__select select-calendar">
+																	<div class="select-calendar__item">
+																		<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span
+																				class="_icon-85">Декабрь
+																				2021</span></button>
+																	</div>
+																	<div hidden="" class="select-calendar__item">
+																		<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span
+																				class="_icon-85">2021</span></button>
+																	</div>
+																</div>
+																<div class="calendar__arrows">
+																	<button type="button" class="calendar__arrow button button_icon _icon-83"><span tabindex="-1"></span></button>
+																	<button type="button" class="calendar__arrow button button_icon _icon-84"><span tabindex="-1"></span></button>
+																</div>
+															</div>
+															<div class="calendar__table">
+																<div class="table-calendar">
+																	<div class="table-calendar__week">пн</div>
+																	<div class="table-calendar__week">вт</div>
+																	<div class="table-calendar__week">ср</div>
+																	<div class="table-calendar__week">чт</div>
+																	<div class="table-calendar__week">пт</div>
+																	<div class="table-calendar__week">сб</div>
+																	<div class="table-calendar__week">вс</div>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>1</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>2</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>3</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>4</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>5</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>6</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>7</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>8</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>9</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>10</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>11</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_choose button button_contained _ripple"><span>12</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>13</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>14</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>15</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>16</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>17</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>18</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>19</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>20</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>21</span></button>
+																	<button type="button" class="table-calendar__day button button_text-white _ripple"><span>22</span></button>
+																	<button type="button" class="table-calendar__day button button_contained _ripple"><span>23</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>24</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>25</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>26</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>27</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>28</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>29</span></button>
+																	<button type="button" class="table-calendar__day table-calendar__day_range button button_text-white _ripple"><span>30</span></button>
+																	<button type="button" class="table-calendar__day button button_contained _ripple"><span>31</span></button>
+																</div>
+															</div>
+															<div hidden="" class="calendar__month">
+																<div class="my-calendar">
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Январь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Февраль</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Март</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Апрель</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Май</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Июнь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Июль</span></button>
+																	<button type="button" class="my-calendar__item button button_contained _ripple"><span>Август</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Сентябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Октябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Ноябрь</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>Декабрь</span></button>
+																</div>
+															</div>
+															<div hidden="" class="calendar__year">
+																<div class="my-calendar">
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2010</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2011</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2012</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2013</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2014</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2015</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2016</span></button>
+																	<button type="button" class="my-calendar__item button button_contained _ripple"><span>2017</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2018</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2019</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2020</span></button>
+																	<button type="button" class="my-calendar__item button button_text-white _ripple"><span>2021</span></button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filter-forecast-history__item">
+										<select name="form[]" class="form">
+											<option data-icon="_icon-63" value="1" selected="selected">GameSport.BET</option>
+											<option data-icon="_icon-63" value="2">GameSport.BET</option>
+											<option data-icon="_icon-63" value="3">GameSport.BET</option>
+											<option data-icon="_icon-63" value="4">GameSport.BET</option>
+										</select>
+									</div>
+									<div class="filter-forecast-history__item">
+										<select name="form[]" class="form">
+											<option data-icon="_icon-63" value="1" selected="selected">Dota 2</option>
+											<option data-icon="_icon-63" value="2">Dota 2</option>
+											<option data-icon="_icon-63" value="3">Dota 2</option>
+										</select>
+									</div>
+									<div class="filter-forecast-history__item">
+										<button type="submit" class="filter-forecast-history__button button button_text button_icon-left _ripple"><span>Сбросить</span></button>
+									</div>
+								</form>
+								<!-- filter-forecast-history -->
+								<div class="forecast-history__tables">
+									<!-- table-history-forecast -->
+									<div class="forecast-history__table table-history-forecast">
+										<div class="table-history-forecast__header">
+											<div class="table-history-forecast__title _headline-6">25 января 2024</div>
+											<div class="table-history-forecast__filter _filter-colored">
+												<a href="" class="_filter-colored__item _filter-colored__item_g _active">Победа</a>
+												<a href="" class="_filter-colored__item _filter-colored__item_r">Проигрыш</a>
+												<a href="" class="_filter-colored__item _filter-colored__item_y">Отклонена</a>
+											</div>
+										</div>
+										<div class="table-history-forecast__items">
+											<!-- title -->
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _active _label _label_xs">Время</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Событие</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
+											</div>
+											<div class="table-history-forecast__title ">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
+											</div>
+											<div class="table-history-forecast__title ">
+											</div>
+											<!-- title -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+												<div class="table-history-forecast__time">16:35</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+												<div class="table-history-forecast__time">18:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+												<div class="table-history-forecast__time">19:05</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+												<div class="table-history-forecast__time">16:35</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+										</div>
+									</div>
+									<!-- table-history-forecast -->
+									<!-- table-history-forecast -->
+									<div class="forecast-history__table table-history-forecast">
+										<div class="table-history-forecast__header">
+											<div class="table-history-forecast__title _headline-6">25 января 2024</div>
+											<div class="table-history-forecast__filter _filter-colored">
+												<a href="" class="_filter-colored__item _filter-colored__item_g">Победа</a>
+												<a href="" class="_filter-colored__item _filter-colored__item_r">Проигрыш</a>
+												<a href="" class="_filter-colored__item _filter-colored__item_y _active">Отклонена</a>
+											</div>
+										</div>
+										<div class="table-history-forecast__items">
+											<!-- title -->
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort  _label _label_xs">Время</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _active _active_up _label _label_xs">Событие</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
+											</div>
+											<div class="table-history-forecast__title">
+												<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
+											</div>
+											<div class="table-history-forecast__title">
+											</div>
+											<!-- title -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+												<div class="table-history-forecast__time">08:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+												<div class="table-history-forecast__time">16:35</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+												<div class="table-history-forecast__time">18:00</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+												<div class="table-history-forecast__time">19:05</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+												<div class="table-history-forecast__time">16:35</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__type">Стандарт</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__text">x 99.99</div>
+											</div>
+											<div class="table-history-forecast__item ">
+												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+											</div>
+											<!-- row -->
+										</div>
+									</div>
+									<!-- table-history-forecast -->
+								</div>
+								<div class="forecast-history__navi">
+									<!-- _pagging -->
+									<div class="_pagging">
+										<ul class="_pagging__list">
+											<li>
+												<a href="#" class="_pagging__arrow _pagging__arrow_prev button button_icon _icon-83"><span tabindex="-1"></span></a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _subtitle _secondary">1</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _subtitle _secondary">2</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _subtitle _secondary">3</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _pagging__item_points _subtitle _secondary">...</a>
+											</li>
+											<li>
+												<a href="" class="_pagging__item _subtitle _secondary">36</a>
+											</li>
+											<li>
+												<a href="#" class="_pagging__arrow _pagging__arrow_next button button_icon _icon-84"><span tabindex="-1"></span></a>
+											</li>
+										</ul>
+
+									</div>
+									<!-- _pagging -->
+								</div>
+							</section>
+							<!-- forecast-history -->
+						</div>
+						<aside class="page__sidebar sidebar">
+							<div class="sidebar__item balance-status">
+								<div class="balance-status__item">
+									<div class="balance-status__label _body">Баланс</div>
+									<div class="balance-status__money money-status">
+										<div class="money-status__value">25 785 рублей</div>
+										<a data-tippy-content="Подсказка" href class="money-status__icon _icon-48 button_icon"></a>
+									</div>
+								</div>
+								<div class="balance-status__item">
+									<div class="balance-status__label _body">В ожидании</div>
+									<div class="balance-status__money money-status">
+										<div class="money-status__value">25 785 рублей</div>
+										<a data-tippy-content="Подсказка" href class="money-status__icon _icon-48 button_icon"></a>
+									</div>
+								</div>
+								<div class="balance-status__item">
+									<div class="balance-status__text _body">Оплачивайте тарифы, услуги аналитиков или товары в магазине.</div>
+								</div>
+								<div class="balance-status__item balance-status__item_buttons">
+									<a href="" class="balance-status__button button button_contained button_icon-left _ripple"><span class="_icon-113">Пополнить баланс </span></a>
+									<a href="" class="balance-status__button button button_text button_icon-left _ripple"><span class="_icon-38">Вывести</span></a>
+								</div>
+							</div>
+							<div class="sidebar__item go-to-analytics">
+								<h4 class="go-to-analytics__title">Попробуйте себя в роли аналитика</h4>
+								<div class="go-to-analytics__main">
+									<div class="go-to-analytics__caption _body">Доступно<span>300 000 рокетов</span></div>
+									<div class="go-to-analytics__text _body">Делайте ставки виртуальной валютой, докажите что Вы топовый аналитик и получайте реальные деньги за свои прогнозы</div>
+								</div>
+								<div class="go-to-analytics__footer">
+									<a href="" class="go-to-analytics__button button button_contained _ripple"><span>Стать аналитиком </span></a>
+								</div>
+							</div>
+
+						</aside>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

@@ -1,0 +1,446 @@
+.form-cards {
+	position: relative;
+	padding: 0px 98px 22px 0px;
+	max-width: 450px;
+	.input__line {
+		background-color: #fff;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.input__value {
+		color: #000000;
+		opacity: 0.15;
+		&._focus {
+			opacity: 1;
+		}
+	}
+	.input__label {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 14px;
+		margin: 0px 0px 8px 0px;
+	}
+	// .form-cards__card
+	&__card {
+	}
+}
+.card-form-frontside {
+	position: relative;
+	z-index: 3;
+	background: linear-gradient(112.05deg, #ee3023 0%, #d6180b 100%);
+	border-radius: 16px;
+	padding: 16px 32px 24px 32px;
+	display: grid;
+	row-gap: 16px;
+	max-width: 352px;
+	// .card-form-frontside__row
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+		column-gap: 16px;
+	}
+	// .card-form-frontside__bank
+	&__bank {
+		display: flex;
+		align-items: center;
+	}
+	// .card-form-frontside__logo
+	&__logo {
+		flex: 0 0 35px;
+		height: 35px;
+		width: 35px;
+		img {
+			max-width: 100%;
+		}
+	}
+	// .card-form-frontside__name
+	&__name {
+		flex: 1 1 auto;
+		padding: 0px 0px 0px 5px;
+	}
+	// .card-form-frontside__image
+	&__image {
+		width: 56px;
+		height: 36px;
+		overflow: hidden;
+		border-radius: 8px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .card-form-frontside__input
+	&__input {
+		&_number {
+			.input__value {
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 26px;
+			}
+		}
+		&_name {
+			.input__line {
+				min-height: 32px;
+				padding: 0px 8px;
+			}
+			.input__value {
+				height: 28px;
+			}
+		}
+	}
+	// .card-form-frontside__selects
+	&__selects {
+	}
+}
+.seclects-card-form-frontside {
+	// .seclects-card-form-frontside__label
+	&__label {
+		@extend .input__label;
+	}
+	// .seclects-card-form-frontside__items
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 5px;
+	}
+	// .seclects-card-form-frontside__input
+	&__input {
+		.select {
+			min-width: 58px;
+			.select__value {
+				font-weight: 600;
+				min-height: 30px;
+			}
+			.select__title {
+				background-color: #fff;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+			}
+			.select__value {
+				justify-content: center;
+				flex-direction: row-reverse;
+				padding: 0px 4px 0px 8px;
+				color: #000;
+				&::after {
+					content: "";
+					display: none;
+				}
+				&::before {
+					@extend %ic;
+					@extend ._icon-85;
+					flex: 0 0 22px;
+					width: 22px;
+					height: 24px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 28px;
+				}
+			}
+			.select__options {
+				background-color: #fff;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				color: #000;
+			}
+			.select__option {
+				height: 30px;
+				padding: 3px 8px;
+				border: 1px solid transparent;
+				@media (any-hover: hover) {
+					&:hover {
+						background-color: rgba(0, 0, 0, 0.1);
+						border: 1px solid rgba(0, 0, 0, 0.1);
+					}
+				}
+			}
+		}
+	}
+}
+.card-form-backside {
+	position: absolute;
+	top: 22px;
+	left: 98px;
+	background: linear-gradient(112.05deg, #ee3023 0%, #d6180b 100%);
+	border-radius: 16px;
+	max-width: 352px;
+	padding: 100px 31px 65px 270px;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.25);
+	}
+	&::before {
+		content: "";
+		background: rgba(0, 0, 0, 0.25);
+		position: absolute;
+		top: 32px;
+		left: 0;
+		width: 100%;
+		height: 56px;
+		z-index: 1;
+	}
+	// .card-form-backside__input
+	&__input {
+		position: relative;
+		z-index: 2;
+		.input__label {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 14px;
+			margin: 0px 0px 9px 0px;
+			span {
+				flex: 1 1 auto;
+			}
+			&::before {
+				flex: 0 0 16px;
+				height: 16px;
+				width: 16px;
+				color: #fff;
+				margin: 1px 0px 0px 4px;
+				font-size: 18px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.input__line {
+			min-height: 32px;
+			padding: 0px 8px 0px 8px;
+		}
+		.input__value {
+			font-weight: 600;
+			height: 30px;
+		}
+	}
+}
+//========================================================================================================================================================
+//? payment-form
+.payment-form {
+	// .payment-form__row
+	&__row {
+		display: grid;
+		grid-template-columns: 42.376% 50.85%;
+		gap: 64px;
+	}
+	// .payment-form__column
+	&__column {
+		// .payment-form__column_left
+		&_left {
+		}
+		// .payment-form__column_right
+		&_right {
+		}
+	}
+}
+//! general-form
+//? order-block
+.order-block {
+	display: grid;
+	gap: 16px;
+	// .order-block__title
+	&__title {
+	}
+	// .order-block__about-order
+	&__about-order {
+	}
+	// .order-block__form
+	&__form {
+	}
+}
+
+.item-about-order {
+	padding: 32px 30px 32px 16px;
+	background-color: $bg-02;
+	border-radius: 4px;
+
+	// .item-about-order__items
+	&__items {
+		display: grid;
+		grid-template-columns: minmax(128px, auto) 1fr;
+		column-gap: 32px;
+		row-gap: 16px;
+	}
+	// .item-about-order__title
+	&__title {
+	}
+	// .item-about-order__value
+	&__value {
+		display: flex;
+		align-items: center;
+	}
+	// .item-about-order__icon
+	&__icon {
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	// .item-about-order__text
+	&__text {
+		padding: 0px 0px 0px 16px;
+	}
+}
+
+.form-order-block {
+	display: grid;
+	row-gap: 16px;
+	// .form-order-block__checkbox
+	&__checkbox {
+	}
+}
+//? payment-method
+.payment-method {
+	display: grid;
+	row-gap: 16px;
+	// .payment-method__title
+	&__title {
+	}
+	// .payment-method__section
+	&__section {
+	}
+	// .payment-method__footer
+	&__footer {
+		padding: 16px 0px 0px 0px;
+	}
+	// .payment-method__button
+	&__button {
+		min-width: 296px;
+	}
+}
+.cards-form {
+	display: grid;
+	row-gap: 16px;
+	// .cards-form__form
+	&__form {
+	}
+	// .cards-form__items
+	&__items {
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(3, 84px);
+		gap: 24px;
+		justify-content: center;
+	}
+	// .cards-form__item
+	&__item {
+		position: relative;
+		z-index: 5;
+		img {
+			filter: grayscale(1);
+			opacity: 0.6;
+			transition: all 0.3s ease 0s;
+			max-width: 100%;
+			max-height: 100%;
+			@media (any-hover: hover) {
+				&:hover {
+					filter: grayscale(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+//? other-payment-methods
+.other-payment-methods {
+	// .other-payment-methods__item
+	&__item {
+	}
+	// .other-payment-methods__header
+	&__header {
+		pointer-events: none;
+		&._active {
+			.other-payment-methods__title {
+				span {
+					&::before {
+						@extend %ic;
+						content: "\e954";
+						width: 24px;
+						height: 24px;
+						flex: 0 0 24px;
+						justify-content: center;
+						align-items: center;
+						display: flex;
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	// .other-payment-methods__title
+	&__title {
+		pointer-events: auto;
+		span {
+			&::before {
+				@extend %ic;
+				content: "\e951";
+				width: 24px;
+				height: 24px;
+				flex: 0 0 24px;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+				font-size: 22px;
+			}
+		}
+	}
+	// .other-payment-methods__text
+	&__text {
+		padding: 4px 0px 0px 40px;
+	}
+	// .other-payment-methods__main
+	&__main {
+		padding: 32px 0px 0px 0px;
+	}
+}
+
+.main-other-payment-methods {
+	// .main-other-payment-methods__item
+	&__item {
+		display: grid;
+		row-gap: 24px;
+		&:not(:last-child) {
+			margin: 0px 0px 48px 0px;
+		}
+	}
+	// .main-other-payment-methods__label
+	&__label {
+	}
+	// .main-other-payment-methods__buttons
+	&__buttons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 32px;
+		row-gap: 16px;
+	}
+	// .main-other-payment-methods__method
+	&__method {
+	}
+}
+//? .chosen-method
+.chosen-method {
+	// .chosen-method__item
+	&__item {
+		.payment-method-button{
+			@media (any-hover: hover){
+				&:hover{
+					background: $bg-02;
+				}
+			}
+		}
+	}
+	// .chosen-method__text
+	&__text {
+	}
+}
+.payment-method-button {
+	// .payment-method-button__image
+	&__image {
+	}
+	// .payment-method-button__name
+	&__name {
+	}
+}

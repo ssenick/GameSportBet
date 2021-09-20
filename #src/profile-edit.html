@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Редактировать профиль"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header-user.html',{})
+		<main class="page">
+			<div class="page__conainer _container">
+				<div class="page__body page__body_3256">
+					<div class="page__main">
+						<nav class="page__nav navigation">
+							<ul class="navigation__list">
+								<li>
+									<a href="#" class="navigation__link _link _active">Редактировать профиль</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">История прогнозов</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">История уведомлений</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Настройки аккаунта</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Подключенные услуги</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Данные оплаты</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Вывод средств</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Уведомления</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link">Партнерская программа</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link _link ">Ввести промокод</a>
+								</li>
+								<li>
+									<a href="#" class="navigation__link navigation__link_exit">Выход</a>
+								</li>
+
+							</ul>
+						</nav>
+						<div class="page__content page__content_ml">
+							<section class="edit-profile">
+								<div class="edit-profile__header">
+									<h4 class="edit-profile__title">
+										Редактировать профиль
+									</h4>
+									<div class="edit-profile__subtitle _body">Люди посещающие ваш профиль увидят следующую информацию</div>
+								</div>
+								<div class="edit-profile__main">
+									<form action="#" class="edit-profile__form form-edit-profile">
+										<div class="form-edit-profile__foto-add foto-add">
+											<div class="foto-add__foto _ibg">
+												<img src="img/avatar.png" alt="">
+											</div>
+											<div class="foto-add__action">
+												<button type="button" class="foto-add__button input__button  _gradient-text button">
+													Изменить
+												</button>
+												<input class="foto-add__change" accept=".jpg, .png" type="file" multiple="">
+											</div>
+										</div>
+										<div class="form-edit-profile__input input">
+											<label for="f_1" class="input__label">Имя</label>
+											<div class="input__line _selected">
+												<input id="f_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="Валентин" class="input__value _selected">
+											</div>
+										</div>
+										<div class="form-edit-profile__input input">
+											<label for="f_2" class="input__label">Ник</label>
+											<div class="input__line _selected">
+												<input id="f_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="konya" class="input__value _selected">
+											</div>
+											<div class="input__info input__info_white">gamesport.bet/user/konya</div>
+										</div>
+										<div class="form-edit-profile__checkbox checkbox">
+											<input id="f_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="f_3" class="checkbox__body">
+												<div tabindex="-1" class="checkbox__content">
+													<span tabindex="-1" class="checkbox__icon _icon-3"></span>
+													<span tabindex="-1" class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
+												</div>
+											</label>
+										</div>
+										<div class="form-edit-profile__area input">
+											<label for="f_4" class="input__label">О себе</label>
+											<div class="input__line input__line_area">
+												<textarea id="f_4" autocomplete="off" name="form[]" data-value="" data-error="Ошибка"
+													class="input__value input__value_h128">Текст в две, а то и больше, строки для проверки</textarea>
+											</div>
+										</div>
+										<div class="form-edit-profile__footer">
+											<button type="submit" class="edit-profile__button button button_contained _ripple"><span>Сохранить</span></button>
+										</div>
+									</form>
+								</div>
+							</section>
+						</div>
+						<aside class="page__sidebar sidebar">
+							<div class="sidebar__item balance-status">
+								<div class="balance-status__item">
+									<div class="balance-status__label _body">Баланс</div>
+									<div class="balance-status__money money-status">
+										<div class="money-status__value">25 785 рублей</div>
+										<a data-tippy-content="Подсказка" href class="money-status__icon _icon-48 button_icon"></a>
+									</div>
+								</div>
+								<div class="balance-status__item">
+									<div class="balance-status__label _body">В ожидании</div>
+									<div class="balance-status__money money-status">
+										<div class="money-status__value">25 785 рублей</div>
+										<a data-tippy-content="Подсказка" href class="money-status__icon _icon-48 button_icon"></a>
+									</div>
+								</div>
+								<div class="balance-status__item">
+									<div class="balance-status__text _body">Оплачивайте тарифы, услуги аналитиков или товары в магазине.</div>
+								</div>
+								<div class="balance-status__item balance-status__item_buttons">
+									<a href="" class="balance-status__button button button_contained button_icon-left _ripple"><span class="_icon-113">Пополнить баланс </span></a>
+									<a href="" class="balance-status__button button button_text button_icon-left _ripple"><span class="_icon-38">Вывести</span></a>
+								</div>
+							</div>
+							<div class="sidebar__item go-to-analytics">
+								<h4 class="go-to-analytics__title">Попробуйте себя в роли аналитика</h4>
+								<div class="go-to-analytics__main">
+									<div class="go-to-analytics__caption _body">Доступно<span>300 000 рокетов</span></div>
+									<div class="go-to-analytics__text _body">Делайте ставки виртуальной валютой, докажите что Вы топовый аналитик и получайте реальные деньги за свои прогнозы</div>
+								</div>
+								<div class="go-to-analytics__footer">
+									<a href="" class="go-to-analytics__button button button_contained _ripple"><span>Стать аналитиком </span></a>
+								</div>
+							</div>
+
+						</aside>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

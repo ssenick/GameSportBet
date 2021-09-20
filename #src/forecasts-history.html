@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"История прогнозов"
+})
+
+<body class="_custom">
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="page__container _container">
+				<div class="page__body forecasts-history">
+					<form action="#" class="forecasts-history__form form-forecasts-history">
+						<div class="form-forecasts-history__main">
+							<h4 class="form-forecasts-history__title">Умная статистика</h4>
+							<div class="form-forecasts-history__text _body">Мы собрали всю нашу статистику в одном месте, рассчитайте свой точный доход</div>
+						</div>
+						<div class="form-forecasts-history__items">
+							<div class="form-forecasts-history__item">
+								<div class="input">
+									<label for="s_1" class="input__label">Год</label>
+									<div class="input__select">
+										<select id="s_1" name="form[]" class="form">
+											<option value="1" selected="selected">2015</option>
+											<option value="2">2016</option>
+											<option value="3">2017</option>
+											<option value="4">2018</option>
+											<option value="5">2019</option>
+											<option value="6">2020</option>
+											<option value="7">2021</option>
+										</select>
+									</div>
+									<div class="input__info">Период прогнозов</div>
+								</div>
+							</div>
+							<div class="form-forecasts-history__item">
+								<div class="input">
+									<label for="i_1" class="input__label">Стартовый банк</label>
+									<div class="input__line">
+										<input id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="300 000 ₽" class="input__value">
+									</div>
+									<div class="input__info">Общая сумма денег на счете БК</div>
+								</div>
+							</div>
+							<div class="form-forecasts-history__item">
+								<div class="input">
+									<label for="i_1" class="input__label">Процент от банка</label>
+									<div class="input__line">
+										<input id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="5%" class="input__value">
+									</div>
+									<div class="input__info">Выше процент - выше доход, но больше рисков уйти в минус</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="forecasts-history__items">
+						<a href="" class="item-forecast-history _active">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-forecast-history">
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__month _subtitle">Январь</div>
+								<div class="item-forecast-history__profit _success _body">+917 710 ₽</div>
+							</div>
+							<div class="item-forecast-history__line">
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Прогнозов</div>
+									<div class="item-forecast-history__value _body">104</div>
+								</div>
+								<div class="item-forecast-history__item">
+									<div class="item-forecast-history__label _caption">Успешных</div>
+									<div class="item-forecast-history__value _body">73%</div>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="forecasts-history-ditail">
+						<div class="forecasts-history-ditail__header header-forecasts-history-ditail">
+							<div class="header-forecasts-history-ditail__main">
+								<h4 class="header-forecasts-history-ditail__title">Подробная статистика за Январь</h4>
+								<div class="header-forecasts-history-ditail__filter _filter-colored">
+									<a href="" class="_filter-colored__item _filter-colored__item_g _active">Победа</a>
+									<a href="" class="_filter-colored__item _filter-colored__item_r">Проигрыш</a>
+									<a href="" class="_filter-colored__item _filter-colored__item_y">Отклонена</a>
+								</div>
+							</div>
+							<div class="header-forecasts-history-ditail__info info-header-forecasts-history">
+								<div class="info-header-forecasts-history__label _body">104 прогнозов</div>
+								<div class="info-header-forecasts-history__item">
+									<div class="info-header-forecasts-history__type _pro">pro</div>
+									<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+									<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+								</div>
+								<div class="info-header-forecasts-history__item">
+									<div class="info-header-forecasts-history__type _lite">lite</div>
+									<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+									<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="forecasts-history-ditail__body">
+							<div class="forecasts-history-ditail__item item-forecasts-history-ditail">
+								<div class="item-forecasts-history-ditail__header">
+									<div class="item-forecasts-history-ditail__info">
+										<div class="info-header-forecasts-history">
+											<div class="info-header-forecasts-history__date _headline-2">9</div>
+											<div class="info-header-forecasts-history__label _body">104 прогнозов</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _pro">pro</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _lite">lite</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__label">Суммарно</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+										</div>
+									</div>
+									<button class="item-forecasts-history-ditail__spoller button button_icon _active _icon-85"><span tabindex="-1"></span></button>
+								</div>
+								<div class="item-forecasts-history-ditail__table">
+									<div class="table-forecast-history">
+										<!-- Titles -->
+										<div class="table-forecast-history__title">Время</div>
+										<div class="table-forecast-history__title">Тип</div>
+										<div class="table-forecast-history__title">Событие</div>
+										<div class="table-forecast-history__title">Детали - Выбор</div>
+										<div class="table-forecast-history__title">Ставка</div>
+										<div class="table-forecast-history__title">% от банка</div>
+										<div class="table-forecast-history__title">Коэф-ент</div>
+										<div class="table-forecast-history__title">Доход</div>
+										<div class="table-forecast-history__title">Прибыль</div>
+										<!-- Items -->
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_fail">
+											<div class="table-forecast-history__time">10:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _p">Live</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/02.svg" alt="">ENCE & Movistar Riders</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">2-Я КАРТА - ТОТАЛ РАУНДОВ: больше 24.5</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">3 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">5%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_cancel">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">-3 060 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="forecasts-history-ditail__item item-forecasts-history-ditail">
+								<div class="item-forecasts-history-ditail__header">
+									<div class="item-forecasts-history-ditail__info">
+										<div class="info-header-forecasts-history">
+											<div class="info-header-forecasts-history__date _headline-2">10</div>
+											<div class="info-header-forecasts-history__label _body">104 прогнозов</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _pro">pro</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _lite">lite</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__label">Суммарно</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+										</div>
+									</div>
+									<button class="item-forecasts-history-ditail__spoller button button_icon _active _icon-85"><span tabindex="-1"></span></button>
+								</div>
+								<div class="item-forecasts-history-ditail__table">
+									<div class="table-forecast-history">
+										<!-- Titles -->
+										<div class="table-forecast-history__title">Время</div>
+										<div class="table-forecast-history__title">Тип</div>
+										<div class="table-forecast-history__title">Событие</div>
+										<div class="table-forecast-history__title">Детали - Выбор</div>
+										<div class="table-forecast-history__title">Ставка</div>
+										<div class="table-forecast-history__title">% от банка</div>
+										<div class="table-forecast-history__title">Коэф-ент</div>
+										<div class="table-forecast-history__title">Доход</div>
+										<div class="table-forecast-history__title">Прибыль</div>
+										<!-- Items -->
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_fail">
+											<div class="table-forecast-history__time">10:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _p">Live</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/02.svg" alt="">ENCE & Movistar Riders</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">2-Я КАРТА - ТОТАЛ РАУНДОВ: больше 24.5</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">3 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">5%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_cancel">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_fail">
+											<div class="table-forecast-history__time">10:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _p">Live</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/02.svg" alt="">ENCE & Movistar Riders</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">2-Я КАРТА - ТОТАЛ РАУНДОВ: больше 24.5</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">3 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">5%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">3 060 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="forecasts-history-ditail__item item-forecasts-history-ditail">
+								<div class="item-forecasts-history-ditail__header">
+									<div class="item-forecasts-history-ditail__info">
+										<div class="info-header-forecasts-history">
+											<div class="info-header-forecasts-history__date _headline-2">11</div>
+											<div class="info-header-forecasts-history__label _body">104 прогнозов</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _pro">pro</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__type _lite">lite</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+											<div class="info-header-forecasts-history__item">
+												<div class="info-header-forecasts-history__label">Суммарно</div>
+												<div class="info-header-forecasts-history__summ _success _body_small-strong">+ 99 999 ₽</div>
+												<div data-tippy-content="Подсказка" class="info-header-forecasts-history__search _icon-28"><span tabindex="-1"></span></div>
+											</div>
+										</div>
+									</div>
+									<button class="item-forecasts-history-ditail__spoller button button_icon _active _icon-85"><span tabindex="-1"></span></button>
+								</div>
+								<div class="item-forecasts-history-ditail__table">
+									<div class="table-forecast-history">
+										<!-- Titles -->
+										<div class="table-forecast-history__title">Время</div>
+										<div class="table-forecast-history__title">Тип</div>
+										<div class="table-forecast-history__title">Событие</div>
+										<div class="table-forecast-history__title">Детали - Выбор</div>
+										<div class="table-forecast-history__title">Ставка</div>
+										<div class="table-forecast-history__title">% от банка</div>
+										<div class="table-forecast-history__title">Коэф-ент</div>
+										<div class="table-forecast-history__title">Доход</div>
+										<div class="table-forecast-history__title">Прибыль</div>
+										<!-- Items -->
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_fail">
+											<div class="table-forecast-history__time">10:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _p">Live</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/02.svg" alt="">ENCE & Movistar Riders</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">2-Я КАРТА - ТОТАЛ РАУНДОВ: больше 24.5</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">3 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">5%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_cancel">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _secondary">-3 060 ₽</div>
+										</div>
+										<!-- Row -->
+										<div class="table-forecast-history__item _table__status _table__status_win">
+											<div class="table-forecast-history__time">09:00</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__type _l">Стандарт</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__event"><img src="img/icons/games/01.svg" alt="">LDLC & Galaxy Racer</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__bet">6 000 ₽ <a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">1%</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">x 2.89</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__text">9 050 ₽</div>
+										</div>
+										<div class="table-forecast-history__item">
+											<div class="table-forecast-history__profit _success">-3 060 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

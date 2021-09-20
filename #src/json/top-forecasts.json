@@ -1,0 +1,22 @@
+[
+	{
+		"type": "Прематч",
+		"value": 48,
+		"color": "#DD01AD"
+	},
+	{
+		"type": "Live",
+		"value": 30,
+		"color": "#8C00CE"
+	},
+	{
+		"type": "Express",
+		"value": 15,
+		"color": "#BC00FE"
+	},
+	{
+		"type": "Догон",
+		"value": 15,
+		"color": "#FE00C7"
+	}
+]
