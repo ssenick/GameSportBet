@@ -69,6 +69,7 @@
 	position: relative;
 	padding: 5px 9px;
 	z-index: 1;
+	text-align: center;
 }
 
 .tip-rating {
@@ -106,5 +107,24 @@
 		top: -1px;
 		margin: 0px 4px 0px 0px;
 		color: inherit;
+	}
+}
+.tippy-currency {
+	width: 208px;
+	padding: 11px 7px;
+	// .tippy-currency__item
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&:not(:last-child) {margin: 0px 0px 8px 0px;};
+	}
+	// .tippy-currency__name
+	&__name {
+		@extend ._caption;
+	}
+	// .tippy-currency__value
+	&__value {
+		@extend ._body_small-strong;
 	}
 }

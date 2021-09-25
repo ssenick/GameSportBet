@@ -988,14 +988,614 @@
 	align-items: center;
 	padding: 10px 23px;
 	// no-p
-	&_no-p{
-		padding:5px;
+	&_no-p {
+		padding: 5px;
 	}
 	// .bookmaker-table-rates__logo
 	&__logo {
 		img {
 			max-width: 100%;
 		}
+	}
+}
+//========================================================================================================================================================
+//? nets-play-off
+.nets-play-off {
+	display: grid;
+	gap: 24px;
+	// .nets-play-off__header
+	&__header {
+	}
+	// .nets-play-off__title
+	&__title {
+	}
+	// .nets-play-off__filter
+	&__filter {
+	}
+	// .nets-play-off__main
+	&__main {
+	}
+}
+.main-play-off {
+	// .main-play-off__wrapper
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 235px 203px 267px 203px 267px 203px;
+		grid-template-rows: minmax(40px, auto) 1fr minmax(40px, auto) auto;
+		row-gap: 25px;
+		overflow: hidden;
+	}
+	// .main-play-off__title
+	&__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		position: relative;
+		&_first-line {
+			&:first-child {
+				&::after {
+					content: "";
+					position: absolute;
+					background-color: $hover-white;
+					top: 0;
+					left: 0;
+					width: 100vw;
+					height: 100%;
+					z-index: 1;
+				}
+			}
+			&:nth-child(even) {
+				&::before {
+					content: "";
+					background-color: $bg-03;
+					width: 100%;
+					height: 100vh;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+				}
+			}
+		}
+		&_second-line-4 {
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: $hover-white;
+				top: 0;
+				right: 0;
+				width: 100vw;
+				height: 100%;
+				z-index: 1;
+			}
+		}
+	}
+}
+.section-main-play-off {
+	// .section-main-play-off_quarterfinals
+	&_quarterfinals {
+		padding: 0px 32px 0px 0px;
+		.section-main-play-off__set {
+			.section-main-play-off__match:first-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, -3px);
+						z-index: 20;
+						width: 235px;
+						height: 81px;
+						pointer-events: none;
+						background: url("../img/nets/quarterfinals/arrow-down.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/quarterfinals/arrow-down-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+			.section-main-play-off__match:last-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 0%;
+						left: 2px;
+						transform: translate(0px, -3px);
+						z-index: 20;
+						width: 235px;
+						height: 81px;
+						pointer-events: none;
+						background: url("../img/nets/quarterfinals/arrow-top.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/quarterfinals/arrow-top-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_quarterfinals-2
+	&_quarterfinals-2 {
+		padding: 0px 32px 0px 0px;
+		.section-main-play-off__set {
+			.section-main-play-off__match {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 8px);
+						z-index: 20;
+						width: 232px;
+						height: 35px;
+						pointer-events: none;
+						background: url("../img/nets/arrow-line.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/arrow-line-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_semifinal
+	&_semifinal {
+		margin: -2px 0px;
+		.section-main-play-off__set {
+			align-content: space-around;
+			height: 100%;
+		}
+		.section-main-play-off__set {
+			.section-main-play-off__match:first-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 8px);
+						z-index: 20;
+						width: 497px;
+						height: 141px;
+						pointer-events: none;
+						background: url("../img/nets/semifinal/arrow-down.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/semifinal/arrow-down-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+			.section-main-play-off__match:last-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 50%;
+						left: 2px;
+						transform: translate(0px, 12px);
+						z-index: 20;
+						width: 497px;
+						height: 141px;
+						pointer-events: none;
+						background: url("../img/nets/semifinal/arrow-top.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/semifinal/arrow-top-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_semifinal-2
+	&_semifinal-2 {
+		.section-main-play-off__set {
+			.section-main-play-off__match:first-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 8px);
+						z-index: 20;
+						width: 235px;
+						height: 81px;
+						pointer-events: none;
+						background: url("../img/nets/semifinal-2/arrow-down.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/semifinal-2/arrow-down-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+			.section-main-play-off__match:last-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 0%;
+						left: 2px;
+						transform: translate(0px, 19px);
+						z-index: 20;
+						width: 235px;
+						height: 81px;
+						pointer-events: none;
+						background: url("../img/nets/semifinal-2/arrow-top.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/semifinal-2/arrow-top-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+			.teams-play-off-mach__items {
+				.team-play-off-mach {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						width: 20px;
+						height: 15px;
+						top: 50%;
+						transform: translate(0px, -50%);
+						right: 100%;
+						background: url("../img/nets/arrow.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/arrow-red.svg") 0 0 no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_empty
+	&_empty {
+		padding: 0px 32px;
+	}
+	// .section-main-play-off_empty-2
+	&_empty-2 {
+		@extend .section-main-play-off_empty;
+		.section-main-play-off__set {
+			align-content: center;
+			height: 100%;
+		}
+		.section-main-play-off__set {
+			.section-main-play-off__match {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 9px);
+						z-index: 20;
+						width: 232px;
+						height: 35px;
+						pointer-events: none;
+						background: url("../img/nets/arrow-line.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/arrow-line-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_bracket-final
+	&_bracket-final {
+		.section-main-play-off__set {
+			align-content: center;
+			height: 100%;
+		}
+		.section-main-play-off__set {
+			.section-main-play-off__match {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 10px);
+						z-index: 20;
+						width: 497px;
+						height: 149px;
+						pointer-events: none;
+						background: url("../img/nets/bracket-final/arrow-down.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/bracket-final/arrow-down-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_bracket-final-2
+	&_bracket-final-2 {
+		.section-main-play-off__set {
+			align-content: center;
+			height: 100%;
+		}
+		.section-main-play-off__set {
+			.section-main-play-off__match {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0%;
+						left: 2px;
+						transform: translate(0px, 22px);
+						z-index: 20;
+						width: 234px;
+						height: 400px;
+						pointer-events: none;
+						background: url("../img/nets/winner-2/arrow-top.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/winner-2/arrow-top-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+		.teams-play-off-mach__items {
+			.team-play-off-mach:first-child {
+				position: relative;
+				&::after {
+					content: "";
+					position: absolute;
+					width: 20px;
+					height: 15px;
+					top: 50%;
+					transform: translate(0px, -50%);
+					right: 100%;
+					background: url("../img/nets/arrow.svg") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+	// .section-main-play-off_grand-final
+	&_grand-final {
+		padding: 0px 32px;
+		.section-main-play-off__set {
+			align-content: end;
+			height: 100%;
+			padding: 0px 0px 56px 0px;
+		}
+		.section-main-play-off__set {
+			.section-main-play-off__match:first-child {
+				.section-main-play-off__teams {
+					position: relative;
+					&::after {
+						content: "";
+						position: absolute;
+						top: 50%;
+						left: 2px;
+						transform: translate(0px, 5px);
+						z-index: 20;
+						width: 233px;
+						height: 10px;
+						pointer-events: none;
+						background: url("../img/nets/grand-final/arrow.svg") 0 0 no-repeat;
+					}
+					&._hover {
+						&::after {
+							background: url("../img/nets/grand-final/arrow-green.svg") 0 0 no-repeat;
+							z-index: 22;
+						}
+					}
+				}
+			}
+		}
+	}
+	// .section-main-play-off_winner
+	&_winner {
+		.section-main-play-off__set {
+			align-content: end;
+			height: 100%;
+			padding: 0px 0px 80px 0px;
+		}
+	}
+	// .section-main-play-off__body
+	&__body {
+		max-width: 203px;
+		height: 100%;
+	}
+	// .section-main-play-off__set
+	&__set {
+		width: 100%;
+		display: grid;
+		gap: 16px;
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+	// .section-main-play-off__match
+	&__match {
+	}
+	// .section-main-play-off__teams
+	&__teams {
+	}
+}
+.teams-play-off-mach {
+	// .teams-play-off-mach__info
+	&__info {
+	}
+	// .teams-play-off-mach__items
+	&__items {
+		display: flex;
+		flex-direction: column;
+		@extend %element-bg;
+		border-radius: 4px;
+		position: relative;
+		// &::before {
+		// 	content: "";
+		// 	display: block;
+		// 	left: 2px;
+		// 	width: calc(100%);
+		// 	height: 1px;
+		// 	position: absolute;
+		// 	top: calc(50% - 2px);
+		// 	background-color: $bg-04;
+
+		// }
+		&_no-line {
+			&::before {
+				content: "";
+				display: none;
+			}
+		}
+	}
+	// .teams-play-off-mach__team
+	&__team {
+	}
+}
+.info-teams-play-off-mach {
+	text-align: center;
+	&:not(:last-child) {
+		margin: 0px 0px 4px 0px;
+	}
+	// .info-teams-play-off-mach__link
+	&__link {
+		display: inline-flex;
+	}
+	// .info-teams-play-off-mach__data
+	&__data {
+	}
+}
+.team-play-off-mach {
+	display: flex;
+	align-items: center;
+	padding: 6px 8px;
+	height: 48px;
+	position: relative;
+	@extend ._table__status;
+	@extend ._table__status_radius;
+	border-radius: 4px;
+	&::before {
+		width: 2px;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			.team-play-off-mach__name {
+				color: $link;
+			}
+		}
+	}
+	// .team-play-off-mach_win
+	&_win {
+		@extend ._table__status_win;
+		.team-play-off-mach__points {
+			color: $success;
+		}
+		&._hover {
+			background-color: rgba(0, 255, 163, 0.1);
+			.team-play-off-mach__name {
+				color: $link;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(0, 255, 163, 0.1);
+			}
+		}
+	}
+	// .team-play-off-mach_lose
+	&_lose {
+		@extend ._table__status_fail;
+		.team-play-off-mach__points {
+			color: $fail;
+		}
+		&._hover {
+			background-color: rgba(239, 57, 0, 0.1);
+			.team-play-off-mach__name {
+				color: $link;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba(239, 57, 0, 0.1);
+			}
+		}
+	}
+	// .team-play-off-mach__image
+	&__image {
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		pointer-events: none;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	// .team-play-off-mach__name
+	&__name {
+		pointer-events: none;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+		flex: 1 1 auto;
+		@extend ._body_xs;
+		padding: 0px 8px;
+		color: #fff;
+		//transition: color 0.3s ease 0s;
+	}
+	// .team-play-off-mach__points
+	&__points {
+		pointer-events: none;
+		color: #fff;
+		flex: 0 1 20px;
+		min-width: 20px;
+		@extend ._body_xs-strong;
 	}
 }
 
@@ -1067,8 +1667,8 @@
 		align-items: center;
 		@extend %element-bg;
 		border-radius: 4px;
-		@media (any-hover: hover){
-			&:hover{
+		@media (any-hover: hover) {
+			&:hover {
 				background: linear-gradient(180deg, #030e1b 0%, #041324 100%);
 			}
 		}

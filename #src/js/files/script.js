@@ -54,3 +54,36 @@ function documentActions(e) {
 
 }
 //========================================================================================================================================================
+
+const gridTables = document.querySelectorAll('._grid-table');
+if (gridTables.length > 0) {
+	gridTables.forEach(gridTable => {
+		const gridTablesItems = gridTable.children;
+		const counterColumns = gridTable.dataset.rows;
+		if (gridTablesItems.length > 0) {
+			gridTablesItems.forEach((gridTablesItem, index) => {
+				if (gridTablesItem.classList.contains('_grid-table__start')) {
+					setHoverToRow(index);
+				}
+			});
+			function setHoverToRow(curentIndex) {
+				const columns = curentIndex + Number(counterColumns);
+				for (let index = curentIndex; index < columns; index++) {
+					const element = gridTablesItems[index];
+					element.addEventListener("mouseenter", function (e) {
+						for (let index = curentIndex; index < columns; index++) {
+							const el = gridTablesItems[index];
+							el.classList.add('_hover');
+						}
+					});
+					element.addEventListener("mouseleave", function (e) {
+						for (let index = curentIndex; index < columns; index++) {
+							const el = gridTablesItems[index];
+							el.classList.remove('_hover');
+						}
+					});
+				}
+			}
+		}
+	});
+}

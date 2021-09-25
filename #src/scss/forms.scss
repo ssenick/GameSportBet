@@ -511,6 +511,8 @@
 	}
 	// .select__option
 	&__option {
+		display: flex;
+		align-items: center;
 		text-align: left;
 		cursor: pointer;
 		width: 100%;
@@ -541,6 +543,17 @@
 				background-color: $bg-02;
 				border: 2px solid $bg-01;
 			}
+		}
+	}
+	// .select__iamge
+	&__image{
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content:center;align-items: center;
+		margin: 0px 8px 0px 0px;
+		img{
+			max-width: 100%;
 		}
 	}
 	&._active {

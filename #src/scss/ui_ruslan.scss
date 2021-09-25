@@ -333,6 +333,9 @@
 	opacity: 0.33;
 	cursor: default;
 	pointer-events: none;
+	&_opacity{
+		opacity: 0.05;
+	}
 }
 //? _statistics
 ._statistics {
