@@ -3,7 +3,7 @@
 		<img src="img/logo.svg" alt="">
 	</a>
 	@@include('_header-search.html',{})
-	<div class="main-header__actions actions-header">
+	<div data-da=".menu__body,959.98," class="main-header__actions actions-header">
 		<button type="button" class="actions-header__item actions-header__item_theme button button_icon _icon-18"><span tabindex="-1"></span></button>
 		<button type="button" class="actions-header__item actions-header__item_lang button button_icon"><span tabindex="-1">RU</span></button>
 		@@if(user === true){
@@ -11,15 +11,18 @@
 		}
 	</div>
 	@@if(user !== true){
-	<div class="main-header__auth auth-header">
+	<div  data-da=".menu__body,959.98," class="main-header__auth auth-header">
 		<button data-popup="111" type="submit" class="auth-header__button button button_outlined-gray button_icon-gradient button_icon-left _ripple _popup-link"><span class="_icon-73">Войти</span></button>
 		<button data-popup="222" type="submit" class="auth-header__button button button_contained _ripple _popup-link"><span>Регистрация</span></button>
 	</div>
 	}
 	@@if(user === true){
-	<div class="main-header__user user-main-header">
+	<div  data-da=".menu__body,959.98," class="main-header__user user-main-header">
 		<button type="button" class="user-main-header__button button button_outlined-gray button_icon-gradient button_icon-left _ripple"><span class="_icon-73">Валентин Константинович</span></button>
-		<div class="user-main-header__info info-user-header">
+		<div  class="user-main-header__info info-user-header">
+			<div class="info-user-header__section mobile-back ">
+				<button type="button" class="info-user-header__back mobile-back__link  _icon-86"><span>Валентин Константинович</span></button>
+			</div>
 			<div class="info-user-header__section type-user-header">
 				<div class="type-user-header__label _info-user-label">Статус</div>
 				<div class="type-user-header__body">
@@ -66,7 +69,7 @@
 					</div>
 				</div>
 			</div>
-			<nav class="info-user-header__section menu-user-header">
+			<nav  class="info-user-header__section menu-user-header">
 				<ul class="menu-user-header__list _body_small">
 					<li><a href="" class="menu-user-header__link _link">Мой профиль</a></li>
 					<li><a href="" class="menu-user-header__link _link">Моя аналитика</a></li>

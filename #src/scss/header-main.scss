@@ -6,17 +6,67 @@
 	gap: 32px;
 	grid-template-columns: auto 1fr auto auto;
 	align-items: center;
+	@media (max-width: $md2+px) {
+		padding: 5px 12px;
+		z-index: 100;
+		margin: 0px -15px;
+		display: flex;
+		justify-content: center;
+		min-height: 60px;
+		align-items: center;
+	}
+	@media (max-width: $md3+px) {
+		min-height: 48px;
+		padding: 0;
+		margin: 0px -8px;
+	}
 	// .main-header__logo
 	&__logo {
+		@media (max-width: $md2+px) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
 	}
 	// .main-header__search
 	&__search {
+		@media (max-width: $md2+px) {
+			padding: 0px 24px;
+			transition: all 0.3s ease 0s;
+			&._transform {
+				transform: translate(-100%, 0px);
+			}
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
 	}
 	// .main-header__actions
 	&__actions {
+		@media (max-width: $md2+px) {
+			padding: 0px 24px;
+			transition: all 0.3s ease 0s;
+			&._transform {
+				transform: translate(-100%, 0px);
+			}
+			&:not(:last-child) {
+				margin: 0px 0px 20px 0px;
+			}
+		}
 	}
 	// .main-header__auth
 	&__auth {
+		@media (max-width: $md2+px) {
+			margin-top: auto;
+			padding: 0px 24px;
+			&:not(:last-child) {
+				margin: 0 0px 20px 0px;
+			}
+		}
 	}
 	// .main-header__user
 	&__user {
@@ -26,7 +76,7 @@
 .search-header {
 	position: relative;
 	z-index: 3;
-	transition: margin 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 	// .search-header__form
 	&__form {
 		position: relative;
@@ -57,6 +107,13 @@
 				@extend ._icon-50;
 			}
 		}
+		@media (max-width: $md3+px) {
+			._search-open {
+				&::before {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 	// .search-header__results
 	&__results {
@@ -67,10 +124,12 @@
 			transform: translate(0px, 0px);
 			visibility: visible;
 			opacity: 1;
+			display: block;
 		}
 	}
 }
 .search-results {
+	display: none;
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
@@ -348,6 +407,10 @@
 	align-items: center;
 	gap: 8px;
 	color: $secondary;
+	@media (max-width: $md2+px) {
+		display: inline-flex;
+		gap: 4px;
+	}
 	// .actions-header__item
 	&__item {
 		width: 40px;
@@ -367,12 +430,47 @@
 	display: grid;
 	grid-template-columns: auto auto;
 	gap: 8px;
+	position: relative;
+	z-index: 99;
 	// .auth-header__button
 	&__button {
+	}
+	@media (max-width: $md2+px) {
+		&__button.button_outlined-gray {
+			background: linear-gradient(265.54deg, #ff1b2d 5.77%, #df006b 95.36%);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			height: 200%;
+			top: 50%;
+			transform: translate(0px, -50%);
+			width: 100%;
+			background-color: #171f32;
+		}
 	}
 }
 .user-main-header {
 	position: relative;
+	@media (max-width: $md2+px) {
+		margin-top: auto;
+		padding: 0px 24px;
+		position: static;
+		&__button.button_outlined-gray {
+			background: linear-gradient(265.54deg, #ff1b2d 5.77%, #df006b 95.36%);
+			width: 100%;
+			min-height: 40px;
+		}
+
+		&._transform {
+			transform: translate(-100%, 0px);
+		}
+	}
+	@media (max-width: $md3+px) {
+		&__button.button_outlined-gray {
+			min-height: 32px;
+		}
+	}
 	// .user-main-header__button
 	&__button {
 	}
@@ -394,6 +492,17 @@
 			opacity: 1;
 			visibility: visible;
 		}
+		@media (max-width: $md2+px) {
+			.info-user-header {
+				display: grid;
+				transition: all 0.3s ease 0s;
+				transform: translate(0px, 0px);
+				opacity: 1;
+				visibility: visible;
+				align-content: start;
+				right: 0;
+			}
+		}
 	}
 }
 .info-user-header {
@@ -402,9 +511,43 @@
 	border-radius: 4px;
 	display: grid;
 	gap: 24px;
+	@media (max-width: $md2+px) {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		z-index: 102;
+		width: 100vw;
+		height: 100vh;
+		transform: translate(0%, 0px);
+		opacity: 0;
+		visibility: hidden;
+		overflow: auto;
+		padding: 60px 24px 24px 24px;
+	}
+	@media (max-width: $md3+px) {
+		padding: 48px 24px 50px 24px;
+	}
 	// .info-user-header__section
 	&__section {
+		@media (max-width:$md2+px){
+			max-width: 500px;
+		}
 	}
+	// .info-user-header__section
+	&__section.mobile-back {
+		margin: 0px -24px 0px -24px;
+		max-width: none;
+		.info-user-header__back {
+			padding: 0px 24px;
+			font-size: 16px;
+			color: #fff;
+		}
+	}
+	// .info-user-header__section
+	&__section.type-user-header {
+		margin: -16px 0px 0px 0px;
+	}
+
 	// .info-user-header__label
 	&__label {
 	}

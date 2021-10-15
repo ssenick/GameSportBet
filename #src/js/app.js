@@ -1,6 +1,7 @@
 @@include('files/regular.js', {})
 @@include('files/sliders.js', {})
 @@include('files/graphs.js', {})
+@@include('files/dynamic_adapt.js', {})
 @@include('files/functions.js', {})
 @@include('files/header.js', {})
 @@include('files/analytic.js', {})

@@ -4,12 +4,21 @@ h1,
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 125%;
+	@media (max-width: $md3+px) {
+		font-size: 20px;
+	}
 }
 h2,
 ._headline-2 {
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 133%;
+	@media (max-width: $md2+px) {
+		font-size: 22px;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 18px;
+	}
 }
 h3,
 ._headline-3 {
@@ -22,18 +31,27 @@ h4,
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 130%;
+	@media (max-width: $md3+px) {
+		font-size: 18px;
+	}
 }
 h5,
 ._headline-5 {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 133%;
+	@media (max-width: $md3+px) {
+		font-size: 16px;
+	}
 }
 h6,
 ._headline-6 {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 137%;
+	@media (max-width: $md3+px) {
+		font-size: 14px;
+	}
 }
 //============================================
 ._subtitle {
@@ -43,6 +61,9 @@ h6,
 	&_small {
 		font-size: 14px;
 		line-height: math.div(18, 14) * 100%;
+	}
+	@media (max-width: $md3+px) {
+		font-size: 14px;
 	}
 }
 ._overline {
@@ -56,6 +77,9 @@ h6,
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 133%;
+	@media (max-width: $md3+px) {
+		font-size: 10px;
+	}
 	&_small {
 		font-size: 10px;
 		line-height: 140%;
@@ -65,6 +89,9 @@ h6,
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 162%;
+	@media (max-width: $md3+px) {
+		font-size: 14px;
+	}
 	a {
 		color: $link;
 		text-decoration: underline;
@@ -82,16 +109,25 @@ h6,
 	&_strong {
 		font-weight: 600;
 		line-height: 112%;
+		@media (max-width: $md3+px) {
+			font-size: 14px;
+		}
 	}
 	&_small {
 		font-size: 14px;
 		line-height: 171%;
 		font-weight: 400;
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+		}
 	}
 	&_small-strong {
 		font-size: 14px;
 		font-weight: 600;
 		line-height: 114%;
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+		}
 	}
 	&_xs {
 		font-size: 12px;

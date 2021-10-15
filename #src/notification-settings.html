@@ -9,57 +9,68 @@
 		@@include('_header-user.html',{})
 		<main class="page">
 			<div class="page__conainer _container">
-				<div class="page__body page__body_3256">
+				<div class="page__body page__body_notification-settings page__body_3256">
 					<div class="page__main">
-						<nav class="page__nav navigation">
-							<ul class="navigation__list">
-								<li>
-									<a href="#" class="navigation__link _link ">Редактировать профиль</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">История прогнозов</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">История уведомлений</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Настройки аккаунта</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">Подключенные услуги</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link  ">Данные оплаты</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">Вывод средств</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link _active">Уведомления</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Партнерская программа</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">Ввести промокод</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link navigation__link_exit">Выход</a>
-								</li>
+						<div class="page__nav ">
+							<nav class="navigation">
+								<div class="navigation__mobil-button">
+									<button type="button" class="navigation__button "> Уведомления</button>
+								</div>
+								<div class="navigation__lists">
+																<ul class="navigation__list">
+																	<li>
+																		<a href="#" class="navigation__link navigation__link_first _icon-36"> <span>Баланс и виджеты</span></a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Редактировать профиль</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">История прогнозов</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">История уведомлений</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Настройки аккаунта</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Подключенные услуги</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Данные оплаты</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Вывод средств</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link _active">Уведомления</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Партнерская программа</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link _link">Ввести промокод</a>
+																	</li>
+																	<li>
+																		<a href="#" class="navigation__link navigation__link_exit">Выход</a>
+																	</li>
+																
+																</ul>
+								</div>
 
-							</ul>
-						</nav>
-						<div class="page__content page__content_ml">
+							</nav>
+						</div>
+						<div class="page__content page__content_notification-settings page__content_ml">
 							<!-- notification-settings -->
 							<section class="notification-settings">
 								<div class="notification-settings__header">
 									<h4 class="notification-settings__title">Уведомления</h4>
 									<div class="notification-settings__subtitle _body">Мы всегда будем сообщать вам о важных изменениях, но вы выбираете, о чем еще хотите услышать.</div>
 								</div>
-								<div class="notification-settings__table">
+								<div class="notification-settings__table notification-settings__table_pc">
 									<div class="table-notification-settings">
 										<!-- title -->
 										<div class="table-notification-settings__item  table-notification-settings__item_first">
@@ -276,10 +287,322 @@
 										<!-- row -->
 									</div>
 								</div>
+								<div class="notification-settings__table notification-settings__table_mobile">
+									<ul class="notification-settings__list list-notification-settings">
+										<li class="list-notification-settings__li">
+											<button class="list-notification-settings__item _icon-84"><span>Прогнозы</span></button>
+											<div class="list-notification-settings__sub-menu">
+												<ul class="list-notification-settings__sub-list">
+													<li class="list-notification-settings__sub-item notification-mobile-back ">
+														<div class="notification-mobile-back__left"><button type="button" class="list-notification-settings__back _icon-83 _link"><span>Назад</span></button>
+															<h4 class="list-notification-settings__title">Прогнозы</h4>
+														</div>
+														<div class="notification-mobile-back__right">
+															<div class="list-notification-settings__subtitle">Выберите на какие платформы хотите получать уведомления</div>
+														</div>
+
+
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Telegram-бот</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="w_300" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="w_300" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Push</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="p_200" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="p_200" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">На сайте</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- disablet -->
+															<div class="list-notification-settings__checkbox checkbox  _active _disabled">
+																<input id="p_400" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="p_400" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- disablet -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Email</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="p_800" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="p_800" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Приложение</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="p_900" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="p_900" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="list-notification-settings__li">
+											<button class="list-notification-settings__item _icon-84"><span>Новости</span></button>
+											<div class="list-notification-settings__sub-menu">
+												<ul class="list-notification-settings__sub-list">
+													<li class="list-notification-settings__sub-item notification-mobile-back ">
+														<div class="notification-mobile-back__left"><button type="button" class="list-notification-settings__back _icon-83 _link"><span>Назад</span></button>
+															<h4 class="list-notification-settings__title">Новости</h4>
+														</div>
+														<div class="notification-mobile-back__right">
+															<div class="list-notification-settings__subtitle">Выберите на какие платформы хотите получать уведомления</div>
+														</div>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Telegram-бот</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="wp_300" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="wp_300" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Push</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="ap_200" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="ap_200" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">На сайте</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- disablet -->
+															<div class="list-notification-settings__checkbox checkbox  _active _disabled">
+																<input id="pp_400" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="pp_400" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- disablet -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Email</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="pp_800" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="pp_800" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Приложение</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="pp_900" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="pp_900" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+										<li class="list-notification-settings__li">
+											<button class="list-notification-settings__item _icon-84"><span>Бонусы и акции</span></button>
+											<div class="list-notification-settings__sub-menu">
+												<ul class="list-notification-settings__sub-list">
+													<li class="list-notification-settings__sub-item notification-mobile-back ">
+														<div class="notification-mobile-back__left"><button type="button" class="list-notification-settings__back _icon-83 _link"><span>Назад</span></button>
+															<h4 class="list-notification-settings__title">Бонусы и акции</h4>
+														</div>
+														<div class="notification-mobile-back__right">
+															<div class="list-notification-settings__subtitle">Выберите на какие платформы хотите получать уведомления</div>
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Telegram-бот</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="zw_300" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="zw_300" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Push</div>
+															<button type="button" class="list-notification-settings__link _link">Подключить</button>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="zp_200" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="zp_200" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">На сайте</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- disablet -->
+															<div class="list-notification-settings__checkbox checkbox  _active _disabled">
+																<input id="zp_400" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="zp_400" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- disablet -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Email</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- active -->
+															<div class="list-notification-settings__checkbox checkbox  _active">
+																<input id="zp_800" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="zp_800" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- active -->
+														</div>
+													</li>
+													<li class="list-notification-settings__sub-item">
+														<div class="list-notification-settings__left">
+															<div class="list-notification-settings__label">Приложение</div>
+														</div>
+														<div class="list-notification-settings__right">
+															<!-- no-active -->
+															<div class="list-notification-settings__checkbox checkbox  ">
+																<input id="zp_900" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="zp_900" class="checkbox__body">
+																	<div class="checkbox__content">
+																		<span class="checkbox__icon _icon-3"></span>
+																	</div>
+																</label>
+															</div>
+															<!-- no-active -->
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</section>
 							<!-- notification-settings -->
 						</div>
-						<aside class="page__sidebar sidebar">
+						<aside data-da=".page__content,1439.98," class="page__sidebar page__sidebar_profile-edite sidebar">
 							<div class="sidebar__item balance-status">
 								<div class="balance-status__item">
 									<div class="balance-status__label _body">Баланс</div>

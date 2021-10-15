@@ -1,5 +1,11 @@
 .landing-login {
 	padding: 32px;
+	@media (max-width: $md2+px) {
+		padding: 16px 0px 32px 0px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 8px 0px 32px 0px;
+	}
 	// .landing-login__body
 	&__body {
 		max-width: 672px;
@@ -7,11 +13,17 @@
 		background-color: $bg-03;
 		border-radius: 4px;
 		padding: 32px;
+		@media (max-width: $md3+px) {
+			padding: 16px;
+		}
 	}
 
 	// .landing-login__breadcrumbs
 	&__breadcrumbs {
 		margin: 0px 0px 30px 0px;
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 		&_64 {
 			margin: 0px 0px 64px 0px;
 		}
@@ -25,6 +37,14 @@
 		&:not(:last-child) {
 			margin: 0px 0px math.div(16px, 20px) * 1em 0px;
 		}
+		@media (max-width: $md3+px) {
+			font-size: 18px;
+		}
+		@media (max-width: $md4+px) {
+			&:not(:last-child) {
+				margin: 0px 0px 8px 0px;
+			}
+		}
 	}
 	// .landing-login__text
 	&__text {
@@ -34,6 +54,9 @@
 		padding: 32px 0px 0px 0px;
 		max-width: 384px;
 		margin: 0px auto;
+		@media (max-width: $md4+px) {
+			padding: 16px 0px 0px 0px;
+		}
 	}
 	// .landing-login__push
 	&__push {
@@ -88,6 +111,9 @@
 	&__footer {
 		text-align: center;
 		padding: 24px 0px 0px 0px;
+		@media (max-width: $md4+px) {
+			padding: 8px 0px 0px 0px;
+		}
 	}
 	// .form-landing-login__button
 	&__button {
@@ -103,12 +129,21 @@
 	padding: 48px 0px 0px 0px;
 	max-width: 456px;
 	margin: 0px auto;
+	@media (max-width: $md3+px) {
+		padding: 30px 0px 0px 0px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 16px 0px 0px 0px;
+	}
 	// .steps-landing-login__items
 	&__items {
 		display: grid;
 		gap: 64px;
 		position: relative;
 		overflow: hidden;
+		@media (max-width: $md3+px) {
+			gap: 42px;
+		}
 		&::before {
 			content: "";
 			position: absolute;
@@ -118,11 +153,19 @@
 			width: 2px;
 			border-left: 2px dashed $secondary-50;
 		}
+		@media (max-width: $md3+px) {
+			&::before {
+				display: none;
+			}
+		}
 	}
 	// .steps-landing-login__footer
 	&__footer {
 		padding: 48px 0px 0px 0px;
 		text-align: center;
+		@media (max-width: $md3+px) {
+			padding: 32px 0px 0px 0px;
+		}
 	}
 }
 .item-steps-landing-login {
@@ -152,6 +195,13 @@
 			bottom: 0;
 		}
 	}
+	@media (max-width: $md3+px) {
+		grid-template-columns: 72px 1fr;
+		gap: 24px;
+	}
+	@media (max-width: $md4+px) {
+		gap: 16px;
+	}
 	// .item-steps-landing-login__number
 	&__number {
 		background-color: $bg-03;
@@ -167,9 +217,15 @@
 			justify-content: center;
 			align-items: center;
 		}
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 	}
 	// .item-steps-landing-login__icon
 	&__icon {
+		img {
+			max-width: 100%;
+		}
 	}
 	// .item-steps-landing-login__body
 	&__body {
@@ -177,6 +233,9 @@
 	// .item-steps-landing-login__title
 	&__title {
 		margin: 0px 0px math.div(18px, 16px) * 1em 0px;
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 8px 0px;
+		}
 	}
 	// .item-steps-landing-login__text
 	&__text {
@@ -187,6 +246,9 @@
 	padding: 32px 0px 0px 0px;
 	max-width: 490px;
 	margin: 0px auto;
+	@media (max-width: 600px) {
+		text-align: center;
+	}
 	// .bk-landing-login__main
 	&__main {
 		display: grid;
@@ -194,6 +256,15 @@
 		gap: 24px;
 		&:not(:last-child) {
 			margin: 0px 0px 32px 0px;
+		}
+		@media (max-width: 600px) {
+			grid-template-columns: auto;
+			justify-content: center;
+			justify-items: center;
+			text-align: center;
+		}
+		@media (max-width: $md4+px) {
+			gap: 16px;
 		}
 	}
 	// .bk-landing-login__buttons
@@ -206,27 +277,51 @@
 		&:not(:last-child) {
 			margin: 0px 0px 64px 0px;
 		}
+		@media (max-width: 600px) {
+			display: inline-grid;
+			grid-template-columns: auto;
+			grid-template-rows: auto;
+			&:not(:last-child) {
+				margin: 0px 0px 41px 0px;
+			}
+		}
 	}
 	// .bk-landing-login__code
 	&__code {
 	}
 	// .bk-landing-login__reg
 	&__reg {
+		@media (max-width: 600px) {
+			justify-self: center;
+		}
 	}
 	&__list-bk {
 		grid-column: span 2;
 		justify-self: center;
+		@media (max-width: 600px) {
+			grid-column: auto;
+		}
 	}
 	// .bk-landing-login__set-price
 	&__set-price {
 		&:not(:last-child) {
 			margin: 0px 0px 41px 0px;
 		}
+		@media (max-width: 600px) {
+			&:not(:last-child) {
+				margin: 0px 0px 32px 0px;
+			}
+		}
 	}
 	// .bk-landing-login__info
 	&__info {
 		&:not(:last-child) {
 			margin: 0px 0px 48px 0px;
+		}
+		@media (max-width: 600px) {
+			&:not(:last-child) {
+				margin: 0px 0px 32px 0px;
+			}
 		}
 	}
 	// .bk-landing-login__footer
@@ -253,16 +348,32 @@
 			margin: 0px auto;
 			max-width: 200px;
 		}
+		@media (max-width: 600px) {
+			max-width: none;
+		}
 	}
 	// .main-bk-landing-login__title
 	&__title {
 		margin: 0px 0px math.div(16px, 22px) * 1em 0px;
+		@media (max-width: 600px) {
+			font-size: 18px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
 	}
 	// .main-bk-landing-login__summs
 	&__summs {
 	}
 	// .main-bk-landing-login__list
 	&__list {
+		@media (max-width: 600px) {
+			text-align: left;
+			max-width: 350px;
+		}
+		@media (max-width: $md4+px) {
+			max-width: 184px;
+		}
 	}
 }
 .summs-main-bk-landing-login {
@@ -287,6 +398,11 @@
 		&:not(:last-child) {
 			margin: 0px 0px 24px 0px;
 		}
+		@media (max-width: 600px) {
+			&:not(:last-child) {
+				margin: 0px 0px 43px 0px;
+			}
+		}
 	}
 	// .set-price-bk-landing-login__title
 	&__title {
@@ -294,10 +410,20 @@
 	}
 	// .set-price-bk-landing-login__text
 	&__text {
+		@media (max-width: 600px) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	// .set-price-bk-landing-login__body
 	&__body {
+		@media (max-width: 600px) {
+			display: flex;
+			flex-direction: column-reverse;
+			text-align: left;
+		}
 	}
 	// .set-price-bk-landing-login__items
 	&__items {
@@ -306,6 +432,13 @@
 		gap: 32px;
 		&:not(:last-child) {
 			margin: 0px 0px 22px 0px;
+		}
+		@media (max-width: 600px) {
+			&:not(:last-child) {
+				margin: 0px 0px 0px 0px;
+			}
+			gap: 16px;
+			grid-template-columns: repeat(auto-fill, minmax(125px, auto));
 		}
 	}
 	// .set-price-bk-landing-login__item
@@ -342,12 +475,21 @@
 				margin: 0px -8px 0px 0px;
 			}
 		}
+		@media (max-width: 600px) {
+			margin: 0px 0px 40px 0px;
+		}
 	}
 }
 .info-bk-landing-login {
 	padding: 32px;
 	background-color: $bg-02;
 	border-radius: 4px;
+	@media (max-width: 600px) {
+		padding: 0px;
+		background-color: transparent;
+		border-radius: none;
+		text-align: left;
+	}
 	// .info-bk-landing-login__title
 	&__title {
 		display: flex;
@@ -358,9 +500,18 @@
 			margin: 0px 14px 0px 0px;
 			font-size: 20px;
 		}
+		@media (max-width: 600px) {
+			font-size: 16px;
+		}
 	}
 	// .info-bk-landing-login__text
 	&__text {
+		@media (max-width: 600px) {
+			text-align: left;
+			p {
+				padding: 0 !important;
+			}
+		}
 	}
 }
 //========================================================================================================================================================
@@ -382,6 +533,18 @@
 			top: 0;
 			transform: translate(-100%, 0px);
 		}
+		@media (max-width: 600px) {
+			&::before {
+				content: "";
+				display: none;
+			}
+			img {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: $md4+px) {
+			padding: 0px 18px;
+		}
 	}
 	// .push-landing-login__text
 	&__text {
@@ -394,9 +557,20 @@
 		align-items: center;
 		justify-content: center;
 		gap: 16px;
+		@media (max-width: 600px) {
+			padding: 32px 0px 0px 0px;
+		}
 	}
 	// .push-landing-login__button
 	&__button {
+		@media (max-width: 600px) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
 	}
 }
 //========================================================================================================================================================
@@ -408,6 +582,12 @@
 		display: inline-block;
 		margin: 0px 0px 32px 0px;
 		position: relative;
+		@media (max-width: $md4+px) {
+			max-width: 130px;
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 	// .push-landing-login__text
 	&__text {
@@ -420,9 +600,20 @@
 		align-items: center;
 		justify-content: center;
 		gap: 16px;
+		@media (max-width: 600px) {
+			padding: 32px 0px 0px 0px;
+		}
 	}
 	// .push-landing-login__button
 	&__button {
+		@media (max-width: 600px) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
 	}
 }
 //========================================================================================================================================================
@@ -434,6 +625,12 @@
 		display: inline-block;
 		margin: 0px 0px 32px 0px;
 		position: relative;
+		@media (max-width: $md4+px) {
+			max-width: 203px;
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 	// .push-landing-login__text
 	&__text {
@@ -446,9 +643,20 @@
 		align-items: center;
 		justify-content: center;
 		gap: 16px;
+		@media (max-width: 600px) {
+			padding: 32px 0px 0px 0px;
+		}
 	}
 	// .push-landing-login__button
 	&__button {
+		@media (max-width: 600px) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 1;
+			}
+		}
 	}
 }
 //========================================================================================================================================================
@@ -457,16 +665,43 @@
 	padding: 24px 0px 0px 0px;
 	display: grid;
 	gap: 64px;
+	@media (max-width: 600px) {
+		gap: 32px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 8px 0px 0px 0px;
+	}
 	// .finish-landing-login__block
 	&__block {
 		display: grid;
 		justify-content: center;
 		gap: 32px;
+		@media (max-width: 600px) {
+			gap: 16px;
+		}
 	}
 	// .finish-landing-login__text
 	&__text {
 		display: grid;
 		gap: 32px;
+		@media (max-width: 600px) {
+			gap: 16px;
+			p {
+				padding: 0 !important;
+				&:first-child {
+					br {
+						display: none;
+					}
+				}
+				&:nth-child(2){
+					br{
+						&:first-child{
+							display: none;
+						}
+					}
+				}
+			}
+		}
 	}
 	// .finish-landing-login__button
 	&__button {
@@ -477,6 +712,10 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 32px;
+		@media (max-width: 600px) {
+			grid-template-columns: auto;
+			gap: 24px;
+		}
 	}
 	// .finish-landing-login__item
 	&__item {
@@ -492,5 +731,12 @@
 	// .finish-landing-login__social
 	&__social {
 		justify-content: center;
+		._social__item {
+			@media (max-width: 600px) {
+				width: 24px;
+				height: 24px;
+				padding: 4px;
+			}
+		}
 	}
 }

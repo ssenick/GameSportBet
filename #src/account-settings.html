@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('_head.html',{
-"title":"История уведомлений"
+"title":"Настройки аккаунта"
 })
 
 <body>
@@ -11,47 +11,58 @@
 			<div class="page__conainer _container">
 				<div class="page__body page__body_3256">
 					<div class="page__main">
-						<nav class="page__nav navigation">
-							<ul class="navigation__list">
-								<li>
-									<a href="#" class="navigation__link _link ">Редактировать профиль</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">История прогнозов</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">История уведомлений</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link _active">Настройки аккаунта</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Подключенные услуги</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Данные оплаты</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Вывод средств</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Уведомления</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Партнерская программа</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">Ввести промокод</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link navigation__link_exit">Выход</a>
-								</li>
+						<div class="page__nav">
+							<nav class="navigation">
+								<div class="navigation__mobil-button">
+									<button type="button" class="navigation__button ">Настройки аккаунта</button>
+								</div>
+								<div class="navigation__lists">
+									<ul class="navigation__list">
+										<li>
+											<a href="#" class="navigation__link navigation__link_first _icon-36"> <span>Баланс и виджеты</span></a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Редактировать профиль</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">История прогнозов</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">История уведомлений</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link _active">Настройки аккаунта</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Подключенные услуги</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Данные оплаты</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Вывод средств</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Уведомления</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Партнерская программа</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link _link">Ввести промокод</a>
+										</li>
+										<li>
+											<a href="#" class="navigation__link navigation__link_exit">Выход</a>
+										</li>
 
-							</ul>
-						</nav>
+									</ul>
+								</div>
+
+							</nav>
+						</div>
 						<div class="page__content page__content_ml">
 							<!-- account settings -->
 							<section class="account-settings">
@@ -60,35 +71,35 @@
 										<h4 class="account-settings__title">Настройки аккаунта</h4>
 										<div class="account-settings__subtitle _body">Настройте вход в систему, привяжите социальные сети или проверьте актульность данных.</div>
 									</div>
-									<form action="#" class="account-settings__form form-account-settings">
-										<div class="form-account-settings__input input">
-											<label for="q_1" class="input__label">Почта</label>
-											<div class="input__row">
+									<div class="account-settings__form form-account-settings">
+										<form action="#" class="form-account-settings__form">
+											<div class="form-account-settings__input input">
+												<label for="q_1" class="input__label">Почта</label>
 												<div class="input__line">
 													<input id="q_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="gsb@gsb.ru" class="input__value _email _req">
 												</div>
 											</div>
-										</div>
-										<div class="form-account-settings__input input">
-											<label for="q_2" class="input__label">Телефон</label>
-											<div class="input__row">
-												<div class="input__line">
-													<input id="q_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="+7(xxx) xxx-xx-xx" class="input__value _phone">
+											<div class="form-account-settings__input  input">
+												<label for="q_2" class="input__label">Телефон</label>
+												<div class="input__row">
+													<div class="input__line">
+														<input id="q_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="" value="+7(xxx) xxx-xx-xx" class="input__value _phone">
+													</div>
+													<button type="button" class="input__button button button_text _ripple"><span>Изменить</span></button>
 												</div>
-												<button type="button" class="input__button button button_text _ripple"><span>Изменить</span></button>
+												<div class="input__email-link">На номер отправлен смс код</div>
 											</div>
-											<div class="input__email-link">На номер отправлен смс код</div>
-										</div>
-										<div class="form-account-settings__input input">
-											<label for="q_3" class="input__label">Код</label>
-											<div class="input__row">
+											<div class="form-account-settings__input input">
+												<label for="q_3" class="input__label">Код</label>
+
 												<div class="input__line">
 													<input id="q_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Введите код из смс" class="input__value">
 												</div>
+
+												<button type="submit" class="input__button input__button_send button button_contained _ripple"><span>Отправить</span></button>
 											</div>
-											<button type="submit" class="input__button input__button_send button button_contained _ripple"><span>Отправить</span></button>
-										</div>
-										<div class="form-account-settings__input input">
+										</form>
+										<div class="form-account-settings__input  input">
 											<label for="q_4" class="input__label">Пароль*</label>
 											<div class="input__row">
 												<div class="input__line">
@@ -100,16 +111,16 @@
 										</div>
 										<div class="form-account-settings__input input">
 											<label class="input__label">Язык интерфейса</label>
-											<div class="input__row">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Русский</option>
-													<option value="2">Русский</option>
-													<option value="3">Русский</option>
-													<option value="4">Русский</option>
-												</select>
-											</div>
+
+											<select name="form[]" class="form">
+												<option value="1" selected="selected">Русский</option>
+												<option value="2">Русский</option>
+												<option value="3">Русский</option>
+												<option value="4">Русский</option>
+											</select>
+
 										</div>
-									</form>
+									</div>
 								</div>
 							</section>
 							<!-- account settings -->
@@ -208,7 +219,7 @@
 							</section>
 							<!-- login-options -->
 						</div>
-						<aside class="page__sidebar sidebar">
+						<aside data-da=".page__content,1439.98," class="page__sidebar page__sidebar_profile-edite sidebar">
 							<div class="sidebar__item balance-status">
 								<div class="balance-status__item">
 									<div class="balance-status__label _body">Баланс</div>

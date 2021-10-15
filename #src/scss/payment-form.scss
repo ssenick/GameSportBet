@@ -296,6 +296,9 @@
 .payment-method {
 	display: grid;
 	row-gap: 16px;
+	&_user{
+		row-gap: 5px;
+	}
 	// .payment-method__title
 	&__title {
 	}

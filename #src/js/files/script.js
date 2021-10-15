@@ -27,6 +27,7 @@ function documentActions(e) {
 	}
 	if (document.querySelector('.header-rating-bk__title') && !targetElement.classList.contains('header-rating-bk__title') && !targetElement.closest('.header-rating-bk__menu')) {
 		document.querySelector('.header-rating-bk__menu').classList.remove('_active');
+	
 	}
 
 	if (targetElement.closest('.select-calendar__value_month') || targetElement.classList.contains('select-calendar__value_month')) {

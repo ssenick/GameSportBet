@@ -1260,7 +1260,7 @@
 				}
 			}
 			.teams-play-off-mach__items {
-				.team-play-off-mach {
+				.team-play-off-mach:first-child {
 					position: relative;
 					&::after {
 						content: "";
@@ -1517,6 +1517,7 @@
 	border-radius: 4px;
 	&::before {
 		width: 2px;
+		
 	}
 
 	@media (any-hover: hover) {

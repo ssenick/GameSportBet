@@ -298,6 +298,7 @@
 			@extend %gradient-button;
 			border-radius: 50%;
 		}
+
 		span {
 			display: flex;
 			justify-content: center;
@@ -322,6 +323,10 @@
 				background-color: $hover-white;
 				@extend %stroke-white;
 			}
+		}
+		@media (max-width: $md3+px) {
+			width: 18px;
+			min-height: 18px;
 		}
 	}
 	&_icon-dark {
@@ -423,6 +428,17 @@
 		cursor: default;
 		opacity: 0.33;
 	}
+	@media (max-width: $md3+px) {
+		min-height: 32px;
+		font-size: 14px;
+		span {
+			&::before {
+				width: 15px;
+				height: 15px;
+				font-size: 18px;
+			}
+		}
+	}
 }
 @keyframes ripple-icon {
 	0% {
@@ -466,6 +482,9 @@
 		@extend ._subtitle;
 		padding: 5px 16px;
 		align-items: center;
+		@media (max-width: $md3+px) {
+			min-height: 28px;
+		}
 		> span {
 			flex: 1 1 auto;
 		}
@@ -490,6 +509,11 @@
 			width: 24px;
 			height: 24px;
 			background: url("../img/icons/select.svg") center / 10px no-repeat;
+			@media (max-width: $md3+px) {
+				width: 18px;
+				height: 18px;
+				background: url("../img/icons/select.svg") center / 8px no-repeat;
+			}
 		}
 	}
 	&__input {
@@ -546,14 +570,19 @@
 		}
 	}
 	// .select__iamge
-	&__image{
+	&__image {
 		width: 24px;
 		height: 24px;
 		display: flex;
-		justify-content:center;align-items: center;
+		justify-content: center;
+		align-items: center;
 		margin: 0px 8px 0px 0px;
-		img{
+		img {
 			max-width: 100%;
+		}
+		@media (max-width: $md3+px) {
+			width: 16px;
+			height: 16px;
 		}
 	}
 	&._active {
@@ -732,17 +761,36 @@ textarea {
 		align-items: flex-start;
 		transition: all 0.3s ease 0s;
 		position: relative;
+		@media (max-width: $md3+px) {
+			min-height: 32px;
+		}
 		&_icon {
 			&::before {
 				color: $primary-light;
 				flex: 0 0 24px;
 				height: 36px;
 				margin: 0px 8px 0px 0px;
+				@media (max-width: $md3+px) {
+					height: 24px;
+				}
 			}
 			&._icon-111 {
 				&::before {
 					font-size: 15px;
 					color: #36ade1;
+				}
+				@media (max-width: $md3+px) {
+					&::before {
+						font-size: 12px;
+					}
+				}
+			}
+			@media (max-width: $md3+px) {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&::before {
+					font-size: 18px;
 				}
 			}
 		}
@@ -812,6 +860,9 @@ textarea {
 			opacity: 1;
 			outline: none;
 		}
+		@media (max-width: $md3+px) {
+			height: 28px;
+		}
 	}
 	&__error {
 		text-align: left;
@@ -829,6 +880,12 @@ textarea {
 		&::before {
 			color: $primary-light;
 			font-size: 24px;
+		}
+		@media (max-width: $md3+px) {
+			height: 28px;
+			&::before {
+				font-size: 18px;
+			}
 		}
 	}
 	&__email-link {
@@ -849,7 +906,7 @@ textarea {
 		padding: 2px 0px 0px 16px;
 		color: $secondary;
 		@extend ._caption;
-		&_white{
+		&_white {
 			color: #fff;
 		}
 	}

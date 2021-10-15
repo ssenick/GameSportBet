@@ -1,3 +1,21 @@
+.page__sidebar_analitics {
+	@media (max-width: $md1+px) {
+		grid-template-columns: repeat(auto-fill, minmax(326px, 1fr));
+		gap: 24px !important;
+		padding: 24px 0px 0px 0px;
+	}
+}
+.page__content_my-predictions {
+	.table-history-forecast__title {
+		margin: 0px 0px 0px 0px;
+		&::after {
+			display: none;
+		}
+	}
+	.filter-forecast-history {
+		grid-template-columns: repeat(auto-fit, minmax(auto, 270px));
+	}
+}
 //?  .available-for-bets
 .available-for-bets {
 	padding: 24px;
@@ -70,6 +88,8 @@
 //========================================================================================================================================================
 
 //! verification
+.page__content_verification {
+}
 // ? verification
 .verification {
 	display: grid;
@@ -113,6 +133,7 @@
 	// .item-verification__value
 	&__value {
 		@extend ._body;
+		white-space: nowrap;
 	}
 	// .item-verification__line
 	&__line {
@@ -143,6 +164,29 @@
 	&__section {
 	}
 }
+//? subscriptions-cancellations
+.subscriptions-cancellations {
+	// .subscriptions-cancellations__header
+	&__header {
+	}
+	// .subscriptions-cancellations__title
+	&__title {
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+	// .subscriptions-cancellations__input
+	&__input {
+		max-width: 240px;
+		@media (max-width: $md3+px) {
+			max-width: none;
+		}
+	}
+	// .subscriptions-cancellations__graph
+	&__graph {
+	}
+}
+
 //?income-block
 .income-block {
 	display: grid;
@@ -161,6 +205,10 @@
 	}
 	// .income-block__link
 	&__link {
+		@media (max-width: $md3+px) {
+			text-align: center;
+			margin: 8px 0px 0px 0px;
+		}
 	}
 	// .income-block__items
 	&__items {
@@ -168,7 +216,9 @@
 		grid-template-columns: minmax(96px, auto) minmax(124px, auto) auto 1fr;
 		align-items: center;
 		overflow: hidden;
-
+		@media (max-width: $md3+px) {
+			grid-template-columns: repeat(4, auto);
+		}
 	}
 	// .income-block__item
 	&__item {
@@ -178,6 +228,9 @@
 		align-items: center;
 		min-height: 44px;
 		@extend ._body;
+		@media (max-width: $md3+px) {
+			padding: 4px 8px;
+		}
 		// .income-block__item_year
 		&_year {
 			padding: 9px 8px 9px 16px;
@@ -189,7 +242,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;
@@ -205,6 +258,7 @@
 		&_value {
 			justify-content: flex-end;
 			margin: 0px 0px 0px 10px;
+			white-space: nowrap;
 		}
 
 		> * {
@@ -222,14 +276,18 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(132px, auto));
 	gap: 16px;
+
 	// .total-subscriptions__item
 	&__item {
 		background: $bg-02;
 		border-radius: 4px;
-		padding: 21px 16px;
+		padding: 21px 1px;
 		text-align: center;
 		display: grid;
 		row-gap: 4px;
+		@media (max-width: $md3+px) {
+			padding: 16px 4px;
+		}
 	}
 	// .total-subscriptions__label
 	&__label {
@@ -253,6 +311,10 @@
 		max-width: 240px;
 		&:not(:last-child) {
 			margin-bottom: 16px;
+		}
+		@media (max-width: $md3+px) {
+			max-width: none;
+			padding: 0px 16px 0px 0px;
 		}
 		.input__button {
 			&::before {
@@ -281,11 +343,23 @@
 }
 //table-transaction-history
 .table-transaction-history {
+	overflow: hidden;
+	margin: 0px -16px 0px 0px;
+	// .table-transaction-history__wrapper
+	&__wrapper {
+		overflow: auto;
+		@media (max-width: $md3+px) {
+			padding: 0px 16px 0px 0px;
+		}
+	}
 	// .table-transaction-history__items
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(6, auto) minmax(auto, 48px);
 		overflow: hidden;
+		@media (max-width: $md1+px) {
+			min-width: 725px;
+		}
 		> * {
 			&:nth-child(odd) {
 				+ .table-transaction-history__item {
@@ -370,7 +444,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;
@@ -444,12 +518,24 @@
 	}
 }
 .table-active-tariffs {
+	overflow: auto;
+	@media (max-width: 1050px) {
+		margin: 0px -32px 0px 0px;
+	}
+	@media (max-width: $md3+px) {
+		margin: 0px -16px 0px 0px;
+	}
+
 	// .table-active-tariffs__items
 	&__items {
 		display: grid;
 		grid-template-columns: minmax(112px, auto) minmax(96px, auto) minmax(106px, auto) auto 1fr minmax(128px, auto);
 		overflow: hidden;
 		align-items: center;
+		@media (max-width: 1500px) {
+			min-width: 725px;
+			padding: 0px 8px 0px 0px;
+		}
 		> * {
 			&:nth-child(12n) {
 				+ .table-active-tariffs__item {
@@ -533,7 +619,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;
@@ -582,12 +668,23 @@
 }
 
 .table-archived-rates {
+	@media (max-width: 1050px) {
+		margin: 0px -32px 0px 0px;
+		overflow: auto;
+	}
+	@media (max-width: $md3+px) {
+		margin: 0px -16px 0px 0px;
+	}
 	// .table-archived-rates__items
 	&__items {
 		display: grid;
 		grid-template-columns: minmax(112px, auto) minmax(96px, auto) minmax(106px, auto) auto 1fr auto auto;
 		overflow: hidden;
 		align-items: center;
+		@media (max-width: 1050px) {
+			min-width: 725px;
+			padding: 0px 8px 0px 0px;
+		}
 		> * {
 			&:nth-child(14n) {
 				+ .table-archived-rates__item {
@@ -672,7 +769,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;
@@ -736,6 +833,9 @@
 		display: grid;
 		grid-template-columns: minmax(auto, 240px) minmax(auto, 301px);
 		gap: 16px;
+		@media (max-width: $md3+px) {
+			grid-template-columns: auto;
+		}
 	}
 	// .form-new-rate__input
 	&__input {
@@ -743,6 +843,9 @@
 			margin: 0px 0px 8px 0px;
 		}
 		max-width: 301px;
+		@media (max-width: $md3+px) {
+			max-width: none;
+		}
 	}
 	&__item {
 		max-width: 393px;
@@ -766,12 +869,26 @@
 	// .payment-formation__header
 	&__header {
 	}
+	&__wrapper {
+		@media (max-width: $md2+px) {
+			overflow: auto;
+		}
+		@media (max-width: 574px) {
+			margin: 0px -16px 0px 0px;
+		}
+	}
 	// .payment-formation__items
 	&__items {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, auto);
 		overflow: hidden;
 		align-items: center;
+		@media (max-width: $md2+px) {
+			min-width: 526px;
+		}
+		@media (max-width: 574px) {
+			padding: 0px 8px 0px 0px;
+		}
 		> * {
 			&:nth-child(6n) {
 				+ .payment-formation__item {
@@ -830,7 +947,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;
@@ -881,6 +998,9 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 24px;
+		@media (max-width: $md3+px) {
+			grid-template-columns: auto;
+		}
 	}
 	// .form-promo-codes__input
 	&__input {
@@ -895,12 +1015,27 @@
 }
 
 .table-promo-codes {
+	overflow: hidden;
+	@media (max-width: 615px) {
+		margin: 0px -16px 0px 0px;
+	}
 	// .table-promo-codes__items
+	&__wrapper {
+		@media (max-width: $md2+px) {
+			overflow: auto;
+		}
+	}
 	&__items {
 		display: grid;
 		align-items: center;
 		overflow: hidden;
 		grid-template-columns: 1fr auto repeat(2, minmax(125px, auto));
+		@media (max-width: $md2+px) {
+			min-width: 564px;
+		}
+		@media (max-width: $md3+px) {
+			padding: 0px 8px 0px 0px;
+		}
 		> * {
 			&:nth-child(8n) {
 				+ .table-promo-codes__item {
@@ -970,7 +1105,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 100vw;
+				width: 1000vw;
 				height: 100%;
 				top: 0;
 				left: 0;

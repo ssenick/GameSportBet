@@ -11,47 +11,58 @@
 			<div class="page__conainer _container">
 				<div class="page__body page__body_3256">
 					<div class="page__main">
-						<nav class="page__nav navigation">
-							<ul class="navigation__list">
-								<li>
-									<a href="#" class="navigation__link _link ">Редактировать профиль</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link _active">История прогнозов</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">История уведомлений</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Настройки аккаунта</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Подключенные услуги</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Данные оплаты</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Вывод средств</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Уведомления</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link">Партнерская программа</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link _link ">Ввести промокод</a>
-								</li>
-								<li>
-									<a href="#" class="navigation__link navigation__link_exit">Выход</a>
-								</li>
-
-							</ul>
-						</nav>
+						<div class="page__nav ">
+							<nav class="navigation">
+								<div class="navigation__mobil-button">
+									<button type="button" class="navigation__button "> История прогнозов</button>
+								</div>
+								<div class="navigation__lists">
+												<ul class="navigation__list">
+													<li>
+														<a href="#" class="navigation__link navigation__link_first _icon-36"> <span>Баланс и виджеты</span></a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Редактировать профиль</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link _active">История прогнозов</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">История уведомлений</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Настройки аккаунта</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Подключенные услуги</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Данные оплаты</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Вывод средств</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Уведомления</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link navigation__link_notice">Сообщения</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Партнерская программа</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link _link">Ввести промокод</a>
+													</li>
+													<li>
+														<a href="#" class="navigation__link navigation__link_exit">Выход</a>
+													</li>
+												
+												</ul>
+								</div>
+				
+							</nav>
+						</div>
 						<div class="page__content page__content_ml">
 							<!-- forecast-history -->
 							<section class="forecast-history">
@@ -276,7 +287,7 @@
 									</div>
 									<div class="filter-forecast-history__item">
 										<select name="form[]" class="form">
-											<option  data-image="img/icons/games/02.svg" value="1" selected="selected">Dota 2</option>
+											<option data-image="img/icons/games/02.svg" value="1" selected="selected">Dota 2</option>
 											<option data-image="img/icons/games/02.svg" value="2">Dota 2</option>
 											<option data-image="img/icons/games/02.svg" value="3">Dota 2</option>
 										</select>
@@ -297,187 +308,190 @@
 												<a href="" class="_filter-colored__item _filter-colored__item_y">Отклонена</a>
 											</div>
 										</div>
-										<div class="table-history-forecast__items">
-											<!-- title -->
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _active _label _label_xs">Время</a>
+										<div class="table-history-forecast__wrapper">
+											<div class="table-history-forecast__items">
+												<!-- title -->
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _active _label _label_xs">Время</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Событие</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
+												</div>
+												<div class="table-history-forecast__title ">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
+												</div>
+												<div class="table-history-forecast__title ">
+												</div>
+												<!-- title -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">mousesports & SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+													<div class="table-history-forecast__time">16:35</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+													<div class="table-history-forecast__time">18:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">mousesports & SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+													<div class="table-history-forecast__time">19:05</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+													<div class="table-history-forecast__time">16:35</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
 											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
-											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Событие</a>
-											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
-											</div>
-											<div class="table-history-forecast__title ">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
-											</div>
-											<div class="table-history-forecast__title ">
-											</div>
-											<!-- title -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
-												<div class="table-history-forecast__time">16:35</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
-												<div class="table-history-forecast__time">18:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
-												<div class="table-history-forecast__time">19:05</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
-												<div class="table-history-forecast__time">16:35</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
 										</div>
+
 									</div>
 									<!-- table-history-forecast -->
 									<!-- table-history-forecast -->
@@ -490,187 +504,190 @@
 												<a href="" class="_filter-colored__item _filter-colored__item_y _active">Отклонена</a>
 											</div>
 										</div>
-										<div class="table-history-forecast__items">
-											<!-- title -->
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort  _label _label_xs">Время</a>
+										<div class="table-history-forecast__wrapper">
+											<div class="table-history-forecast__items">
+												<!-- title -->
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort  _label _label_xs">Время</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _active _active_up _label _label_xs">Событие</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
+												</div>
+												<div class="table-history-forecast__title">
+													<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
+												</div>
+												<div class="table-history-forecast__title">
+												</div>
+												<!-- title -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">mousesports & SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
+													<div class="table-history-forecast__time">08:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+													<div class="table-history-forecast__time">16:35</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+													<div class="table-history-forecast__time">18:00</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">mousesports & SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
+													<div class="table-history-forecast__time">19:05</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
+												<!-- row -->
+												<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
+													<div class="table-history-forecast__time">16:35</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__type">Стандарт</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__text">x 99.99</div>
+												</div>
+												<div class="table-history-forecast__item ">
+													<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
+												</div>
+												<!-- row -->
 											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Тип</a>
-											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _active _active_up _label _label_xs">Событие</a>
-											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Детали - Выбор</a>
-											</div>
-											<div class="table-history-forecast__title">
-												<a href="#" class="table-history-forecast__sort _label _label_xs">Коэф-ент</a>
-											</div>
-											<div class="table-history-forecast__title">
-											</div>
-											<!-- title -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/02.svg" alt="">K23 &amp; Young Ninjas</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/01.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_win">
-												<div class="table-history-forecast__time">08:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
-												<div class="table-history-forecast__time">16:35</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
-												<div class="table-history-forecast__time">18:00</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/03.svg" alt="">Movistar Riders &amp; Lyngby Vikings</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА ФОРА ПО РАУНДАМ: K23 (-1.5)</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_cancel">
-												<div class="table-history-forecast__time">19:05</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/04.svg" alt="">LDLC &amp; Galaxy Racer</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">2-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛЮЧАЯ ОВЕРТАЙМ): Virtus.Pro</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
-											<!-- row -->
-											<div class="table-history-forecast__item table-history-forecast__item_time _table__status _table__status_fail">
-												<div class="table-history-forecast__time">16:35</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__type">Стандарт</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__event"><img src="img/icons/games/05.svg" alt="">mousesports &amp; SKADE</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text-small">1-Я КАРТА - ПОБЕДИТЕЛЬ (ВКЛ. ОВЕРТАЙМ): SAW</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__text">x 99.99</div>
-											</div>
-											<div class="table-history-forecast__item ">
-												<div class="table-history-forecast__bet"><a href="img/logo.svg" target="_blank" class="_icon-40 _popup-link button_icon"></a></div>
-											</div>
-											<!-- row -->
 										</div>
+
 									</div>
 									<!-- table-history-forecast -->
 								</div>
@@ -707,7 +724,7 @@
 							</section>
 							<!-- forecast-history -->
 						</div>
-						<aside class="page__sidebar sidebar">
+						<aside data-da=".page__content,1439.98," class="page__sidebar page__sidebar_profile-edite sidebar">
 							<div class="sidebar__item balance-status">
 								<div class="balance-status__item">
 									<div class="balance-status__label _body">Баланс</div>

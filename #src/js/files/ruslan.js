@@ -168,3 +168,101 @@ if (teamPlayOffMachs.length > 0) {
     });
   });
 }
+//========================================================================================================================================================
+let topAnalysts = document.querySelector('.top-analysts');
+let top10Bk = document.querySelector('.top-10-bk');
+
+window.addEventListener('resize', () => {
+  if (differencesSlider) {
+    mobileSlider();
+  }
+  if (topAnalysts && top10Bk) {
+    addClassList();
+  }
+  if (mediaSlider) {
+    bildsliderMediaLending();
+  }
+});
+
+function addClassList() {
+  if (window.innerWidth <= 767.98 && topAnalysts.dataset.mobile == 'false' && top10Bk.dataset.mobile == 'false') {
+    topAnalysts.dataset.mobile = 'true';
+    top10Bk.dataset.mobile = 'true';
+    topAnalysts.classList.add('_tabs-block');
+    top10Bk.classList.add('_tabs-block');
+    let tabsWrraper = document.querySelectorAll('._tabs-wrapper');
+    for (let index = 0; index < tabsWrraper.length; index++) {
+      let tab = tabsWrraper[index];
+      let tabs_items = tab.querySelectorAll('._tabs-item');
+      let tabs_blocks = tab.getElementsByClassName('_tabs-block');
+      for (let index = 0; index < tabs_items.length; index++) {
+        let tabs_item = tabs_items[index];
+        tabs_item.addEventListener('click', function (e) {
+          for (let index = 0; index < tabs_items.length; index++) {
+            let tabs_item = tabs_items[index];
+            tabs_item.classList.remove('_active');
+            tabs_blocks[index].classList.remove('_active');
+          }
+          tabs_item.classList.add('_active');
+          tabs_blocks[index].classList.add('_active');
+          e.preventDefault();
+        });
+      }
+    }
+  }
+  if (window.innerWidth > 767.98) {
+    top10Bk.dataset.mobile = 'false';
+    topAnalysts.dataset.mobile = 'false';
+    topAnalysts.classList.remove('_tabs-block');
+    top10Bk.classList.remove('_tabs-block');
+  }
+}
+
+if (topAnalysts && top10Bk) {
+  addClassList();
+}
+//========================================================================================================================================================
+const popuPlogin6 = document.querySelector('.popup_login-new-6');
+if (popuPlogin6) {
+  popuPlogin6.addEventListener('click', (e) => {
+    if (e.target.classList.contains('login-new-6__column_three') || e.target.closest('.login-new-6__column_three')) {
+      document.querySelector('.login-new-6__column_three').classList.add('_selected');
+      if (document.querySelector('.login-new-6__column_two').classList.contains('_selected')) {
+        document.querySelector('.login-new-6__column_two').classList.remove('_selected');
+      }
+    }
+    if (e.target.classList.contains('login-new-6__column_two') || e.target.closest('.login-new-6__column_two')) {
+      document.querySelector('.login-new-6__column_two').classList.add('_selected');
+      if (document.querySelector('.login-new-6__column_three').classList.contains('_selected')) {
+        document.querySelector('.login-new-6__column_three').classList.remove('_selected');
+      }
+    }
+  });
+}
+//========================================================================================================================================================
+const navigation = document.querySelector('.navigation');
+if (navigation) {
+  navigation.addEventListener('click', (e) => {
+    if (e.target.classList.contains('navigation__button') || e.target.closest('.navigation__button')) {
+      navigation.querySelector('.navigation__button').classList.toggle('_active');
+      navigation.querySelector('.navigation__lists').classList.toggle('_active');
+    }
+  });
+}
+//========================================================================================================================================================
+const notificationSettings = document.querySelector('.page__content_notification-settings');
+if (notificationSettings) {
+  notificationSettings.addEventListener('click', function (e) {
+    if (
+      (e.target.classList.contains('list-notification-settings__item') && window.innerWidth <= 768.98) ||
+      e.target.closest('.list-notification-settings__item')
+    ) {
+      notificationSettings.classList.add('_active');
+      e.target.closest('.list-notification-settings__li').querySelector('.list-notification-settings__sub-menu').classList.add('_active');
+    }
+    if (e.target.classList.contains('list-notification-settings__back') || e.target.closest('.list-notification-settings__back')) {
+      notificationSettings.classList.remove('_active');
+      e.target.closest('.list-notification-settings__sub-menu').classList.remove('_active');
+    }
+  });
+}

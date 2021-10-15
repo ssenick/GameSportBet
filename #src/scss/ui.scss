@@ -312,6 +312,9 @@
 	&::before {
 		transition: color 0.3s ease 0s;
 		font-size: 18px;
+		@media (max-width: $md3+px) {
+			font-size: 14px;
+		}
 	}
 	&_only {
 		&::before {
@@ -390,7 +393,7 @@ a._ic,
 		&._active {
 			opacity: 1;
 		}
-		
+
 		&::before {
 			font-size: 20px;
 			margin: 0px 4px 0px 0px;
@@ -462,6 +465,9 @@ a._ic,
 	gap: 14px;
 	align-items: center;
 	margin: 0px 0px 16px 0px;
+	@media (max-width: $md3+px) {
+		margin: 0px 0px 8px 0px;
+	}
 	// ._block-header__title
 	&__title {
 	}
@@ -584,7 +590,6 @@ a._ic,
 	}
 }
 ._social {
-	
 	display: flex;
 	flex-wrap: wrap;
 	margin: -4px;
@@ -1129,6 +1134,12 @@ ol {
 			top: 0;
 			left: 0;
 			text-align: center;
+		}
+		@media (max-width: $md3+px) {
+			padding: 0px 0px 0px 20px;
+			&::before {
+				width: 20px;
+			}
 		}
 	}
 }
