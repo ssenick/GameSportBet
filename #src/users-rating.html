@@ -1,807 +1,1626 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Рейтинг всех пользователей аналитиков"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
-				<div class="page__container _container">
-					<div class="page__body page__body_7256">
-						<div class="page__header">
-							<h1 class="page__title">Рейтинг аналитиков</h1>
-							<div class="page__sub-title _label">на основе пользовательского мнения</div>
-						</div>
-						<div class="page__row">
-							<div class="page__content">
-								<div class="users-rating">
-									<div class="users-rating__text _body">Букмекерская компания GGBet – легальный в России букмекер, изначально специализирующийся на киберспорте, но в 2020 году стал активно развивать ставки на классический спорт (особенно — футбол). Компания начала работу в 2019 году. GGBet является членом «СРО Букмекеров» и принимает ставки через ЦУПИС Киви-банка.</div>
-									<div class="users-rating__header header-users-rating">
-										<div class="header-users-rating__main">
-											<h3 class="header-users-rating__title">Топ аналитиков сайта</h3>
-											<a href="" class="header-users-rating__info _caption _link _icon-48">Как формируется рейтинг</a>
-										</div>
-										<div class="header-users-rating__type">
-											<a href="" class="header-users-rating__button button_text button _ripple"><span>Все аналитики</span></a>
-											<a href="" class="header-users-rating__button button_outlined button _ripple"><span>Профи</span></a>
-										</div>
+@@include('_head.html',{
+"title":"Рейтинг всех пользователей аналитиков"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="page__container _container">
+				<div class="page__body page__body_7256">
+					<div class="page__header">
+						<h1 class="page__title">Рейтинг аналитиков</h1>
+						<div class="page__sub-title page__sub-title_user-rating _label">на основе пользовательского мнения</div>
+					</div>
+					<div class="page__row">
+						<div class="page__content">
+							<div class="users-rating">
+								<div class="users-rating__text _body">Букмекерская компания GGBet – легальный в России букмекер, изначально специализирующийся на киберспорте, но в 2020 году стал активно развивать ставки на классический спорт (особенно — футбол). Компания начала работу в 2019 году. GGBet является членом «СРО Букмекеров» и принимает ставки через ЦУПИС Киви-банка.</div>
+								<div class="users-rating__header header-users-rating">
+									<div class="header-users-rating__main">
+										<h3 class="header-users-rating__title">Топ аналитиков сайта</h3>
+										<a href="" class="header-users-rating__info _caption _link _icon-48"><span>Как формируется рейтинг</span></a>
 									</div>
-									<div class="users-rating__filter filter-users-rating">
+									<div class="header-users-rating__type">
+										<a href="" class="header-users-rating__button button_text button _ripple"><span>Все аналитики</span></a>
+										<a href="" class="header-users-rating__button button_outlined button _ripple"><span>Профи</span></a>
+									</div>
+								</div>
+								<div class="users-rating__filter filter-users-rating">
+									<div class="filter-users-rating__block">
 										<div class="filter-users-rating__time _content-filter">
 											<a href="" class="_content-filter__item _active">Неделя</a>
 											<a href="" class="_content-filter__item">Месяц</a>
 											<a href="" class="_content-filter__item">3 месяца</a>
 											<a href="" class="_content-filter__item">Все время</a>
 										</div>
-										<a href="" class="filter-users-rating__game"><img src="img/icons/games/01.svg" alt=""></a>
-										<div class="filter-users-rating__sort _content-sort">
-											<a href="" class="_content-sort__item _active">Рейтинг</a>
-											<a href="" class="_content-sort__item">Прибыль</a>
-											<a href="" class="_content-sort__item _active _active_up">Популярность</a>
-											<a href="" class="_content-sort__item">Winrate</a>
+										<div class="filter-users-rating__block-2">
+											<a href="" class="filter-users-rating__game"><img src="img/icons/games/01.svg" alt=""></a>
+											<div class="filter-users-rating__sort">
+												<div class="filter-users-rating__select-mobile">
+													<select name="form[]" class="form">
+														<option data-icon="_icon-21" value="1" selected="selected">Рейтинг</option>
+														<option data-icon="_icon-22" value="2">Рейтинг</option>
+														<option data-icon="_icon-21" value="3">Прибыль</option>
+														<option data-icon="_icon-22" value="4">Прибыль</option>
+														<option data-icon="_icon-21" value="5">Популярность</option>
+														<option data-icon="_icon-22" value="6">Популярность</option>
+														<option data-icon="_icon-21" value="7">Winrate</option>
+														<option data-icon="_icon-22" value="8">Winrate</option>
+													</select>
+												</div>
+												<div class="filter-users-rating__list-sort _content-sort">
+													<a href="" class="_content-sort__item _active">Рейтинг</a>
+													<a href="" class="_content-sort__item">Прибыль</a>
+													<a href="" class="_content-sort__item _active _active_up">Популярность</a>
+													<a href="" class="_content-sort__item">Winrate</a>
+												</div>
+
+											</div>
 										</div>
-										<div class="filter-users-rating__actions">
-											<a href="" class="filter-users-rating__clean button button_text button_icon-left _ripple"><span class="_icon-105">Очистить</span></a>
-											<a href="" class="filter-users-rating__clean button button_text button_icon-left _ripple"><span class="_icon-104">Сравнить 3</span></a>
-										</div>
+
 									</div>
-									<div class="users-rating__items items-users-rating">
-										<div class="users-rating__table table-users-rating">
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">Eleanor Pena</div>
-														<div class="_user-name__status"></div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">BestTipsterEver</div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">Eleanor Pena</div>
-														<div class="_user-name__status"></div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">BestTipsterEver</div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">Eleanor Pena</div>
-														<div class="_user-name__status"></div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">BestTipsterEver</div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">Eleanor Pena</div>
-														<div class="_user-name__status"></div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">BestTipsterEver</div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">Eleanor Pena</div>
-														<div class="_user-name__status"></div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-											<div class="table-users-rating__item table-users-rating__avatar">
-												<div class="_avatar _avatar_middle">
-													<div class="_avatar__image">
-														<img src="img/avatar.png" alt="">
-													</div>
-													<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
-													<a href="" class="_avatar__rating _icon-63"></a>
-													<a href="" class="_avatar__awards _icon-79"></a>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__body">
-												<div class="table-users-rating__header">
-													<div class="table-users-rating__user _user-name">
-														<div class="_user-name__flag">
-															<img src="img/icons/flags/01.png" alt="">
-														</div>
-														<div class="_user-name__name">BestTipsterEver</div>
-													</div>
-													<div class="table-users-rating__value">
-														<div class="rating rating_16">
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-															<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-															<div class="rating__value _body _secondary">4.5</div>
-														</div>
-													</div>
-													<div class="table-users-rating__social _info-line _info-line_x-big">
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
-														<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
-													</div>
-												</div>
-												<div class="table-users-rating__stat stat-table-users-rating">
-													<div class="stat-table-users-rating__item _icon-52">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
-														<div class="stat-table-users-rating__value _body_strong">568 267</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-79">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
-														<div class="stat-table-users-rating__value _body_strong">56%</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-97">
-														<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
-														<div class="stat-table-users-rating__value _last-forecast">
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_blue"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_red"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-															<div class="_last-forecast__item _last-forecast__item_green"></div>
-														</div>
-													</div>
-													<div class="stat-table-users-rating__item _icon-101">
-														<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
-														<div class="stat-table-users-rating__value _procent-items">
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-															<div class="_procent-items__item _procent-items__item_red">14%</div>
-															<div class="_procent-items__item _procent-items__item_green">65%</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="table-users-rating__item table-users-rating__actions">
-												<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
-												<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
-												<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
-											</div>
-										</div>
-										<div class="items-users-rating__footer">
-											<a href="" class="items-users-rating__button button button_outlined _ripple"><span>Загрузить еще</span></a>
-										</div>
+
+									<div class="filter-users-rating__actions">
+										<a href="" class="filter-users-rating__mobile-clean "><span class="_icon-104"></span></a>
+										<a href="" class="filter-users-rating__clean button button_text button_icon-left _ripple"><span class="_icon-105">Очистить</span></a>
+										<a href="" class="filter-users-rating__clean button button_text button_icon-left _ripple"><span class="_icon-104">Сравнить 3</span></a>
 									</div>
 								</div>
+								<div class="users-rating__items  items-users-rating">
+									<div class="users-rating__table users-rating__table_pc table-users-rating ">
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">Eleanor Pena</div>
+													<div class="_user-name__status"></div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">BestTipsterEver</div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">Eleanor Pena</div>
+													<div class="_user-name__status"></div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">BestTipsterEver</div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">Eleanor Pena</div>
+													<div class="_user-name__status"></div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">BestTipsterEver</div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">Eleanor Pena</div>
+													<div class="_user-name__status"></div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">BestTipsterEver</div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">Eleanor Pena</div>
+													<div class="_user-name__status"></div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+										<div class="table-users-rating__item table-users-rating__avatar">
+											<div class="_avatar _avatar_middle">
+												<div class="_avatar__image">
+													<img src="img/avatar.png" alt="">
+												</div>
+												<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+												<a href="" class="_avatar__rating _icon-63"></a>
+												<a href="" class="_avatar__awards _icon-79"></a>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__body">
+											<div class="table-users-rating__header">
+												<div class="table-users-rating__user _user-name">
+													<div class="_user-name__flag">
+														<img src="img/icons/flags/01.png" alt="">
+													</div>
+													<div class="_user-name__name">BestTipsterEver</div>
+												</div>
+												<div class="table-users-rating__value">
+													<div class="rating rating_16">
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+														<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+														<div class="rating__value _body _secondary">4.5</div>
+													</div>
+												</div>
+												<div class="table-users-rating__social _info-line _info-line_x-big">
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+													<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+												</div>
+											</div>
+											<div class="table-users-rating__stat stat-table-users-rating">
+												<div class="stat-table-users-rating__item _icon-52">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Прибыль</div>
+													<div class="stat-table-users-rating__value _body_strong">568 267</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-79">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Winrate</div>
+													<div class="stat-table-users-rating__value _body_strong">56%</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-97">
+													<div class="stat-table-users-rating__label _caption_small _secondary">Последние 10 прогнозов</div>
+													<div class="stat-table-users-rating__value _last-forecast">
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_blue"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_red"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+														<div class="_last-forecast__item _last-forecast__item_green"></div>
+													</div>
+												</div>
+												<div class="stat-table-users-rating__item _icon-101">
+													<div class="stat-table-users-rating__label _caption_small _secondary">3 месяца</div>
+													<div class="stat-table-users-rating__value _procent-items">
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+														<div class="_procent-items__item _procent-items__item_red">14%</div>
+														<div class="_procent-items__item _procent-items__item_green">65%</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="table-users-rating__item table-users-rating__actions">
+											<a href="" class="table-users-rating__button button button_text _ripple"><span>Подробнее</span></a>
+											<a href="" class="table-users-rating__button button button_text button_icon-only button_icon-gradient _ripple"><span class="_icon-103"></span></a>
+											<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+										</div>
+									</div>
+									<div class="users-rating__table users-rating__table_mobil">
+										<div class="table-users-rating ">
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+											<!-- row -->
+											<div class="table-users-rating__row">
+												<div class="table-users-rating__line table-users-rating__line_top">
+													<div class="table-users-rating__avatar">
+														<div class="_avatar _avatar_middle">
+															<div class="_avatar__image">
+																<img src="img/avatar.png" alt="">
+															</div>
+															<a href="" class="_avatar__social"><img src="img/icons/social/02.svg" alt=""></a>
+															<a href="" class="_avatar__rating _icon-63"></a>
+															<a href="" class="_avatar__awards _icon-79"></a>
+														</div>
+													</div>
+													<div class="table-users-rating__header">
+														<div class="table-users-rating__top-header">
+															<div class="table-users-rating__user _user-name">
+																<div class="_user-name__flag">
+																	<img src="img/icons/flags/01.png" alt="">
+																</div>
+																<div class="_user-name__name">Eleanor Pena</div>
+																<div class="_user-name__status"></div>
+															</div>
+															<div class="table-users-rating__value">
+																<div class="rating rating_16">
+																	<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+																	<div class="rating__value _body _secondary">4.5</div>
+																</div>
+															</div>
+															<div class="table-users-rating__social _info-line _info-line_x-big">
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _icon-102">359</a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-58"></a>
+																<a data-tippy-content="Подсказка" href="" class="_info-line__item _ic_only _icon-6"></a>
+															</div>
+														</div>
+														<div class="table-users-rating__bottom-header _icon-97">
+															<div class="table-users-rating__status-label _caption_small _secondary">Последние 10 прогнозов</div>
+															<div class="_last-forecast">
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_blue"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_red"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+																<div class="_last-forecast__item _last-forecast__item_green"></div>
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_center">
+													<div class="table-users-rating__bottom-header _icon-52">
+														<div class="table-users-rating__status-label _caption_small _secondary">Прибыль</div>
+														<div class="table-users-rating__status-value _body_strong">568 267</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-79">
+														<div class="table-users-rating__status-label _caption_small _secondary">Winrate</div>
+														<div class="table-users-rating__status-value _body_strong">56%</div>
+													</div>
+													<div class="table-users-rating__bottom-header _icon-101">
+														<div class="table-users-rating__status-label _caption_small _secondary">3 месяца</div>
+														<div class="table-users-rating__status-value _procent-items">
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+															<div class="_procent-items__item _procent-items__item_red">14%</div>
+															<div class="_procent-items__item _procent-items__item_green">65%</div>
+														</div>
+													</div>
+												</div>
+												<div class="table-users-rating__line table-users-rating__line_bottom">
+													<a href="" class="table-users-rating__button button button_outlined _ripple"><span>Получить прогнозы</span></a>
+													<a href="" class="table-users-rating__button button  button_icon-only _ripple"><span class="_icon-103"></span></a>
+												</div>
+											</div>
+											<!-- row -->
+										</div>
+
+
+
+
+
+
+
+									</div>
+									<div class="items-users-rating__footer">
+										<a href="" class="items-users-rating__button button button_outlined _ripple"><span>Загрузить еще</span></a>
+									</div>
+								</div>
+
 							</div>
-							<aside class="page__sidebar sidebar">
-								<a href="" class="sidebar__banner banner">
-									<img src="img/banners/02.jpg" alt="">
-								</a>
-							</aside>
 						</div>
+						<aside class="page__sidebar page__sidebar_user-arting sidebar">
+							<a href="" class="sidebar__banner sidebar__banner_user-arting-pc banner">
+								<img src="img/banners/02.jpg" alt="">
+							</a>
+							<a href="" class="sidebar__banner sidebar__banner_user-arting-mobil banner">
+								<img src="img/banners/01.jpg" alt="">
+							</a>
+						</aside>
 					</div>
 				</div>
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>

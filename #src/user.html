@@ -9,7 +9,7 @@
 		@@include('_header.html',{})
 		<main class="page">
 			<div class="page__container _container">
-				<div class="main-user">
+				<div data-da=".page__body,959.98,0" class="main-user">
 					<div class="main-user__body">
 						<div class="main-user__avatar _avatar _avatar_big">
 							<div class="_avatar__image">
@@ -27,7 +27,7 @@
 								<div class="main-user__name name-main-user">
 									<div class="name-main-user__flag"><img src="img/icons/flags/01.png" alt=""></div>
 									<h3 class="name-main-user__name">Usual User</h3>
-									<div data-tippy-content="Подсказка" class="name-main-user__rating rating-main-user">
+									<div data-da=".main-user__info,768.98,1" data-tippy-content="Подсказка" class="name-main-user__rating rating-main-user">
 										<div class="rating-main-user__icon"><img src="img/icons/rating_half.svg" alt=""></div>
 										<div class="rating-main-user__value _secondary _body">4.2</div>
 									</div>
@@ -37,7 +37,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="" class="main-user__button button button_text button_icon-left _ripple"><span class="_icon-60">Пожаловаться</span></a>
+					<a href="" class="main-user__button button button_text button_icon-left _ripple"><span class="_icon-60"><span>Пожаловаться</span></span></a>
 				</div>
 				<div class="page__body">
 					<div class="page__row">
@@ -50,6 +50,16 @@
 											<a href="" class="_content-sort__item _active">Дата</a>
 											<a href="" class="_content-sort__item">Просмотры</a>
 											<a href="" class="_content-sort__item _active _active_up">Комментарии</a>
+										</div>
+										<div class="news-user__mobile-filter">
+											<select name="form[]" class="form">
+												<option data-icon="_icon-21" value="1" selected="selected">По дате</option>
+												<option data-icon="_icon-22" value="2">По дате</option>
+												<option data-icon="_icon-21" value="3">Просмотры</option>
+												<option data-icon="_icon-22" value="4">Просмотры</option>
+												<option data-icon="_icon-21" value="5">Комментарии</option>
+												<option data-icon="_icon-22" value="6">Комментарии</option>
+											</select>
 										</div>
 									</div>
 									<div class="news-user__items items-news">
@@ -289,6 +299,25 @@
 																			<div class="_reactions__value _success">3</div>
 																			<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																		</div>
+																		<div class="comment__mobil-block mobil-block-comment">
+																			<div class="mobil-block-comment__top">
+																				<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																				<div class="mobil-block-comment__actions _info-line _info-line_big">
+																					<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																					<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																					<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																				</div>
+																			</div>
+																			<div class="mobil-block-comment__main">
+																				<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																				<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																			</div>
+																			<div class="mobil-block-comment__reactions _reactions">
+																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				<div class="_reactions__value _success">3</div>
+																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																		</div>
 																	</aside>
 																	<div class="comment__body">
 																		<div class="comment__header header-comment">
@@ -322,7 +351,9 @@
 																		</div>
 																		<ul class="comment__footer">
 																			<li><a href="" class="comment__show-answers _active _icon-85">12 ответов</a></li>
-																			<li><a href="" class="comment__link _secondary">Перейти к комментарию</a></li>
+																			<li>
+																				<a href="" class="comment__reply">Перейти к комментарию</a>
+																			</li>
 																		</ul>
 																	</div>
 																</div>
@@ -343,6 +374,25 @@
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																				<div class="_reactions__value _success">3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
 																			</div>
 																		</aside>
 																		<div class="comment__body">
@@ -378,6 +428,25 @@
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																				<div class="_reactions__value _success">3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
 																			</div>
 																		</aside>
 																		<div class="comment__body">
@@ -421,6 +490,25 @@
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																				<div class="_reactions__value _fail">-3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
 																			</div>
 																		</aside>
 																		<div class="comment__body">
@@ -471,6 +559,25 @@
 																			<div class="_reactions__value _success">3</div>
 																			<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																		</div>
+																		<div class="comment__mobil-block mobil-block-comment">
+																			<div class="mobil-block-comment__top">
+																				<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																				<div class="mobil-block-comment__actions _info-line _info-line_big">
+																					<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																					<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																					<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																				</div>
+																			</div>
+																			<div class="mobil-block-comment__main">
+																				<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																				<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																			</div>
+																			<div class="mobil-block-comment__reactions _reactions">
+																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				<div class="_reactions__value _success">3</div>
+																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																		</div>
 																	</aside>
 																	<div class="comment__body">
 																		<div class="comment__header header-comment">
@@ -504,7 +611,9 @@
 																		</div>
 																		<ul class="comment__footer">
 																			<li><a href="" class="comment__show-answers _active _icon-85">12 ответов</a></li>
-																			<li><a href="" class="comment__link _secondary">Перейти к комментарию</a></li>
+																			<li>
+																				<a href="" class="comment__reply">Перейти к комментарию</a>
+																			</li>
 																		</ul>
 																	</div>
 																</div>
@@ -525,6 +634,25 @@
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																				<div class="_reactions__value _success">3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
 																			</div>
 																		</aside>
 																		<div class="comment__body">
@@ -560,6 +688,25 @@
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																				<div class="_reactions__value _success">3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
 																			</div>
 																		</aside>
 																		<div class="comment__body">
@@ -604,6 +751,25 @@
 																				<div class="_reactions__value _fail">-3</div>
 																				<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
 																			</div>
+																			<div class="comment__mobil-block mobil-block-comment">
+																				<div class="mobil-block-comment__top">
+																					<div class="mobil-block-comment__name _subtitle_small">Seth Farmer</div>
+																					<div class="mobil-block-comment__actions _info-line _info-line_big">
+																						<a href="" class="_info-line__item _icon-60 _ic_only"></a>
+																						<a href="#comment-link" class="_info-line__item _icon-90 _ic_only _popup-link"></a>
+																						<a href="#comment-share" class="_info-line__item _icon-58 _ic_only _popup-link"></a>
+																					</div>
+																				</div>
+																				<div class="mobil-block-comment__main">
+																					<div class="mobil-block-comment__answer _subtitle_small _secondary _icon-51">Seth Farmer</div>
+																					<div class="mobil-block-comment__date _caption _secondary">2015.08.22 11:01</div>
+																				</div>
+																				<div class="mobil-block-comment__reactions _reactions">
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																					<div class="_reactions__value _success">3</div>
+																					<button type="button" class="_reactions__link button button_icon _icon-68"><span tabindex="-1"></span></button>
+																				</div>
+																			</div>
 																		</aside>
 																		<div class="comment__body">
 																			<div class="comment__header header-comment">
@@ -638,7 +804,7 @@
 							</div>
 						</div>
 						<aside data-da=".user,1439.98,2" class="page__sidebar page__sidebar_user sidebar">
-							<a  href="" class="sidebar__banner banner">
+							<a href="" class="sidebar__banner banner">
 								<img src="img/banners/02.jpg" alt="">
 							</a>
 							<div data-da=".news-user,1439.98," class="tags-user sidebar__tags">

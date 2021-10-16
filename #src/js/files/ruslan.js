@@ -266,3 +266,18 @@ if (notificationSettings) {
     }
   });
 }
+//========================================================================================================================================================
+const alphabetFilterHeader = document.querySelector('.alphabet-filter__header');
+if(alphabetFilterHeader){
+	alphabetFilterHeader.addEventListener('click', function (e) {
+		if (
+      e.target.classList.contains('alphabet-filter__button') ||
+      e.target.classList.contains('alphabet-filter__label') ||
+      e.target.closest('.alphabet-filter__button') ||
+      e.target.closest('.alphabet-filter__label')
+    ) {
+		 e.preventDefault();
+		e.target.closest('.alphabet-filter').querySelector('.alphabet-filter__items').classList.toggle('_active');
+    }
+	})
+}
