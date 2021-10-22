@@ -7,7 +7,7 @@
 <body>
 	<div class="wrapper">
 		@@include('_header.html',{})
-		<main class="page">
+		<main class="page page_tournaments">
 			<div class="page__container _container">
 				<div class="page__body page__body_7256">
 					<div class="page__header">
@@ -15,7 +15,7 @@
 					</div>
 					<div class="page__row">
 						<div class="page__content page__content_32 tournaments ">
-							<div class="tournaments__sort">
+							<div data-da=".tournaments__filter,767.98,2" class="tournaments__sort">
 								<form class="sort-tournaments" action="#">
 									<div class="sort-tournaments__items">
 										<div class="sort-tournaments__item">
@@ -38,13 +38,11 @@
 																<div class="calendar__header">
 																	<div class="calendar__select select-calendar">
 																		<div class="select-calendar__item">
-																			<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span
-																					class="_icon-85">Декабрь
+																			<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span class="_icon-85">Декабрь
 																					2021</span></button>
 																		</div>
 																		<div hidden class="select-calendar__item">
-																			<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span
-																					class="_icon-85">2021</span></button>
+																			<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span class="_icon-85">2021</span></button>
 																		</div>
 																	</div>
 																	<div class="calendar__arrows">
@@ -133,13 +131,11 @@
 																<div class="calendar__header">
 																	<div class="calendar__select select-calendar">
 																		<div class="select-calendar__item">
-																			<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span
-																					class="_icon-85">Декабрь
+																			<button type="button" class="select-calendar__value select-calendar__value_month button button_text-white button_icon-right _ripple"><span class="_icon-85">Декабрь
 																					2021</span></button>
 																		</div>
 																		<div hidden class="select-calendar__item">
-																			<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span
-																					class="_icon-85">2021</span></button>
+																			<button type="button" class="select-calendar__value select-calendar__value_year button button_text-white button_icon-right _ripple"><span class="_icon-85">2021</span></button>
 																		</div>
 																	</div>
 																	<div class="calendar__arrows">
@@ -254,13 +250,17 @@
 									</div>
 								</form>
 							</div>
-							<div class="tournaments__filter filter-tournaments">
-								<div class="filter-tournaments__menu _content-filter">
+							<div class="tournaments__filter filter-tournaments _mobile-filter-block">
+								<div data-da=".page__content,767.98,1" class="filter-tournaments__menu _content-filter">
 									<a href="" class="_content-filter__item _active">Все</a>
 									<a href="" class="_content-filter__item">Текущие</a>
 									<a href="" class="_content-filter__item">Прошедшие</a>
 									<a href="" class="_content-filter__item">Будущие</a>
 								</div>
+								<div class="filter-tournaments__mobile-button mobile-filter-forecasts-analytics ">
+									<button type="button" class="mobile-filter-forecasts-analytics__btn button button_outlined _ripple _mobile-filter-button"><span>Фильтр дисциплин</span><span>85</span></button>
+								</div>
+								<div hidden="" class="filter-tournaments__mobile-filter _mobile-filter-items"></div>
 							</div>
 							<div class="tournaments__tablet tablet-tournaments">
 								<!-- table -->
@@ -294,7 +294,7 @@
 											<img src="img/icons/games/01.svg" alt>
 										</div>
 										<div class="tablet-tournaments__loading">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_name">
@@ -329,7 +329,7 @@
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_loading">
 										<div class="loading-tablet-tournaments">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 
@@ -655,7 +655,7 @@
 											<img src="img/icons/games/01.svg" alt>
 										</div>
 										<div class="tablet-tournaments__loading">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_name">
@@ -690,7 +690,7 @@
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_loading">
 										<div class="loading-tablet-tournaments">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 									<!-- row -->
@@ -780,7 +780,7 @@
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_loading">
 										<div class="loading-tablet-tournaments">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 									<!-- row -->
@@ -1005,744 +1005,1080 @@
 									</div>
 									<div class="tablet-tournaments__item tablet-tournaments__item_loading">
 										<div class="loading-tablet-tournaments">
-											<span style="width: 50%"></span>
+											<span style="width: 27%"></span>
 										</div>
 									</div>
 									<!-- row -->
 								</div>
 								<!-- table -->
-
+								<!-- mobile-table -->
+								<div class="mobile-tablet-tournaments">
+									<div class="mobile-tablet-tournaments__wrapper">
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/02.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 27%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/03.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 27%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/01.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 70%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/04.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 30%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/02.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 27%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/03.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 27%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/01.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 70%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/03.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 30%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+										<!-- mobile-item -->
+										<div class="mobile-tablet-tournaments__item item-mobile-tournaments">
+											<div class="item-mobile-tournaments__body">
+												<div class="item-mobile-tournaments__header header-item-mobile-tournaments">
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__discipline">
+															<img src="img/icons/games/04.svg" alt="">
+														</div>
+														<a href="#" class="header-item-mobile-tournaments__name">
+															European Development Championship
+														</a>
+													</div>
+													<div class="header-item-mobile-tournaments__item">
+														<div class="header-item-mobile-tournaments__ratings ">
+															<div class="header-item-mobile-tournaments__rating _rating _rating_g">5</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__main main-item-mobile-tournaments">
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Даты проведения</div>
+														<div class="main-item-mobile-tournaments__value main-item-mobile-tournaments__value_data"><span>07.12.21</span> — <span>20.12.21</span></div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Призовые</div>
+														<div class="main-item-mobile-tournaments__value ">$ 500 000</div>
+													</div>
+													<div class="main-item-mobile-tournaments__item">
+														<div class="main-item-mobile-tournaments__label _secondary">Команд</div>
+														<div class="main-item-mobile-tournaments__value ">12</div>
+													</div>
+												</div>
+												<div class="item-mobile-tournaments__line"><span style="width: 27%"></span></div>
+											</div>
+										</div>
+										<!-- mobile-item -->
+									</div>
+								</div>
+								<!-- mobile-table -->
 								<div class="tablet-tournaments__footer">
 									<a href="" class="tablet-tournaments__button button button_outlined _ripple"><span>Загрузить еще</span></a>
 								</div>
 							</div>
+
 						</div>
 						<aside class="page__sidebar sidebar">
 							<div class="sidebar__item">
-								<div class="category-analytic">
-									<div class="category-analytic__filter _content-filter">
-										<a href="" class="_content-filter__item ">Все</a>
-										<a href="" class="_content-filter__item _active">Киберспорт<sup>85</sup></a>
-										<a href="" class="_content-filter__item">Спорт</a>
+								<div data-da=".filter-tournaments__mobile-filter,1439.98,1" class="tournaments-fillter">
+									<div class="category-analytic">
+										<div class="category-analytic__filter _content-filter">
+											<a href="" class="_content-filter__item ">Все</a>
+											<a href="" class="_content-filter__item _active">Киберспорт<sup>85</sup></a>
+											<a href="" class="_content-filter__item">Спорт</a>
+										</div>
+									</div>
+									<div class="category-analytic__items" data-spollers>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/01.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_1" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Counter-Strike</div>
+												<div class="check-category-analytic__value _body_small">59</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_1_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_1_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_1_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_1_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_1_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_1_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_1_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_1_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/02.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_2" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Dota 2</div>
+												<div class="check-category-analytic__value _body_small">26</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_2_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_2_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_2_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_2_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_2_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_2_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_2_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_2_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/03.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_3" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Hearthstone</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_3_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_3_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_3_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_3_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/04.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_4" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">LoL</div>
+												<div class="check-category-analytic__value _body_small">26</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_4_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_3_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_4_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_4_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_4_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_4_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_4_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_4_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/05.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_5" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Overwatch</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_5_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_5_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_5_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_5_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/06.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_6" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">PUBG</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_6_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_6_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_6_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_6_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_6_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_6_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_6_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_6_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/01.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_7" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Counter-Strike</div>
+												<div class="check-category-analytic__value _body_small">59</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_7_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_7_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_7_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_7_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_7_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_7_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_7_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_7_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/02.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_8" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Dota 2</div>
+												<div class="check-category-analytic__value _body_small">26</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_8_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_8_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_8_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_8_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_8_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_8_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_8_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_8_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/03.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_9" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Hearthstone</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_9_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_9_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_9_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_9_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_9_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_9_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_9_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_9_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/04.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_10" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">LoL</div>
+												<div class="check-category-analytic__value _body_small">26</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_10_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_10_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_10_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_10_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_10_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_10_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_10_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_10_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/05.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_11" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">Overwatch</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_11_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_11_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_11_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_11_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_11_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_11_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_11_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_11_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="category-analytic__item">
+											<div data-spoller class="category-analytic__check check-category-analytic">
+												<div class="check-category-analytic__icon"><img src="img/icons/games/06.svg" alt=""></div>
+												<div class="check-category-analytic__item checkbox">
+													<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+													<label for="c_12" class="checkbox__body">
+														<div class="checkbox__content">
+															<span class="checkbox__icon _icon-3"></span>
+														</div>
+													</label>
+												</div>
+												<div class="check-category-analytic__text _body_small">PUBG</div>
+												<div class="check-category-analytic__value _body_small">36</div>
+											</div>
+											<div class="category-analytic__body">
+												<div class="category-analytic__subitems">
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_12_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_12_1" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
+																<span class="checkbox__value _body_xs">59</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_12_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_12_2" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
+																<span class="checkbox__value _body_xs">9</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_12_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_12_3" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
+																<span class="checkbox__value _body_xs">8</span>
+															</div>
+														</label>
+													</div>
+													<div class="category-analytic__subitem checkbox">
+														<input id="c_12_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_12_4" class="checkbox__body">
+															<div class="checkbox__content">
+																<span class="checkbox__icon _icon-3"></span>
+																<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
+																<span class="checkbox__value _body_xs">13</span>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="category-analytic__items" data-spollers>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/01.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_1" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Counter-Strike</div>
-											<div class="check-category-analytic__value _body_small">59</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_1_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_1_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_1_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_1_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_1_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_1_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_1_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_1_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/02.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_2" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Dota 2</div>
-											<div class="check-category-analytic__value _body_small">26</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_2_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_2_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_2_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_2_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_2_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_2_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_2_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_2_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/03.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_3" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Hearthstone</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_3_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_3_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_3_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_3_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_3_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_3_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_3_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_3_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/04.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_4" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">LoL</div>
-											<div class="check-category-analytic__value _body_small">26</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_4_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_3_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_4_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_4_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_4_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_4_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_4_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_4_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/05.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_5" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Overwatch</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_5_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_5_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_5_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_5_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_5_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_5_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_5_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_5_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/06.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_6" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">PUBG</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_6_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_6_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_6_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_6_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_6_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_6_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_6_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_6_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/01.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_7" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Counter-Strike</div>
-											<div class="check-category-analytic__value _body_small">59</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_7_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_7_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_7_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_7_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_7_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_7_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_7_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_7_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/02.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_8" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Dota 2</div>
-											<div class="check-category-analytic__value _body_small">26</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_8_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_8_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_8_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_8_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_8_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_8_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_8_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_8_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/03.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_9" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Hearthstone</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_9_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_9_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_9_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_9_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_9_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_9_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_9_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_9_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/04.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_10" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">LoL</div>
-											<div class="check-category-analytic__value _body_small">26</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_10_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_10_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_10_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_10_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_10_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_10_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_10_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_10_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/05.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_11" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">Overwatch</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_11_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_11_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_11_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_11_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_11_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_11_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_11_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_11_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="category-analytic__item">
-										<div data-spoller class="category-analytic__check check-category-analytic">
-											<div class="check-category-analytic__icon"><img src="img/icons/games/06.svg" alt=""></div>
-											<div class="check-category-analytic__item checkbox">
-												<input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-												<label for="c_12" class="checkbox__body">
-													<div class="checkbox__content">
-														<span class="checkbox__icon _icon-3"></span>
-													</div>
-												</label>
-											</div>
-											<div class="check-category-analytic__text _body_small">PUBG</div>
-											<div class="check-category-analytic__value _body_small">36</div>
-										</div>
-										<div class="category-analytic__body">
-											<div class="category-analytic__subitems">
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_12_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_12_1" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">ESL One Los Angeles 2020 - Online: Europe</span>
-															<span class="checkbox__value _body_xs">59</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_12_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_12_2" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Season 3: EU/CIS</span>
-															<span class="checkbox__value _body_xs">9</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_12_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_12_3" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">Epic Prime League Season 1</span>
-															<span class="checkbox__value _body_xs">8</span>
-														</div>
-													</label>
-												</div>
-												<div class="category-analytic__subitem checkbox">
-													<input id="c_12_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-													<label for="c_12_4" class="checkbox__body">
-														<div class="checkbox__content">
-															<span class="checkbox__icon _icon-3"></span>
-															<span class="checkbox__text _body_xs">OGA Dota PIT 2020 Online: Europe/CIS</span>
-															<span class="checkbox__value _body_xs">13</span>
-														</div>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+
 							</div>
 						</aside>
 					</div>
-					<div class="page__row">
+					<div class="page__row page__row _social-banners">
 						<div class="page__content">
-							<a href="" class="banner-social__banner banner">
+							<a href="" class="banner-social__banner banner ">
 								<img src="img/banners/01.jpg" alt="">
+							</a>
+							<a href="" class="banner-social__mobile-banner  banner banner_304">
+								<img src="img/banners/02.jpg" alt="">
 							</a>
 						</div>
 						<aside class="page__sidebar sidebar">
@@ -1908,7 +2244,7 @@
 									<p>Букмекерская компания GGBet – легальный в России букмекер, изначально специализирующийся на киберспорте, но в 2020 году стал активно развивать ставки на классический
 										спорт (особенно — футбол). Компания начала работу в 2019 году. GGBet является членом «СРО Букмекеров» и принимает ставки через ЦУПИС Киви-банка</p>
 								</div>
-								<div class="text-page__side">
+								<div data-da=".text-page,767.98,0" class="text-page__side">
 									<a href="" class="text-page__banner banner">
 										<img src="img/banners/02.jpg" alt="">
 									</a>

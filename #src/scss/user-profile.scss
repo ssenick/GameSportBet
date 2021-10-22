@@ -6,7 +6,24 @@
 		padding: 24px 0px 0px 0px;
 	}
 }
-
+//? widgets
+.widgets{
+	display: grid;
+	gap: 32px;
+	justify-content: center;
+	padding: 0px 8px;
+	@media (max-width:$md2+px){
+		 gap: 24px; 
+	}
+	@media (max-width:$md3+px){
+		 gap: 8px; 
+	}
+	&__item{
+		@media (max-width:$md3+px){
+			 padding: 16px !important; 
+		}
+	}
+}
 //? navigation
 .navigation {
 	position: relative;

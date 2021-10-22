@@ -7,7 +7,7 @@
 <body>
 	<div class="wrapper">
 		@@include('_header.html',{})
-		<main class="page">
+		<main class="page page_turnament">
 			<div class="page__container _container">
 				<div class="page__body page__body_7256">
 					<div class="page__header">
@@ -25,7 +25,7 @@
 										</div>
 										<div class="status-main-tournament__content">
 											<div class="status-main-tournament__label _caption _secondary">Серия</div>
-											<div class="status-main-tournament__value _body_strong">Huya Super League</div>
+											<div class="status-main-tournament__value status-main-tournament__value_title _body_strong">Huya Super League</div>
 										</div>
 
 									</div>
@@ -48,17 +48,17 @@
 									</div>
 									<div class="status-main-tournament__item _icon-116">
 										<div class="status-main-tournament__label _caption _secondary">Плей-офф, Сетка</div>
-										<div class="status-main-tournament__value _body_strong">23.12.20 —27.12.20</div>
+										<div class="status-main-tournament__value _body_strong"><span>23.12.20 —27.12.20</span> <span>23.12 —27.12</span></div>
 									</div>
 									<div class="status-main-tournament__item _icon-79">
-										<div class="status-main-tournament__label _caption _secondary">Сумма призовых</div>
+										<div class="status-main-tournament__label status-main-tournament__label_prize _caption _secondary"><span>Сумма призовых</span><span>Призовых</span></div>
 										<div class="status-main-tournament__value _body_strong">$ 91 500</div>
 									</div>
 									<div class="status-main-tournament__item _icon-47">
 										<div class="status-main-tournament__label _caption _secondary">Локация</div>
 										<div class="status-main-tournament__value _body_strong">Online</div>
 									</div>
-									<div class="status-main-tournament__item">
+									<div class="status-main-tournament__item status-main-tournament__item_live">
 										<div class="status-main-tournament__live">LIVE</div>
 									</div>
 								</div>
@@ -1480,8 +1480,8 @@
 							</div>
 							<div class="broadcasts__slider">
 								<button type="submit" class="broadcasts__arrow broadcasts__arrow_prev _icon-83"></button>
-								<div class="slider-broadcasts _swiper">
-									<div class="slider-broadcasts__slide slide-broadcasts">
+								<div data-mobile="false" class="slider-broadcasts _swiper">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts _active">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1495,7 +1495,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts slide-broadcasts_live">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts slide-broadcasts_live">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1512,7 +1512,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts slide-broadcasts_live">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts slide-broadcasts_live">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1529,7 +1529,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1543,7 +1543,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts slide-broadcasts_live">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts slide-broadcasts_live">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1560,7 +1560,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts">
+									<div class="slider-broadcasts__slide swiper-slide  slide-broadcasts">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1574,7 +1574,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="slider-broadcasts__slide slide-broadcasts">
+									<div class="slider-broadcasts__slide swiper-slide slide-broadcasts">
 										<div class="slide-broadcasts__items">
 											<div class="slide-broadcasts__logo">
 												<img src="img/teams/01.png" alt="">
@@ -1602,13 +1602,13 @@
 										<div class="analitics-broadcast__item">
 											<div class="analitics-broadcast__teams  teams-analitics-broadcast">
 												<div class="teams-analitics-broadcast__team team-analitics-broadcast _table__status _table__status_win  _table__status_opacity ">
-													<div class="team-analitics-broadcast__top">
+													<div class="team-analitics-broadcast__top team-analitics-broadcast__top_left">
 														<a href="#" class="team-analitics-broadcast__name _body_strong">Quincy Crew</a>
 														<div class="team-analitics-broadcast__logo">
 															<img src="img/teams/06.png" alt="">
 														</div>
 													</div>
-													<div class="team-analitics-broadcast__bottom">
+													<div class="team-analitics-broadcast__bottom team-analitics-broadcast__bottom_left">
 														<div class="team-analitics-broadcast__value _body_small-strong">17</div>
 														<div class="team-analitics-broadcast__statistics _statistics">
 															<div class="_statistics__item _statistics__item_green"></div>
@@ -1637,10 +1637,11 @@
 												</div>
 												<div class="teams-analitics-broadcast__team team-analitics-broadcast _table__status-r _table__status-r_fail _table__status-r_opacity">
 													<div class="team-analitics-broadcast__top team-analitics-broadcast__top_rev">
-														<a href="#" class="team-analitics-broadcast__name _body_strong">Royal Never Give Up</a>
 														<div class="team-analitics-broadcast__logo">
 															<img src="img/teams/04.png" alt="">
 														</div>
+														<a href="#" class="team-analitics-broadcast__name _body_strong">Royal Never Give Up</a>
+
 													</div>
 													<div class="team-analitics-broadcast__bottom">
 														<div class="team-analitics-broadcast__value _body_small-strong">2</div>
@@ -1666,7 +1667,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="analitics-broadcast__item">
+										<div class="analitics-broadcast__item ">
 											<div class="analitics-broadcast__maps maps-analitics-broadcast">
 												<div class="maps-analitics-broadcast__label _body_small-strong">Карты</div>
 												<div class="maps-analitics-broadcast__table">
@@ -1699,7 +1700,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="analitics-broadcast__item">
+										<div class="analitics-broadcast__item analitics-broadcast__item_r2">
 											<div class="analitics-broadcast__ratings ratings-analitics-broadcast">
 												<div class="ratings-analitics-broadcast__label _body_small-strong">
 													Рейтинги игроков в этом матче
@@ -1784,7 +1785,7 @@
 										</div>
 										<div class="analitics-broadcast__item">
 											<div class="analitics-broadcast__buttons buttons-analitics-broadcast">
-												<a href="" class="buttons-analitics-broadcast__item button button_outlined _ripple"><span>Страница матча</span></a>
+												<a href="" class="buttons-analitics-broadcast__item button button_outlined _ripple"><span>Страница матча</span><span>Подробнее</span></a>
 												<a href="" class="buttons-analitics-broadcast__item button button_contained _ripple"><span>Сделать прогноз</span></a>
 											</div>
 										</div>
@@ -2458,18 +2459,6 @@
 							<!-- main-play-off -->
 						</section>
 						<!-- nets-play-off -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 						<!--nets start -->
 						<section class="page__section nets">

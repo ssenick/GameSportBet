@@ -184,6 +184,7 @@
 	grid-template-columns: 24px 40px 1fr auto;
 	gap: 8px;
 	@extend %element-bg;
+
 	// .top-analyst__number
 	&__number {
 		&::before {
@@ -980,7 +981,44 @@
 		grid-column: span 2;
 		width: 100%;
 	}
+	// .match-item__bottom-header
+	&__bottom-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	// .match-item__rating
+	&__rating {
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+			&::before {
+				width: 16px;
+				height: 16px;
+				flex: 0 0 16px;
+				font-size: 16px;
+			}
+		}
+	}
+	// .match-item__grid
+	&__grid {
+		font-size: 16px;
+		line-height: 18px;
+		color: $link;
+		margin: 0px 16px;
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+		}
+	}
+	// .match-item__text
+	&__text {
+		font-size: 16px;
+		line-height: 18px;
+		@media (max-width: $md3+px) {
+			font-size: 12px;
+		}
+	}
 }
+
 .main-match-item {
 	display: grid;
 	grid-template: auto auto / 1fr 47.5px 47.5px 1fr;
@@ -1010,11 +1048,22 @@
 			margin: 0;
 		}
 	}
+	&__colon {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+	}
 	// .main-match-item__logo
 	&__logo {
 		flex: 0 0 56px;
 		img {
 			max-width: 100%;
+		}
+		@media (max-width: $md2+px) {
+			flex: 0 0 75px;
+		}
+		@media (max-width: $md3+px) {
+			flex: 0 0 56px;
 		}
 	}
 	&__center {
@@ -1026,6 +1075,19 @@
 	}
 	// .main-match-item__timer
 	&__timer {
+	}
+	&__live {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::before {
+			content: "";
+			flex: 0 0 9px;
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background: linear-gradient(94.6deg, #ff1b2d 2.36%, #df006b 98.71%);
+		}
 	}
 	&__name {
 		margin: 4px 0px 0px 0px;
@@ -1040,6 +1102,57 @@
 		}
 	}
 }
+.match-current-game-score {
+	display: grid;
+	grid-template-columns: auto 5px auto;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	@media (max-width: $md3+px) {
+		gap: 5px;
+	}
+	// .match-current-game-score__column
+	&__column {
+	}
+	// .match-current-game-score__item
+	&__item {
+		@extend ._headline-3;
+		font-size: 50px;
+		@media (max-width: $md3+px) {
+			font-size: 32px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
+		// .match-current-game-score__item_red
+		&_red {
+			color: $fail;
+		}
+		// .match-current-game-score__item_green
+		&_green {
+			color: $success;
+		}
+	}
+	// .match-current-game-score__info
+	&__info {
+		font-size: 16px;
+		@media (max-width: $md3+px) {
+			font-size: 14px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+		}
+	}
+	// .match-current-game-score__span
+	&__span {
+		@extend ._headline-3;
+		font-size: 30px;
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+	}
+}
+
 .forecast-match-item {
 	padding: 8px 16px;
 	display: flex;

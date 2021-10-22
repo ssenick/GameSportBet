@@ -132,6 +132,7 @@
 		}
 	}
 	&_text {
+
 		border-radius: 4px;
 		padding: 0px 8px;
 		&::before {
@@ -147,9 +148,11 @@
 		}
 		&:not(:disabled) {
 			span {
+				
 				@extend %gradient-button;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
+				
 			}
 		}
 		@media (any-hover: hover) {

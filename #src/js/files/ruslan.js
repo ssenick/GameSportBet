@@ -69,7 +69,6 @@ if (_maps.length > 0) {
 function mapsActions(e) {
   const targetElement = e.target;
   const targetBlock = targetElement.closest('._maps');
-  console.log(targetBlock);
   if (!targetBlock.querySelectorAll('._slide').length) {
     if (targetElement.classList.contains('map-tbd__title') || targetElement.closest('.map-tbd__title')) {
       targetElement.closest('.map-tbd__header').classList.toggle('_active');
@@ -176,12 +175,18 @@ window.addEventListener('resize', () => {
   if (differencesSlider) {
     mobileSlider();
   }
+  if (sliderBroadcasts) {
+    mobileSliderBroadcasts();
+  }
   if (topAnalysts && top10Bk) {
     addClassList();
   }
   if (mediaSlider) {
     bildsliderMediaLending();
   }
+  //   if (mapTbdSliderOne) {
+  //     bildMobileSliderMapOne();
+  //   }
 });
 
 function addClassList() {
@@ -210,7 +215,7 @@ function addClassList() {
       }
     }
   }
-  if (window.innerWidth > 767.98) {
+  if (window.innerWidth > 767.98 && topAnalysts.hasAttribute('data-mobile') && top10Bk.hasAttribute('data-mobile')) {
     top10Bk.dataset.mobile = 'false';
     topAnalysts.dataset.mobile = 'false';
     topAnalysts.classList.remove('_tabs-block');
@@ -268,16 +273,17 @@ if (notificationSettings) {
 }
 //========================================================================================================================================================
 const alphabetFilterHeader = document.querySelector('.alphabet-filter__header');
-if(alphabetFilterHeader){
-	alphabetFilterHeader.addEventListener('click', function (e) {
-		if (
+if (alphabetFilterHeader) {
+  alphabetFilterHeader.addEventListener('click', function (e) {
+    if (
       e.target.classList.contains('alphabet-filter__button') ||
       e.target.classList.contains('alphabet-filter__label') ||
       e.target.closest('.alphabet-filter__button') ||
       e.target.closest('.alphabet-filter__label')
     ) {
-		 e.preventDefault();
-		e.target.closest('.alphabet-filter').querySelector('.alphabet-filter__items').classList.toggle('_active');
+      e.preventDefault();
+      e.target.closest('.alphabet-filter').querySelector('.alphabet-filter__items').classList.toggle('_active');
     }
-	})
+  });
 }
+//========================================================================================================================================================

@@ -1,208 +1,257 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Компоненты"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
-				<div class="components">
-					<div class="components__container _container">
-						<div class="components__section">
-							<h1 class="components__title">Typo</h1>
-							<h1>Header 1</h1>
-							<h2>Header 2</h2>
-							<h3>Header 3</h3>
-							<h4>Header 4</h4>
-							<h5>Header 5</h5>
-							<h6>Header 6</h6>
-							<div class="_subtitle">subtitle</div>
-							<div class="_subtitle _subtitle_small">subtitle-s</div>
-							<div class="_overline">overline</div>
-							<div class="_body">body</div>
-							<div class="_body _body_strong">body-strong</div>
-							<div class="_body _body_small">body-small</div>
-							<div class="_body _body_small-strong">body-small-strong</div>
-							<div class="_body _body_xs">body-xs</div>
-							<div class="_body _body_xs-strong">body-xs-strong</div>
-							<div class="_caption">caption</div>
-							<div class="_caption_small">caption-small</div>
-							<p><button type="submit" class="button">button</button></p>
-							<p><button type="submit" class="button button_small">button-s</button></p>
+@@include('_head.html',{
+"title":"Компоненты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<div class="components">
+				<div class="components__container _container">
+					<div class="components__section">
+						<h1 class="components__title">Typo</h1>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<h4>Header 4</h4>
+						<h5>Header 5</h5>
+						<h6>Header 6</h6>
+						<div class="_subtitle">subtitle</div>
+						<div class="_subtitle _subtitle_small">subtitle-s</div>
+						<div class="_overline">overline</div>
+						<div class="_body">body</div>
+						<div class="_body _body_strong">body-strong</div>
+						<div class="_body _body_small">body-small</div>
+						<div class="_body _body_small-strong">body-small-strong</div>
+						<div class="_body _body_xs">body-xs</div>
+						<div class="_body _body_xs-strong">body-xs-strong</div>
+						<div class="_caption">caption</div>
+						<div class="_caption_small">caption-small</div>
+						<p><button type="submit" class="button">button</button></p>
+						<p><button type="submit" class="button button_small">button-s</button></p>
+					</div>
+					<div class="components__section">
+						<h1 class="components__title">Form</h1>
+						<div class="components__item"><button type="submit" class="button button_contained _ripple"><span>button</span></button></div>
+						<div class="components__item"><button type="submit" class="button button_outlined _ripple"><span>button</span></button></div>
+						<div class="components__item"><button type="submit" class="button button_outlined-gray _ripple"><span>button</span></button></div>
+						<div class="components__item"><button type="submit" class="button button_chip button_small _ripple"><span>button</span></button></div>
+						<div class="components__item"><button type="submit" class="button button_text _ripple"><span>button</span></button></div>
+						<div class="components__item"><button type="submit" class="button button_text-white _ripple"><span>button</span></button></div>
+						<div class="components__item">
+							<div class="checkbox">
+								<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__body">
+									<div tabindex="-1" class="checkbox__content">
+										<span tabindex="-1" class="checkbox__icon _icon-3"></span>
+										<span tabindex="-1" class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
+									</div>
+								</label>
+							</div>
 						</div>
-						<div class="components__section">
-							<h1 class="components__title">Form</h1>
-							<div class="components__item"><button type="submit" class="button button_contained _ripple"><span>button</span></button></div>
-							<div class="components__item"><button type="submit" class="button button_outlined _ripple"><span>button</span></button></div>
-							<div class="components__item"><button type="submit" class="button button_outlined-gray _ripple"><span>button</span></button></div>
-							<div class="components__item"><button type="submit" class="button button_chip button_small _ripple"><span>button</span></button></div>
-							<div class="components__item"><button type="submit" class="button button_text _ripple"><span>button</span></button></div>
-							<div class="components__item"><button type="submit" class="button button_text-white _ripple"><span>button</span></button></div>
-							<div class="components__item">
-								<div class="checkbox">
-									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-									<label for="c_1" class="checkbox__body">
-										<div tabindex="-1" class="checkbox__content">
-											<span tabindex="-1" class="checkbox__icon _icon-3"></span>
-											<span tabindex="-1" class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</div>
+						<div class="components__item">
+							<div class="checkbox">
+								<input id="c_2" disabled data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_2" class="checkbox__body">
+									<div class="checkbox__content">
+										<span class="checkbox__icon _icon-3"></span>
+										<span class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="checkbox">
+								<input id="c_3" disabled checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_3" class="checkbox__body">
+									<div class="checkbox__content">
+										<span class="checkbox__icon _icon-3"></span>
+										<span class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
+									</div>
+								</label>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="options">
+								<div class="options__item">
+									<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+									<label for="o_1" class="options__body">
+										<span class="options__icon"></span>
+										<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
+									</label>
+								</div>
+								<div class="options__item">
+									<input id="o_2" class="options__input" type="radio" value="2" name="option">
+									<label for="o_2" class="options__body">
+										<span class="options__icon"></span>
+										<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
+									</label>
+								</div>
+								<div class="options__item">
+									<input id="o_3" disabled class="options__input" type="radio" value="3" name="option">
+									<label for="o_3" class="options__body">
+										<span class="options__icon"></span>
+										<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
 									</label>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="checkbox">
-									<input id="c_2" disabled data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-									<label for="c_2" class="checkbox__body">
-										<div class="checkbox__content">
-											<span class="checkbox__icon _icon-3"></span>
-											<span class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</div>
-									</label>
+						</div>
+						<div class="components__item">
+							<div class="switcher">
+								<input id="s_1" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
+								<label for="s_1" class="switcher__body">
+									<span class="switcher__icon"><span></span></span>
+								</label>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="switcher">
+								<input disabled checked id="s_2" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
+								<label for="s_2" class="switcher__body">
+									<span class="switcher__icon"><span></span></span>
+								</label>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="input">
+								<label for="i_1" class="input__label">Заголовок</label>
+								<div class="input__line">
+									<input id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Поиск" class="input__value _req">
+									<button type="button" class="input__button _search-button _search-open button button_icon-dark _icon-8 _viewpass"><span tabindex="-1"></span></button>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="checkbox">
-									<input id="c_3" disabled checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-									<label for="c_3" class="checkbox__body">
-										<div class="checkbox__content">
-											<span class="checkbox__icon _icon-3"></span>
-											<span class="checkbox__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</div>
-									</label>
+						</div>
+						<div class="components__item">
+							<div class="input">
+								<label for="i_2" class="input__label">Заголовок</label>
+								<div class="input__line">
+									<input id="i_2" disabled autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Поиск" class="input__value _req">
+									<button type="button" class="input__button _search-button _search-open button button_icon-dark _icon-8 _viewpass"><span tabindex="-1"></span></button>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="options">
-									<div class="options__item">
-										<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
-										<label for="o_1" class="options__body">
-											<span class="options__icon"></span>
-											<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</label>
-									</div>
-									<div class="options__item">
-										<input id="o_2" class="options__input" type="radio" value="2" name="option">
-										<label for="o_2" class="options__body">
-											<span class="options__icon"></span>
-											<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</label>
-									</div>
-									<div class="options__item">
-										<input id="o_3" disabled class="options__input" type="radio" value="3" name="option">
-										<label for="o_3" class="options__body">
-											<span class="options__icon"></span>
-											<span class="options__text">Использовать ник вместо ФИО в публичном профиле</span>
-										</label>
-									</div>
+						</div>
+						<div class="components__item">
+							<div class="input">
+								<label class="input__label">Заголовок</label>
+								<select name="form[]" class="form">
+									<option data-discount="скидка 0%" value="1" selected="selected">5 дней</option>
+									<option data-discount="скидка 3%" value="2">10 дней</option>
+									<option data-discount="скидка 12%" value="3">25 дней</option>
+									<option data-discount="скидка 34%" value="4">50 дней</option>
+									<option data-discount="скидка 61%" value="5">100 дней</option>
+									<option data-discount="скидка 72%" value="6">300 дней</option>
+									<option data-discount="скидка 116%" value="7">1000 дней</option>
+								</select>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="input">
+								<label class="input__label">Заголовок</label>
+								<select disabled name="form[]" class="form">
+									<option data-discount="скидка 0%" value="1" selected="selected">5 дней</option>
+									<option data-discount="скидка 3%" value="2">10 дней</option>
+									<option data-discount="скидка 12%" value="3">25 дней</option>
+									<option data-discount="скидка 34%" value="4">50 дней</option>
+									<option data-discount="скидка 61%" value="5">100 дней</option>
+									<option data-discount="скидка 72%" value="6">300 дней</option>
+									<option data-discount="скидка 116%" value="7">1000 дней</option>
+								</select>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="__controls _controls">
+								<button type="button" class="_arrow _arrow_prev"><span tabindex="-1"></span></button>
+								<div class="_dotts"></div>
+								<button type="button" class="_arrow _arrow_next"><span tabindex="-1"></span></button>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="rating rating_10">
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+								<div class="rating__value _secondary">4.5</div>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="rating rating_16">
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+								<div class="rating__value _secondary">4.5</div>
+							</div>
+						</div>
+						<div class="components__item">
+							<div class="rating rating_24">
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
+								<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
+								<div class="rating__value">4.5</div>
+							</div>
+						</div>
+					</div>
+					<div class="notifications">
+						<div class="notifications__item item-notification item-notification_regular">
+							<div class="item-notification__body">
+								<button type="button" class="item-notification__close button button_icon _icon-50"><span tabindex="-1"></span></button>
+								<div class="item-notification__wrapper">
+									<div class="item-notification__title"><span>Уведомление</span></div>
+									<div class="item-notification__text">Подключен тариф PRO аналитика 25 дней</div>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="switcher">
-									<input id="s_1" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
-									<label for="s_1" class="switcher__body">
-										<span class="switcher__icon"><span></span></span>
-									</label>
+						</div>
+						<div class="notifications__item item-notification item-notification_success">
+							<div class="item-notification__body">
+								<button type="button" class="item-notification__close button button_icon _icon-50"><span tabindex="-1"></span></button>
+								<div class="item-notification__wrapper">
+									<div class="item-notification__title"><span>Уведомление</span></div>
+									<div class="item-notification__text">Подключен тариф PRO аналитика 25 дней</div>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="switcher">
-									<input disabled checked id="s_2" data-error="Ошибка" class="switcher__input" type="checkbox" value="1" name="form[]">
-									<label for="s_2" class="switcher__body">
-										<span class="switcher__icon"><span></span></span>
-									</label>
+						</div>
+						<div class="notifications__item item-notification item-notification_error">
+							<div class="item-notification__body">
+								<button type="button" class="item-notification__close button button_icon _icon-50"><span tabindex="-1"></span></button>
+								<div class="item-notification__wrapper">
+									<div class="item-notification__title"><span>Уведомление</span></div>
+									<div class="item-notification__text">Подключен тариф PRO аналитика 25 дней</div>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="input">
-									<label for="i_1" class="input__label">Заголовок</label>
-									<div class="input__line">
-										<input id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Поиск" class="input__value _req">
-										<button type="button" class="input__button _search-button _search-open button button_icon-dark _icon-8 _viewpass"><span tabindex="-1"></span></button>
-									</div>
+						</div>
+						<div class="notifications__item item-notification item-notification_link">
+							<div class="item-notification__body">
+								<button type="button" class="item-notification__close button button_icon _icon-50"><span tabindex="-1"></span></button>
+								<div class="item-notification__wrapper">
+									<div class="item-notification__title"><span>Уведомление</span></div>
+									<div class="item-notification__text">Подключен тариф PRO аналитика 25 дней</div>
 								</div>
 							</div>
-							<div class="components__item">
-								<div class="input">
-									<label for="i_2" class="input__label">Заголовок</label>
-									<div class="input__line">
-										<input id="i_2" disabled autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Поиск" class="input__value _req">
-										<button type="button" class="input__button _search-button _search-open button button_icon-dark _icon-8 _viewpass"><span tabindex="-1"></span></button>
-									</div>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="input">
-									<label class="input__label">Заголовок</label>
-									<select name="form[]" class="form" >
-										<option data-discount="скидка 0%" value="1" selected="selected">5 дней</option>
-										<option data-discount="скидка 3%" value="2">10 дней</option>
-										<option data-discount="скидка 12%" value="3">25 дней</option>
-										<option data-discount="скидка 34%" value="4">50 дней</option>
-										<option data-discount="скидка 61%" value="5">100 дней</option>
-										<option data-discount="скидка 72%" value="6">300 дней</option>
-										<option data-discount="скидка 116%" value="7">1000 дней</option>
-									</select>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="input">
-									<label class="input__label">Заголовок</label>
-									<select disabled name="form[]" class="form">
-										<option data-discount="скидка 0%" value="1" selected="selected">5 дней</option>
-										<option data-discount="скидка 3%" value="2">10 дней</option>
-										<option data-discount="скидка 12%" value="3">25 дней</option>
-										<option data-discount="скидка 34%" value="4">50 дней</option>
-										<option data-discount="скидка 61%" value="5">100 дней</option>
-										<option data-discount="скидка 72%" value="6">300 дней</option>
-										<option data-discount="скидка 116%" value="7">1000 дней</option>
-									</select>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="__controls _controls">
-									<button type="button" class="_arrow _arrow_prev"><span tabindex="-1"></span></button>
-									<div class="_dotts"></div>
-									<button type="button" class="_arrow _arrow_next"><span tabindex="-1"></span></button>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="rating rating_10">
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-									<div class="rating__value _secondary">4.5</div>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="rating rating_16">
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-									<div class="rating__value _secondary">4.5</div>
-								</div>
-							</div>
-							<div class="components__item">
-								<div class="rating rating_24">
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_active.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating_half.svg" alt=""></div>
-									<div class="rating__item"><img src="img/icons/rating.svg" alt=""></div>
-									<div class="rating__value">4.5</div>
+						</div>
+						<div class="notifications__item item-notification item-notification_info">
+							<div class="item-notification__body">
+								<button type="button" class="item-notification__close button button_icon _icon-50"><span tabindex="-1"></span></button>
+								<div class="item-notification__wrapper">
+									<div class="item-notification__title"><span>Уведомление</span></div>
+									<div class="item-notification__text">Подключен тариф PRO аналитика 25 дней</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>
