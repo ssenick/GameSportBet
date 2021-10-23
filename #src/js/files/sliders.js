@@ -1014,7 +1014,7 @@ if (sliderBroadcasts) {
     if (window.innerWidth <= 959.98) {
       sliderBroadcasts.dataset.mobile = 'false';
       if (sliderBroadcasts.classList.contains('swiper-container-initialized')) {
-       sliderBroadcastsBlock.destroy();
+        sliderBroadcastsBlock.destroy();
       }
     }
   }
@@ -1142,27 +1142,34 @@ if (document.querySelector('.slider-current-lineup')) {
       clickable: true,
       type: 'bullets',
     },
-    /*
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				autoHeight: true,
-			},
-			768: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			992: {
-				slidesPerView: 3,
-				spaceBetween: 20,
-			},
-			1268: {
-				slidesPerView: 4,
-				spaceBetween: 30,
-			},
-		},
-		*/
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1.37,
+        spaceBetween: 32,
+        autoHeight: true,
+      },
+      460: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24,
+      },
+      960: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 24,
+      },
+      1439.98: {
+        slidesPerView: 6,
+        spaceBetween: 32,
+      },
+    },
+
     on: {
       lazyImageReady: function () {
         ibg();
@@ -1171,54 +1178,74 @@ if (document.querySelector('.slider-current-lineup')) {
   });
 }
 // ===================================================
-if (document.querySelector('.slider-trophies')) {
-  new Swiper('.slider-trophies', {
-    observer: true,
-    observeParents: true,
-    slidesPerView: 11,
-    spaceBetween: 32,
-    speed: 800,
-    //loop: true,
-    //autoHeight: true,
-    watchOverflow: true,
-    slideToClickedSlide: true,
-    // Arrows
-    navigation: {
-      nextEl: '.trophies__arrow_next',
-      prevEl: '.trophies__arrow_prev',
-    },
-    //pagination: {
-    //  el: ".current-lineup__dotts",
-    // clickable: true,
-    //  type: "bullets",
-    //},
-    /*
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 0,
-				autoHeight: true,
-			},
-			768: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			992: {
-				slidesPerView: 3,
-				spaceBetween: 20,
-			},
-			1268: {
-				slidesPerView: 4,
-				spaceBetween: 30,
-			},
-		},
-		*/
-    on: {
-      lazyImageReady: function () {
-        ibg();
-      },
-    },
-  });
+
+const trophiesSlider = document.querySelector('.slider-trophies');
+if (trophiesSlider) {
+  let sliderTrophies;
+  function mobileSliderTrophies() {
+    if (window.innerWidth > 767.98 && trophiesSlider.dataset.mobile == 'false') {
+      trophiesSlider.dataset.mobile = 'true';
+      sliderTrophies = new Swiper('.slider-trophies', {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 11,
+        spaceBetween: 32,
+        speed: 800,
+        //loop: true,
+        //autoHeight: true,
+        watchOverflow: true,
+        slideToClickedSlide: true,
+        // Arrows
+        navigation: {
+          nextEl: '.trophies__arrow_next',
+          prevEl: '.trophies__arrow_prev',
+        },
+        //pagination: {
+        //  el: ".current-lineup__dotts",
+        // clickable: true,
+        //  type: "bullets",
+        //},
+
+        breakpoints: {
+          320: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            autoHeight: true,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          960: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 8,
+            spaceBetween: 20,
+          },
+          1439: {
+            slidesPerView: 11,
+            spaceBetween: 32,
+          },
+        },
+
+        on: {
+          lazyImageReady: function () {
+            ibg();
+          },
+        },
+      });
+    }
+    if (window.innerWidth <= 767.98) {
+      trophiesSlider.dataset.mobile = 'false';
+
+      if (trophiesSlider.classList.contains('swiper-container-initialized')) {
+        sliderTrophies.destroy();
+      }
+    }
+  }
+  mobileSliderTrophies();
 }
 // ===================================================
 let sliderUnscrupulousAnalyst;

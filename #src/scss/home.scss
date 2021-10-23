@@ -1087,6 +1087,7 @@
 			height: 9px;
 			border-radius: 50%;
 			background: linear-gradient(94.6deg, #ff1b2d 2.36%, #df006b 98.71%);
+			margin: 0px 3px 0px 0px;
 		}
 	}
 	&__name {
@@ -1232,7 +1233,7 @@
 		height: 8px;
 		margin: 2.5px;
 		@media (max-width: 1200px) {
-			margin: 2.5px 1px;
+			margin: 2.5px 1.5px;
 		}
 		border-radius: 50%;
 		// .last-forecast__item_green

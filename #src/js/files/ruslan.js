@@ -184,6 +184,9 @@ window.addEventListener('resize', () => {
   if (mediaSlider) {
     bildsliderMediaLending();
   }
+  if (trophiesSlider) {
+    mobileSliderTrophies();
+  }
   //   if (mapTbdSliderOne) {
   //     bildMobileSliderMapOne();
   //   }

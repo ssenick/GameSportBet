@@ -489,12 +489,14 @@ a._ic,
 	align-items: center;
 	justify-content: center;
 }
+
 ._dotts {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 25px;
 	padding: 0px 16px;
 	align-items: center;
+
 	&.swiper-pagination-lock {
 		opacity: 0.33;
 		pointer-events: none;
@@ -524,6 +526,24 @@ a._ic,
 				background-color: $secondary;
 				border: 0px solid $secondary;
 			}
+		}
+	}
+
+	@media (max-width: $md2+px) {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0;
+		margin: 0px -12.5px;
+		.swiper-pagination-bullet {
+			margin: 5px 12.5px;
+		}
+	}
+	@media (max-width: $md4+px) {
+		margin: 0px -6px;
+		.swiper-pagination-bullet {
+			margin: 5px 6px;
 		}
 	}
 }
@@ -1069,8 +1089,8 @@ a._ic,
 	display: grid;
 	gap: 16px;
 	grid-template-rows: auto 1fr;
-	@media (max-width:$md3+px){
-		 gap: 8px; 
+	@media (max-width: $md3+px) {
+		gap: 8px;
 	}
 	// ._line-graph__legends
 	&__legends {
