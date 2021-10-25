@@ -96,6 +96,9 @@
 		grid-template-columns: auto 1fr repeat(6, auto);
 		row-gap: 4px;
 		align-content: center;
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 	}
 	// .table-ratings-commands__title
 	&__title {
@@ -211,6 +214,16 @@
 			background-color: $green-2;
 		}
 	}
+	&__mobile-table {
+		display: none;
+		@media (max-width: $md3+px) {
+			display: grid;
+			gap: 16px;
+		}
+		@media (max-width: $md4+px) {
+			gap: 8px;
+		}
+	}
 	// .table-ratings-commands__footer
 	&__footer {
 		padding: 24px 0px 0px 0px;
@@ -219,6 +232,200 @@
 	}
 	// .table-ratings-commands__button
 	&__button {
+	}
+}
+.mobile-table-ratings-commands {
+	@media (min-width: $md3+px) {
+		display: none;
+	}
+	position: relative;
+	display: grid;
+	gap: 16px;
+	padding: 8px 16px;
+	background: linear-gradient(180deg, rgba(3, 14, 27, 0.6) 0%, #041324 0.01%, #030e1b 100%);
+	border-radius: 4px;
+	overflow: hidden;
+	@media (min-width: $md4+px) {
+		padding: 24px;
+	}
+	// .mobile-table-ratings-commands__body
+	&__body {
+		display: grid;
+		grid-template-columns: minmax(16px, auto) 1fr 24px 24px auto;
+		align-items: center;
+		gap: 8px;
+		@media (max-width: $md4+px) {
+			gap: 5px;
+			grid-template-columns: minmax(16px, auto) 1fr 16px 16px auto;
+		}
+	}
+
+	// .mobile-table-ratings-commands__footer
+	&__footer {
+	}
+	&__loading {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		background-color: #ef3900;
+		height: 1px;
+		width: 100%;
+		span {
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: #00ffa3;
+		}
+	}
+}
+.body-mobile-table-ratings {
+	// .body-mobile-table-ratings__number
+	&__number {
+		font-size: 12px;
+		line-height: math.div(18px, 12px) * 100%;
+		@media (min-width: $md4+px) {
+			font-size: 16px;
+		}
+	}
+	// .body-mobile-table-ratings__team
+	&__team {
+	}
+	// .body-mobile-table-ratings__discipliner
+	&__discipliner {
+		width: 16px;
+		height: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $md4+px) {
+			width: 24px;
+			height: 24px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	// .body-mobile-table-ratings__country
+	&__country {
+		position: relative;
+		width: 16px;
+		height: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (min-width: $md4+px) {
+			width: 24px;
+			height: 24px;
+		}
+		img {
+			max-width: 100%;
+		}
+	}
+	//.body-mobile-table-ratings__rate
+	&__rate {
+		&._rate {
+			font-size: 12px;
+			&::before {
+				font-size: 6px;
+			}
+			@media (min-width: $md4+px) {
+				font-size: 16px;
+
+				&::before {
+					font-size: 8px;
+				}
+			}
+			&_down {
+				&::before {
+					font-size: 6px;
+				}
+				@media (max-width: $md4+px) {
+					&::before {
+						font-size: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+.team-body-mobile-table-ratings {
+	display: flex;
+	align-items: center;
+	// .team-body-mobile-table-ratings__logo
+	&__logo {
+		width: 40px;
+		height: 40px;
+		flex: 0 0 40px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		@media (min-width: $md4+px) {
+			width: 50px;
+			height: 50px;
+			flex: 0 0 50px;
+		}
+	}
+	// .team-body-mobile-table-ratings__name
+	&__name {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: math.div(13px, 12px) * 100%;
+		padding: 0px 0px 0px 5px;
+		@media (min-width: $md4+px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.footer-mobile-table-ratings {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 16px;
+	justify-content: space-between;
+	// .footer-mobile-table-ratings__item
+	&__item {
+	}
+	// .footer-mobile-table-ratings__label
+	&__label {
+		font-size: 10px;
+		margin: 0px 0px 4px 0px;
+		@media (min-width: $md4+px) {
+			font-size: 14px;
+		}
+	}
+	// .footer-mobile-table-ratings__statistics
+	&__statistics {
+	}
+	// .footer-mobile-table-ratings__money
+	&__money {
+		font-size: 12px;
+		line-height: math.div(18px, 12px) * 100%;
+		@media (min-width: $md4+px) {
+			font-size: 16px;
+		}
+	}
+	// .footer-mobile-table-ratings__winrate
+	&__winrate {
+		color: $secondary;
+		font-size: 12px;
+		line-height: math.div(18px, 12px) * 100%;
+		&::before {
+			width: 16px;
+			height: 16px;
+			margin: 0px 4px 0px 0px;
+		}
+		@media (min-width: $md4+px) {
+			font-size: 16px;
+			&::before {
+				font-size: 18px;
+				width: 18px;
+				height: 18px;
+				margin: 0px 6px 0px 0px;
+			}
+		}
 	}
 }
 
@@ -290,7 +497,7 @@
 				}
 			}
 		}
-		.items-forecasts__list{
+		.items-forecasts__list {
 			gap: 16px;
 		}
 		.news-page {
@@ -464,6 +671,7 @@
 }
 .trophies {
 	min-width: 0;
+
 	// .trophies__title
 	&__title {
 		&:not(:last-child) {
@@ -508,6 +716,19 @@
 		overflow: auto;
 		.swiper-wrapper {
 			margin: 0px -4px;
+		}
+	}
+	&_no-slider {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 60px);
+		gap: 24px;
+		@media (max-width:$md2+px){
+			gap: 20px;
+			
+		}
+		@media (max-width:$md3+px){
+			 overflow: hidden; 
+			 padding: 0;
 		}
 	}
 	// .slider-trophies__slide
@@ -698,6 +919,9 @@
 	&__sections {
 		display: grid;
 		gap: 32px;
+		.matches-command-page__statistics{
+			margin: 0px 0px 16px 0px;
+		}
 	}
 	// .command-page__section
 	&__section {
@@ -755,22 +979,18 @@
 	}
 	// .matches-command-page__statistics
 	&__statistics {
-		&:not(:last-child) {
-			margin: 0px 0px 24px 0px;
-		}
+		padding: 0px 0px 16px 0px;
 	}
 }
 .statistics-matches-command-page {
 	display: flex;
 	margin: 0px -2px;
+	padding: 16px 0px;
 	// .statistics-matches-command-page__item
 	&__item {
 		padding: 0px 2px;
 		display: inline-grid;
-		grid-template-rows: repeat(3, auto);
-		justify-items: center;
-		align-items: center;
-		row-gap: 4px;
+		position: relative;
 		// .statistics-matches-command-page__item_win
 		&_win {
 			color: $success;
@@ -797,6 +1017,10 @@
 	&__value {
 		display: inline-block;
 		white-space: nowrap;
+		position: absolute;
+		bottom: calc(100% + 4px);
+		left: 50%;
+		transform: translate(-50%, 0px);
 		@media (max-width: $md2+px) {
 			font-size: 12px;
 		}
@@ -811,6 +1035,11 @@
 	// .statistics-matches-command-page__label
 	&__label {
 		display: inline-block;
+		position: absolute;
+		top: calc(100% + 4px);
+		left: 50%;
+		line-height: 100%;
+		transform: translate(-50%, 0px);
 		@media (max-width: $md2+px) {
 			font-size: 10px;
 		}

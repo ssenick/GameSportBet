@@ -7,7 +7,7 @@
 <body>
 	<div class="wrapper">
 		@@include('_header.html',{})
-		<main class="page">
+		<main class="page page_player">
 			<div class="page__container _container">
 				<div class="page__body page__body_7256">
 					<div class="page__header">
@@ -22,13 +22,13 @@
 								</div>
 							</div>
 							<div class="about-player__info">
-								<div class="about-player__header header-about-player">
+								<div data-da=".about-player,959.98,0" class="about-player__header header-about-player">
 									<div class="header-about-player__main">
 										<div class="header-about-player__line">
 											<div class="header-about-player__flag">
 												<img src="img/flags/02.png" alt="">
 											</div>
-											<div class="header-about-player__info _headline-6">Александр “S1mple” Костылев, 23 года</div>
+											<div class="header-about-player__info _headline-6">Александр “S1mple” Костылев, <br> 23 года</div>
 										</div>
 										<div class="header-about-player__line">
 											<div class="header-about-player__team">
@@ -137,10 +137,10 @@
 										</div>
 									</div>
 								</div>
-								<div class="about-player__trophies trophies">
+								<div data-da=".about-player,1439.98," class="about-player__trophies trophies">
 									<h4 class="trophies__title">Трофеи</h4>
 									<div class="trophies__slider">
-										<div class="slider-trophies _swiper">
+										<div class="slider-trophies slider-trophies_no-slider">
 											<div class="slider-trophies__slide slide-trophies">
 												<a href="" data-tippy-content="Best of 2018 награда в Huya Dota 2 winter invitation" class="slide-trophies__image">
 													<img src="img/trophies/01.png" alt="">
@@ -183,18 +183,10 @@
 											</div>
 											<div class="slider-trophies__slide slide-trophies">
 												<a href="" data-tippy-content="Best of 2018 награда в Huya Dota 2 winter invitation" class="slide-trophies__image">
-													<img src="img/trophies/01.png" alt="">
-												</a>
-											</div>
-											<div class="slider-trophies__slide slide-trophies">
-												<a href="" data-tippy-content="Best of 2018 награда в Huya Dota 2 winter invitation" class="slide-trophies__image">
 													<img src="img/trophies/02.png" alt="">
 												</a>
 											</div>
-
 										</div>
-										<button type="button" class="trophies__arrow trophies__arrow_prev button button_icon  _icon-86"><span tabindex="-1"></span></button>
-										<button type="button" class="trophies__arrow trophies__arrow_next button button_icon _icon-86 "><span tabindex="-1"></span></button>
 									</div>
 								</div>
 							</div>
@@ -301,7 +293,7 @@
 								<section class="player-statistics__item table-statistics-player">
 									<h4 class="table-statistics-player__title">Подробная статистика</h4>
 									<div class="table-statistics-player__columns">
-										<div class="table-statistics-player__body">
+										<div class="table-statistics-player__body ">
 											<div class="table-statistics-player__line table-statistics-player__line_bg">
 												<div class="table-statistics-player__item">
 													<a data-tippy-content="Убийств в одном раунде" href="" class="table-statistics-player__name">
@@ -374,7 +366,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="table-statistics-player__body">
+										<div class="table-statistics-player__body table-statistics-player__body_last">
 											<div class="table-statistics-player__line table-statistics-player__line_bg">
 												<div class="table-statistics-player__item">
 													<a data-tippy-content="Убийств в одном раунде" href="" class="table-statistics-player__name">
@@ -470,17 +462,17 @@
 									</div>
 									<div class="participation__item">
 										<div class="participation__statistics statistics-matches-command-page">
-											<div style="flex: 0 0 72%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_win">
+											<div style="flex: 0 0 55%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_win">
 												<div class="statistics-matches-command-page__value _body_small-strong">72% (300)</div>
 												<div class="statistics-matches-command-page__line"></div>
 												<div class="statistics-matches-command-page__label _body_xs">Победы</div>
 											</div>
-											<div style="flex: 0 0 5%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_draw">
+											<div style="flex: 0 0 8%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_draw">
 												<div class="statistics-matches-command-page__value _body_small-strong">5% (11)</div>
 												<div class="statistics-matches-command-page__line"></div>
 												<div class="statistics-matches-command-page__label _body_xs">Ничьи</div>
 											</div>
-											<div style="flex: 0 0 23%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_fail">
+											<div style="flex: 0 0 37%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_fail">
 												<div class="statistics-matches-command-page__value _body_small-strong">23% (21)</div>
 												<div class="statistics-matches-command-page__line"></div>
 												<div class="statistics-matches-command-page__label _body_xs">Поражения</div>
@@ -591,18 +583,18 @@
 						<section class="page__section matches-command-page">
 							<h3 class="matches-command-page__title">Матчи</h3>
 							<div class="matches-command-page__statistics statistics-matches-command-page">
-								<div style="flex: 0 0 72%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_win">
-									<div class="statistics-matches-command-page__value _body_small-strong">72% (300)</div>
+								<div style="flex: 0 0 45%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_win">
+									<div class="statistics-matches-command-page__value _body_small-strong">55% (300)</div>
 									<div class="statistics-matches-command-page__line"></div>
 									<div class="statistics-matches-command-page__label _body_xs">Победы</div>
 								</div>
-								<div style="flex: 0 0 5%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_draw">
-									<div class="statistics-matches-command-page__value _body_small-strong">5% (11)</div>
+								<div style="flex: 0 0 30%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_draw">
+									<div class="statistics-matches-command-page__value _body_small-strong">25% (11)</div>
 									<div class="statistics-matches-command-page__line"></div>
 									<div class="statistics-matches-command-page__label _body_xs">Ничьи</div>
 								</div>
-								<div style="flex: 0 0 23%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_fail">
-									<div class="statistics-matches-command-page__value _body_small-strong">23% (21)</div>
+								<div style="flex: 0 0 25%;" class="statistics-matches-command-page__item statistics-matches-command-page__item_fail">
+									<div class="statistics-matches-command-page__value _body_small-strong">20% (21)</div>
 									<div class="statistics-matches-command-page__line"></div>
 									<div class="statistics-matches-command-page__label _body_xs">Поражения</div>
 								</div>
@@ -644,11 +636,45 @@
 												<div class="item-forecast__logo"><img src="img/teams/02.png" alt=""></div>
 												<a href="" class="item-forecast__name _hover-link _body_small-strong">Virtus.Pro</a>
 											</div>
+											<div class="item-forecast__mobile-content ">
+												<div class="match-item__top">
+													<div class="match-item__header">
+														<a href="" class="match-item__game _game">
+															<img src="img/icons/games/02.svg" class="_game__logo" alt="">OGA Dota PIT 2020 Season 3: EU/CIS
+														</a>
+														<div class="match-item__bottom-header">
+															<div class="match-item__rating _rating _rating_g">5</div>
+															<a href="" class="match-item__grid">Сетка</a>
+															<div class="match-item__text">Bo3</div>
+														</div>
+													</div>
+													<div class="match-item__main main-match-item">
+														<div class="main-match-item__info">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/01.png" alt=""></div>
+														</div>
+														<div class="main-match-item__center main-match-item__center">
+															<div class="main-match-item__label _caption_small">до начала</div>
+															<div class="main-match-item__timer _body_small-strong">06:05:32</div>
+
+														</div>
+														<div class="main-match-item__info main-match-item__info_rev">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/02.png" alt=""></div>
+														</div>
+														<div class="main-match-item__name _body_small-strong">Team Aster</div>
+														<div class="main-match-item__name _body_small-strong">Trust Gaming</div>
+													</div>
+												</div>
+											</div>
 											<div class="item-forecast__actions">
 												<div class="item-forecast__quantity">
 													<div class="item-forecast__label _caption_small _secondary">Прогнозов</div>
 													<div class="item-forecast__value _body_strong">+58</div>
 												</div>
+												<a href="" class="item-forecast__mobile-quantity">
+													На этот матч <span>56</span> прогнозов
+												</a>
 												<a href="" class="item-forecast__button button button_outlined _ripple"><span>Создать прогноз</span></a>
 												<a href="" class="item-forecast__button button button_contained _ripple"><span>Получить прогноз</span></a>
 											</div>
@@ -677,19 +703,62 @@
 												<div class="item-forecast__logo"><img src="img/teams/02.png" alt=""></div>
 												<a href="" class="item-forecast__name _hover-link _body_small-strong">Virtus.Pro</a>
 											</div>
+											<div class="item-forecast__mobile-content ">
+												<div class="match-item__top">
+													<div class="match-item__header match-item__header_live">
+														<a href="" class="match-item__game _game">
+															<img src="img/icons/games/02.svg" class="_game__logo" alt="">OGA Dota PIT 2020 Season 3: EU/CIS
+														</a>
+														<div class="match-item__bottom-header">
+															<div class="match-item__rating _rating _rating_g">5</div>
+															<a href="" class="match-item__grid">Сетка</a>
+															<div class="match-item__text">Bo3</div>
+														</div>
+													</div>
+													<div class="match-item__main main-match-item">
+														<div class="main-match-item__info">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/01.png" alt=""></div>
+														</div>
+														<div class="main-match-item__center main-match-item__center">
+															<div class="main-match-item__live  _caption"><span>LIVE</span></div>
+															<div class="main-match-item__status _caption">идет 2-я карта</div>
+															<div class="match-current-game-score">
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_red">0</div>
 
+																</div>
+																<div class="match-current-game-score__column">
+																	<span class="match-current-game-score__span">:</span>
+																</div>
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_green">1</div>
+
+																</div>
+															</div>
+														</div>
+														<div class="main-match-item__info main-match-item__info_rev">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/04.png" alt=""></div>
+														</div>
+														<div class="main-match-item__name _body_small-strong">Team Aster</div>
+														<div class="main-match-item__name _body_small-strong">Trust Gaming</div>
+													</div>
+												</div>
+											</div>
 											<div class="item-forecast__actions">
 												<div class="item-forecast__quantity">
 													<div class="item-forecast__label _caption_small _secondary">Прогнозов</div>
 													<div class="item-forecast__value _body_strong">+58</div>
 												</div>
+												<a href="" class="item-forecast__mobile-quantity">
+													На этот матч <span>56</span> прогнозов
+												</a>
 												<a href="" class="item-forecast__button button button_outlined _ripple"><span>Создать прогноз</span></a>
 												<a href="" class="item-forecast__button button button_contained _ripple"><span>Получить прогноз</span></a>
 											</div>
 										</div>
 									</div>
-
-
 									<div class="item-forecast">
 										<div class="item-forecast__header header-item-forecast _body_small">
 											<div class="header-item-forecast__main">
@@ -714,6 +783,48 @@
 												<div class="item-forecast__value _value">9.81</div>
 												<div class="item-forecast__logo"><img src="img/teams/02.png" alt=""></div>
 												<a href="" class="item-forecast__name _hover-link _body_small-strong">Virtus.Pro</a>
+											</div>
+											<div class="item-forecast__mobile-content ">
+												<div class="match-item__top">
+													<div class="match-item__header">
+														<a href="" class="match-item__game _game">
+															<img src="img/icons/games/02.svg" class="_game__logo" alt="">OGA Dota PIT 2020 Season 3: EU/CIS
+														</a>
+														<div class="match-item__bottom-header">
+															<div class="match-item__rating _rating _rating_g">5</div>
+															<a href="" class="match-item__grid">Сетка</a>
+															<div class="match-item__text">Bo3</div>
+														</div>
+													</div>
+													<div class="match-item__main main-match-item">
+														<div class="main-match-item__info">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/01.png" alt=""></div>
+														</div>
+														<div class="main-match-item__center main-match-item__center">
+															<div class="main-match-item__status _caption">окончен</div>
+															<div class="match-current-game-score">
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_red">0</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(32)</div>
+																</div>
+																<div class="match-current-game-score__column">
+																	<span class="match-current-game-score__span">:</span>
+																</div>
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_green">1</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(48)</div>
+																</div>
+															</div>
+														</div>
+														<div class="main-match-item__info main-match-item__info_rev">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/02.png" alt=""></div>
+														</div>
+														<div class="main-match-item__name _body_small-strong">Team Aster</div>
+														<div class="main-match-item__name _body_small-strong">Trust Gaming</div>
+													</div>
+												</div>
 											</div>
 											<div class="item-forecast__actions">
 												<div class="item-forecast__more _icon-86"></div>
@@ -793,6 +904,48 @@
 												<div class="item-forecast__value _value">9.81</div>
 												<div class="item-forecast__logo"><img src="img/teams/02.png" alt=""></div>
 												<a href="" class="item-forecast__name _hover-link _body_small-strong">Virtus.Pro</a>
+											</div>
+											<div class="item-forecast__mobile-content ">
+												<div class="match-item__top">
+													<div class="match-item__header">
+														<a href="" class="match-item__game _game">
+															<img src="img/icons/games/02.svg" class="_game__logo" alt="">OGA Dota PIT 2020 Season 3: EU/CIS
+														</a>
+														<div class="match-item__bottom-header">
+															<div class="match-item__rating _rating _rating_g">5</div>
+															<a href="" class="match-item__grid">Сетка</a>
+															<div class="match-item__text">Bo3</div>
+														</div>
+													</div>
+													<div class="match-item__main main-match-item">
+														<div class="main-match-item__info">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/01.png" alt=""></div>
+														</div>
+														<div class="main-match-item__center main-match-item__center">
+															<div class="main-match-item__status _caption">окончен</div>
+															<div class="match-current-game-score">
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_red">0</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(32)</div>
+																</div>
+																<div class="match-current-game-score__column">
+																	<span class="match-current-game-score__span">:</span>
+																</div>
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_green">1</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(48)</div>
+																</div>
+															</div>
+														</div>
+														<div class="main-match-item__info main-match-item__info_rev">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/02.png" alt=""></div>
+														</div>
+														<div class="main-match-item__name _body_small-strong">Team Aster</div>
+														<div class="main-match-item__name _body_small-strong">Trust Gaming</div>
+													</div>
+												</div>
 											</div>
 											<div class="item-forecast__actions">
 												<div class="item-forecast__more _icon-86"></div>
@@ -848,10 +1001,6 @@
 											</div>
 										</div>
 									</div>
-
-
-
-
 									<div class="item-forecast">
 										<div class="item-forecast__header header-item-forecast _body_small">
 											<div class="header-item-forecast__main">
@@ -876,6 +1025,48 @@
 												<div class="item-forecast__value _value">9.81</div>
 												<div class="item-forecast__logo"><img src="img/teams/02.png" alt=""></div>
 												<a href="" class="item-forecast__name _hover-link _body_small-strong">Virtus.Pro</a>
+											</div>
+											<div class="item-forecast__mobile-content ">
+												<div class="match-item__top">
+													<div class="match-item__header">
+														<a href="" class="match-item__game _game">
+															<img src="img/icons/games/02.svg" class="_game__logo" alt="">OGA Dota PIT 2020 Season 3: EU/CIS
+														</a>
+														<div class="match-item__bottom-header">
+															<div class="match-item__rating _rating _rating_g">5</div>
+															<a href="" class="match-item__grid">Сетка</a>
+															<div class="match-item__text">Bo3</div>
+														</div>
+													</div>
+													<div class="match-item__main main-match-item">
+														<div class="main-match-item__info">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/01.png" alt=""></div>
+														</div>
+														<div class="main-match-item__center main-match-item__center">
+															<div class="main-match-item__status _caption">окончен</div>
+															<div class="match-current-game-score">
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_red">0</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(32)</div>
+																</div>
+																<div class="match-current-game-score__column">
+																	<span class="match-current-game-score__span">:</span>
+																</div>
+																<div class="match-current-game-score__column">
+																	<div class="match-current-game-score__item match-current-game-score__item_green">1</div>
+																	<div class="match-current-game-score__info _body_small _secondary">(48)</div>
+																</div>
+															</div>
+														</div>
+														<div class="main-match-item__info main-match-item__info_rev">
+															<div class="main-match-item__value _value">9.81</div>
+															<div class="main-match-item__logo"><img src="img/teams/02.png" alt=""></div>
+														</div>
+														<div class="main-match-item__name _body_small-strong">Team Aster</div>
+														<div class="main-match-item__name _body_small-strong">Trust Gaming</div>
+													</div>
+												</div>
 											</div>
 											<div class="item-forecast__actions">
 												<div class="item-forecast__more _icon-86"></div>
@@ -952,9 +1143,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/01.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												ESL One Birmingham 2020 - Online: Europe
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -969,9 +1160,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/02.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												WePlay Dota 2 Tug of War Mad Moon
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -986,9 +1177,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/03.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												OGA Dota PIT 2020 Season 3: EU/CIS
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1003,9 +1194,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/01.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												ESL One Birmingham 2020 - Online: Europe
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1020,9 +1211,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/02.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												WePlay Dota 2 Tug of War Mad Moon
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1037,9 +1228,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/03.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												OGA Dota PIT 2020 Season 3: EU/CIS
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1056,9 +1247,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/01.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												ESL One Birmingham 2020 - Online: Europe
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1073,9 +1264,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/02.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												WePlay Dota 2 Tug of War Mad Moon
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1090,9 +1281,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/03.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												OGA Dota PIT 2020 Season 3: EU/CIS
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1107,9 +1298,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/01.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												ESL One Birmingham 2020 - Online: Europe
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1124,9 +1315,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/02.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												WePlay Dota 2 Tug of War Mad Moon
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1141,9 +1332,9 @@
 											<div class="table-winnings-block__icon">
 												<img src="img/trophies/03.png" alt="">
 											</div>
-											<div class="table-winnings-block__name">
+											<a href="#" class="table-winnings-block__name">
 												OGA Dota PIT 2020 Season 3: EU/CIS
-											</div>
+											</a>
 										</div>
 									</div>
 									<div class="table-winnings-block__item">
@@ -1157,10 +1348,13 @@
 						</div>
 						<!-- winnings-block -->
 						<!-- banner -->
-						<div class="page__row">
+						<div class="page__row _social-banners">
 							<div class="page__content">
-								<a href="" class="banner-social__banner banner">
+								<a href="" class="banner-social__banner _social-banners__pc banner">
 									<img src="img/banners/01.jpg" alt="">
+								</a>
+								<a href="" class="banner-social__banner _social-banners__mobile  banner banner_304">
+									<img src="img/banners/02.jpg" alt="">
 								</a>
 							</div>
 							<aside class="page__sidebar sidebar">
@@ -1181,7 +1375,7 @@
 						<!-- news-page -->
 						<div class="page__section">
 							<section class="news-page">
-								<h3 class="news-page__title">Новости игрока и команды</h3>
+								<h3 class="news-page__title">Новости</h3>
 								<div class="items-news">
 									<div class="item-news item-news_2-r">
 										<a href="" class="item-news__image _ibg">
@@ -1194,9 +1388,9 @@
 											<div class="item-news__footer">
 												<div class="item-news__time _caption">Сегодня</div>
 												<div class="item-news__info _info-line _info-line_small">
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-102">32</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-8">365</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _ic_only _icon-58"></a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-102">32</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-8">365</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _ic_only _icon-58"></a>
 												</div>
 											</div>
 										</div>
@@ -1214,9 +1408,9 @@
 												<div class="item-news__time _caption">Сегодня</div>
 												<div class="item-news__info _info-line _info-line_small">
 
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-102">32</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-8">365</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _ic_only _icon-58"></a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-102">32</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-8">365</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _ic_only _icon-58"></a>
 												</div>
 											</div>
 										</div>
@@ -1234,9 +1428,9 @@
 												<div class="item-news__time _caption">Сегодня</div>
 												<div class="item-news__info _info-line _info-line_small">
 
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-102">32</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-8">365</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _ic_only _icon-58"></a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-102">32</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-8">365</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _ic_only _icon-58"></a>
 												</div>
 											</div>
 										</div>
@@ -1300,9 +1494,9 @@
 												<div class="item-news__time _caption">Сегодня</div>
 												<div class="item-news__info _info-line _info-line_small">
 
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-102">32</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _icon-8">365</a>
-													<a href="" data-tippy-content="Убийств в одном раунде" class="_info-line__item _ic _ic_only _icon-58"></a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-102">32</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _icon-8">365</a>
+													<a href="" data-tippy-content="Подсказка" class="_info-line__item _ic _ic_only _icon-58"></a>
 												</div>
 											</div>
 										</div>
@@ -1348,7 +1542,7 @@
 										</div>
 									</section>
 								</div>
-								<aside class="comments-block__sidebar sidebar">
+								<aside data-da=".text-page,767.98,0" class="comments-block__sidebar sidebar">
 									<a href="" class="sidebar__banner banner">
 										<img src="img/banners/02.jpg" alt="">
 									</a>
@@ -1359,9 +1553,8 @@
 					</div>
 				</div>
 			</div>
-	</div>
-	</main>
-	@@include('_footer.html',{})
+		</main>
+		@@include('_footer.html',{})
 	</div>
 	@@include('_popup.html',{})
 	@@include('_js.html',{})
