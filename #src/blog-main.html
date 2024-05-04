@@ -7,7 +7,7 @@
 <body>
 	<div class="wrapper">
 		@@include('_header.html',{})
-		<main class="page">
+		<main class="page page_blog-main">
 			<div class="page__container _container">
 				<div class="page__body page__body_7256">
 					<div class="page__header">
@@ -25,7 +25,17 @@
 												<a href="" class="_content-sort__item _active">Дата</a>
 												<a href="" class="_content-sort__item">Просмотры</a>
 												<a href="" class="_content-sort__item _active _active_up">Комментарии</a>
-												<a href="" class="news-user__button button button_contained _ripple"><span>Создать запись</span></a>
+												<a data-da=".news-user__header,767.98,1" href="" class="news-user__button button button_contained _ripple"><span>Создать запись</span></a>
+											</div>
+											<div class="news-user__mobile-filter">
+												<select name="form[]" class="form">
+													<option data-icon="_icon-21" value="1" selected="selected">По дате</option>
+													<option data-icon="_icon-22" value="2">По дате</option>
+													<option data-icon="_icon-21" value="3">Просмотры</option>
+													<option data-icon="_icon-22" value="4">Просмотры</option>
+													<option data-icon="_icon-21" value="5">Комментарии</option>
+													<option data-icon="_icon-22" value="6">Комментарии</option>
+												</select>
 											</div>
 										</div>
 										<div class="news-user__items items-news">
@@ -217,7 +227,7 @@
 							<a href="" class="sidebar__banner banner">
 								<img src="img/banners/02.jpg" alt="">
 							</a>
-							<div class="tags-user sidebar__tags">
+							<div data-da=".page__row,767.98," class="tags-user sidebar__tags">
 								<h5 class="tags-user__title">Теги блога</h5>
 								<div class="chips chips_min">
 									<a href="" class="chip _ripple"><span>Ставки</span></a>

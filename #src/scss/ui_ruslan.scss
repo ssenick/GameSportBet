@@ -1,42 +1,3 @@
-//  $bg-button-hover-white-015: rgba(255, 255, 255, 0.25);
-//  $green-1: #00A938;
-// $fail-1:  #EB0000;
-// $green-2: #00FFA3;
-
-//Изменил файл _popap.html, добавил свои попапы
-
-// картинки
-// img/flags/01.png
-// img/flags/02.png
-// img/flags/03.png
-// img/teams/01-big.png
-// img/teams/02-big.png
-// img/teams/03-big.png
-// img/teams/04-big.png
-// img/teams/05-big.png
-// img/teams/06-big.png
-// img/teams/02-big-200.png
-// img/broadcasts/01.jpg
-// img/avatar-icons.jpg
-// img/trophies/01.png
-// img/trophies/02.png
-// img/trophies/03.png
-// img/trophies/04.png
-// img/players/03.png
-// img/players/04.png
-// img/players/05.png
-// img/fag/01.png
-// img/fag/02.png
-// img/rocket.svg
-// img/translation/01.jpg
-// img/translation/02.jpg
-
-// создано tournaments.scss
-// создано tournament.scss
-// создано ui_ruslan.scss
-// создано commants.scss
-
-//создано ruslan.js
 //========================================================================================================================================================
 ._container-1072 {
 	max-width: 1072px;
@@ -286,6 +247,18 @@
 		}
 	}
 }
+
+._underline {
+	text-decoration: underline;
+}
+._italic {
+	font-style: italic;
+}
+._border {
+	border: 1px dashed #6c89a9;
+	border-radius: 4px;
+}
+
 //!_content-filter
 ._content-filter {
 	// ._content-filter__item
@@ -322,6 +295,14 @@
 				&_h128 {
 					min-height: 128px;
 				}
+			}
+		}
+	}
+	&__footer {
+		padding: 4px 0px 0px 0px;
+		.input__span-value {
+			&:first-child {
+				margin: 0px 10px 0px 0px;
 			}
 		}
 	}
@@ -2025,20 +2006,83 @@
 		}
 	}
 }
-.footer-login-new-5 {
-	// .footer-login-new-5__button
-	&__button {
-	}
-	// .footer-login-new-5__pay
-	&__pay {
-	}
-	// .footer-login-new-5__label
-	&__label {
-	}
-	// .footer-login-new-5__items
-	&__items {
-	}
-	// .footer-login-new-5__item
+
+//========================================================================================================================================================
+.calendar-block {
+	padding: 52px 0px;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 32px;
 	&__item {
+	}
+	
+}
+
+.mobile-calendar {
+	max-width: 312px;
+	background-color: $bg-03;
+	box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.35);
+	border-radius: 4px;
+	min-height: 482px;
+	display: flex;
+	flex-direction: column;
+
+	.button_outlined-gray::after{
+		background: none;
+	}
+	// .mobile-calendar__header
+	&__header {
+	}
+	// .mobile-calendar__main
+	&__main {
+		flex: 1 1 auto;
+		.calendar__month,.calendar__year{
+			padding: 40px 0px 0px 0px;
+		}
+		.calendar__header_end{
+			justify-content: flex-end;
+		}
+	}
+	// .mobile-calendar__footer
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding: 0px 24px 24px 24px;
+	}
+}
+.header-mobile-calendar {
+	display: grid;
+	gap: 22px;
+	padding: 16px 16px 0px 16px;
+	// .header-mobile-calendar__top
+	&__top {
+		text-align: center;
+	}
+	// .header-mobile-calendar__label
+	&__label {
+		font-size: 16px;
+		line-height: math.div(26px, 16px) * 100%;
+		color: $secondary;
+		&:not(:last-child) {
+			margin: 0px 0px 4px 0px;
+		}
+	}
+	// .header-mobile-calendar__range
+	&__range {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: math.div(28px, 22px) * 100%;
+	}
+	// .header-mobile-calendar__bottom
+	&__bottom {
+		overflow: auto;
+		margin: 0px -16px 0px 0px;
+		.presets-calendar {
+			display: flex;
+			.presets-calendar__item.button {
+				min-height: 32px;
+				background-color: $bg-02;
+			}
+		}
 	}
 }

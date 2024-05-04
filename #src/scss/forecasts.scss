@@ -8,6 +8,13 @@
 		display: none;
 	}
 }
+.page_forecasts-center{
+	@media (max-width:$md4+px){
+		  .page__row {
+			  &:not(:last-child) {margin: 0px 0px 24px 0px;};
+		  }
+	}
+}
 .page__sidebar_forecasts-center {
 	.sidebar__item.top-10-bk {
 		display: none;
@@ -206,6 +213,97 @@
 }
 
 .item-forecast {
+	&_on {
+		.item-forecast__body {
+			@media (max-width: $md2+px) {
+				display: grid;
+				grid-template-columns: 1fr minmax(24px, auto);
+				.item-forecast__actions {
+					flex: 1 1 auto;
+				}
+				.item-forecast__actions {
+					padding: 0px 17px 0px 0px;
+				}
+			}
+		}
+		.item-forecast__content {
+			@media (max-width: $md2+px) {
+				display: none;
+				display: block;
+				display: grid !important;
+				grid-template-columns: repeat(2, 1fr) repeat(2, auto) repeat(2, 1fr);
+				grid-template-rows: repeat(5, auto);
+				justify-content: center;
+				justify-items: center;
+				align-items: center;
+				padding: 18px 0px;
+				column-gap: 0px;
+				row-gap: 10px;
+				grid-template-areas:
+					" item-2 item-2 item-1  item-1 item-1 item-1"
+					" item-3 item-3  item-4 item-4  item-5 item-5"
+					" item-6 item-6 item-7  item-7 item-7 item-7 "
+					" item-8 item-8  item-9 item-9  item-10 item-10"
+					" item-11 item-11 item-12 item-12 item-12 item-12";
+				._item-1 {
+					grid-area: item-1;
+					justify-self: start;
+				}
+				._item-2 {
+					grid-area: item-2;
+					justify-self: end;
+				}
+				._item-3 {
+					grid-area: item-3;
+					justify-self: end;
+				}
+				._item-4 {
+					grid-area: item-4;
+				}
+				._item-5 {
+					grid-area: item-5;
+					justify-self: start;
+				}
+				._item-6 {
+					grid-area: item-6;
+					justify-self: end;
+				}
+				._item-7 {
+					grid-area: item-7;
+					justify-self: start;
+				}
+				._item-8 {
+					grid-area: item-8;
+					justify-self: end;
+				}
+				._item-9 {
+					grid-area: item-9;
+				}
+				._item-10 {
+					grid-area: item-10;
+					justify-self: start;
+				}
+				._item-11 {
+					grid-area: item-11;
+					justify-self: end;
+				}
+				._item-12 {
+					grid-area: item-12;
+					justify-self: start;
+				}
+			}
+		}
+		.match-item__header{
+			padding: 8px !important;
+		}
+		.match-item__game{
+			margin: 0px 0px 4px 0px;
+			&._game{
+				line-height: 120%;
+				font-size: 12px;
+			}
+		}
+	}
 	// .item-forecast__header
 	&__header {
 	}
@@ -240,13 +338,25 @@
 		align-items: center;
 		justify-content: center;
 		gap: 8px;
-		@media (max-width: $md2+px) {
+		@media (max-width:$md2+px){
 			display: none;
 		}
 	}
 	// .item-forecast__name
 	&__name {
 		color: inherit;
+		@media (max-width: $md2+px) {
+			font-size: 22px;
+			line-height: math.div(16px, 14px) * 100%;
+			padding: 0px 0px 0px 8px;
+			margin: 0px 10px 0px 0px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
 	}
 	// .item-forecast__logo
 	&__logo {
@@ -259,6 +369,19 @@
 		img {
 			max-height: 100%;
 			max-width: 100%;
+		}
+		@media (max-width: $md2+px) {
+			width: 75px;
+			height: 75px;
+			padding: 0;
+		}
+		@media (max-width: $md3+px) {
+			width: 56px;
+			height: 56px;
+		}
+		@media (max-width:$md4+px){
+			 width: 40px;
+			 height: 40px; 
 		}
 	}
 	// .item-forecast__value
@@ -274,6 +397,17 @@
 	&__info {
 		width: 40px;
 		text-align: center;
+		padding: 0px 10px;
+		@media (max-width: $md2+px) {
+			width: auto;
+			font-size: 18px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 14px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+		}
 	}
 
 	// .item-forecast__counter
@@ -287,8 +421,18 @@
 			padding: 0px 0px;
 		}
 		span {
-			flex: 0 0 20px;
 			text-align: center;
+		}
+		@media (max-width: $md2+px) {
+			font-size: 35px;
+			grid-template-columns: 40px auto 40px;
+		}
+		@media (max-width: $md3+px) {
+			grid-template-columns: 30px auto 30px;
+			font-size: 28px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 16px;
 		}
 	}
 
@@ -339,8 +483,8 @@
 	// .item-forecast__button
 	&__button {
 		text-align: center;
-		@media (max-width: 1200px){
-			  padding: 0px 10px;
+		@media (max-width: 1200px) {
+			padding: 0px 10px;
 		}
 		@media (max-width: $md3+px) {
 			align-self: stretch;

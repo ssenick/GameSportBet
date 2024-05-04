@@ -443,7 +443,7 @@
 				}
 			}
 		}
-		.sidebar__item.day-mach{
+		.sidebar__item.day-mach {
 			display: none;
 		}
 	}
@@ -719,6 +719,8 @@
 // slider-unscrupulous-analyst
 .slider-unscrupulous-analyst {
 	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
 	// .slider-unscrupulous-analyst__body
 	&__body {
 	}
@@ -737,6 +739,7 @@
 		padding: 16px;
 		position: relative;
 		z-index: 2;
+
 		@media (max-width: $md2+px) {
 			display: block;
 			text-align: center;
@@ -744,6 +747,9 @@
 		@media (max-width: $md3+px) {
 			margin: 0;
 			background-color: $bg-03;
+			display: grid;
+			gap: 5px;
+			padding: 16px 8px;
 		}
 	}
 	// .slider-unscrupulous-analyst__controls
@@ -785,6 +791,9 @@
 	// .slide-unscrupulous-analyst__image
 	&__image {
 		padding: 0px 0px 56.25% 0px;
+		@media (max-width: 1200px) {
+			padding: 0px 0px 63.158% 0px;
+		}
 	}
 }
 // footer-slider-unscrupulous-analyst

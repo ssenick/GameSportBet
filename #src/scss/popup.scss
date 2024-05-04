@@ -108,6 +108,9 @@
 		.popup__body {
 			padding: 48px;
 			max-width: 650px;
+			@media (max-width: $md3+px) {
+				padding: 16px;
+			}
 		}
 	}
 	&_compare-analytic {
@@ -377,17 +380,42 @@
 		&:not(:last-child) {
 			margin: 0px 0px 56px 0px;
 		}
+		@media (max-width: $md3+px) {
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+		}
 	}
 	// .analytic-popup__sub-title
 	&__sub-title {
 		&:not(:last-child) {
 			margin: 0px 0px 16px 0px;
 		}
+		@media (max-width: $md3+px) {
+			&:not(:last-child) {
+				margin: 0px 0px 8px 0px;
+			}
+		}
 	}
 	// .analytic-popup__list
 	&__list {
 		&:not(:last-child) {
 			margin: 0px 0px 56px 0px;
+		}
+		@media (max-width: $md3+px) {
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+			&._list._min{
+				gap: 2px;
+				li{
+					font-size: 12px;
+					padding: 0px 0px 0px 18px;
+					&::before{
+						width: 18px;
+					}
+				}
+			}
 		}
 	}
 	// .analytic-popup__button
@@ -423,14 +451,14 @@
 	grid-template-columns: 141px repeat(auto-fill, 208px);
 	align-items: start;
 	gap: 8px;
-	@media (max-width:$md1+px){
-		  min-width: 1005px;
+	@media (max-width: $md1+px) {
+		min-width: 1005px;
 	}
-	@media (max-width:$md2+px){
+	@media (max-width: $md2+px) {
 		padding: 0px 0px 16px 0px;
 		grid-template-columns: 141px repeat(auto-fill, 200px);
 	}
-	@media (max-width:$md3+px){
+	@media (max-width: $md3+px) {
 		min-width: 890px;
 		grid-template-columns: 110px repeat(auto-fill, 180px);
 	}
@@ -469,8 +497,8 @@
 				margin: 0px 4px 0px 0px;
 			}
 		}
-		@media (max-width:$md3+px){
-			 padding: 4px; 
+		@media (max-width: $md3+px) {
+			padding: 4px;
 		}
 	}
 	// .table-compare-analytic-popup__main
@@ -531,8 +559,8 @@
 			min-height: 28px;
 			padding: 4px 12px;
 		}
-		@media (max-width:$md3+px){
-			  padding: 4px 4px;
+		@media (max-width: $md3+px) {
+			padding: 4px 4px;
 		}
 		span {
 			&::before {
@@ -553,10 +581,10 @@
 	// .table-compare-analytic-popup__button
 	&__button {
 		width: 100%;
-		@media (max-width:$md3+px){
-			 &.button{
+		@media (max-width: $md3+px) {
+			&.button {
 				padding: 0px 4px;
-			 } 
+			}
 		}
 	}
 	// .table-compare-analytic-popup__remove

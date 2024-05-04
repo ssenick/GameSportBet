@@ -1920,7 +1920,7 @@
 			font-size: 16px;
 		}
 		@media (min-width: $md3+px) {
-			min-height: 64px;
+			min-height: 55px;
 			font-size: 22px;
 		}
 		// .mobile-table-rates__command_one
@@ -1966,8 +1966,8 @@
 			max-width: 150px;
 		}
 		@media (min-width: $md3+px) {
-			min-height: 150px;
-			max-width: 250px;
+			min-height: 120px;
+			max-width: 200px;
 		}
 	}
 	// .item-mobile-table-rates__bonus
@@ -1985,7 +1985,7 @@
 			font-size: 14px;
 		}
 		@media (min-width: $md3+px) {
-			min-height: 50px;
+			min-height: 44px;
 			font-size: 18px;
 		}
 	}
@@ -2008,7 +2008,7 @@
 			font-size: 16px;
 		}
 		@media (min-width: $md3+px) {
-			min-height: 50px;
+			min-height: 44px;
 			font-size: 20px;
 		}
 		span {
@@ -2054,7 +2054,7 @@
 }
 .bookmaker-table-rates {
 	transform: rotate(-90deg);
-	width: 107px;
+	width: 101px;
 	min-height: 60px;
 	display: flex;
 	justify-content: center;

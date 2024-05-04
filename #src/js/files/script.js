@@ -59,6 +59,20 @@ function documentActions(e) {
     _slideToggle(targetElement.closest('._mobile-filter-block').querySelector('._mobile-filter-items'));
     e.preventDefault();
   }
+  if (targetElement.closest('.dop-menu-page') && targetElement.closest('.actions-dop-menu-page__button')) {
+    targetElement.closest('.dop-menu-page').querySelector('.bet-cupon').classList.toggle('_active');
+  }
+  if (document.querySelector('.bet-cupon')) {
+    if (!targetElement.closest('.dop-menu-page') && !targetElement.closest('.actions-dop-menu-page__button')) {
+      document.querySelector('.bet-cupon').classList.remove('_active');
+    }
+  }
+//   if (targetElement.closest('.header-award-user__button')) {
+//     _slideToggle(targetElement.closest('.award-user').querySelector('.award-user__body'));
+//     e.preventDefault();
+//     targetElement.closest('.header-award-user__actions').querySelector('.header-award-user__button').classList.toggle('_active');
+//   }
+
 }
 //========================================================================================================================================================
 
@@ -94,3 +108,4 @@ if (gridTables.length > 0) {
     }
   });
 }
+//========================================================================================================================================================

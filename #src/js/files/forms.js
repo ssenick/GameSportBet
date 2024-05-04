@@ -458,18 +458,7 @@ function select_get_options(select_options) {
         const select_option_text = select_option.innerHTML;
         const select_option_discount = select_option.dataset.discount ? `<small class="_success">${select_option.dataset.discount}</small>` : '';
         const select_option_icon = select_option.dataset.icon ? ' ' + select_option.dataset.icon + ' ' : '';
-        select_options_content =
-          select_options_content +
-          '<button type="button" data-value="' +
-          select_option_value +
-          '" class="select__option"><img class="select__image" src="' +
-          select_option.dataset.image +
-          '" alt=""><span class="' +
-          select_option_icon +
-          '">' +
-          select_option_text +
-          select_option_discount +
-          '</span></button>';
+        select_options_content = select_options_content + '<button type="button" data-value="' + select_option_value +'" class="select__option"><img class="select__image" src="' + select_option.dataset.image + '" alt=""><span class="' + select_option_icon + '">' +select_option_text + select_option_discount +'</span></button>';
 		}
     }
     return select_options_content;

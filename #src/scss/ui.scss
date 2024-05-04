@@ -397,6 +397,7 @@ a._ic,
 		&::before {
 			font-size: 20px;
 			margin: 0px 4px 0px 0px;
+			color: inherit;
 		}
 		&:not(:last-child) {
 			margin-right: 16px;

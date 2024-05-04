@@ -23,7 +23,9 @@ if (newPropsCardsButtons) {
       const targetElement = e.target;
       if (targetElement.classList.contains('payment-method-button') || targetElement.closest('.payment-method-button')) {
         const newPropsCardsButtonsActive = elementButtons.querySelector('.payment-method-button._active');
-        if (newPropsCardsButtonsActive) newPropsCardsButtonsActive.classList.remove('_active');
+        if (newPropsCardsButtonsActive) {
+          newPropsCardsButtonsActive.classList.remove('_active');
+        }
         const newPropsCardsButtonsItem = targetElement.classList.contains('payment-method-button')
           ? targetElement
           : targetElement.closest('.payment-method-button');
@@ -64,7 +66,6 @@ if (_maps.length > 0) {
     _mapsElement.addEventListener('click', mapsActions);
   }
 }
-
 //mapTbdBody.querySelectorAll('._slide')
 function mapsActions(e) {
   const targetElement = e.target;
@@ -87,7 +88,9 @@ if (tablesMapTbdBody) {
       const targetElement = e.target;
       if (targetElement.classList.contains('tables-map-tbd__item') || targetElement.closest('.tables-map-tbd__item')) {
         const tableMapTbdBodyActive = tableMapTbdBody.querySelector('.tables-map-tbd__item.tables-map-tbd__item_domainant');
-        if (tableMapTbdBodyActive) tableMapTbdBodyActive.classList.remove('tables-map-tbd__item_domainant');
+        if (tableMapTbdBodyActive) {
+          tableMapTbdBodyActive.classList.remove('tables-map-tbd__item_domainant');
+        }
 
         const tableMapTbdBodyItem = targetElement.classList.contains('tables-map-tbd__item')
           ? targetElement
@@ -109,6 +112,20 @@ if (counterInputs.length > 0) {
       const inputValueSpan = counterInput.closest('.input').querySelector('._counter-value');
       const inputValueSpanValue = counterInput.getAttribute('maxlength');
       const inputValueResults = inputValueSpanValue - inputValue;
+      inputValueSpan.innerHTML = inputValueResults;
+    });
+  });
+}
+//========================================================================================================================================================
+//blog-new-post.html
+const counterInputs2 = document.querySelectorAll('._counter-input-2');
+if (counterInputs2.length > 0) {
+  counterInputs2.forEach((counterInput) => {
+    counterInput.addEventListener('keyup', function (e) {
+      const inputValue = counterInput.value.length;
+      const inputValueSpan = counterInput.closest('.input').querySelector('._counter-value');
+      const inputValueSpanValue = counterInput.getAttribute('maxlength');
+      const inputValueResults = inputValue;
       inputValueSpan.innerHTML = inputValueResults;
     });
   });
@@ -167,6 +184,81 @@ if (teamPlayOffMachs.length > 0) {
     });
   });
 }
+
+//========================================================================================================================================================
+//event-vip.html
+let statisticsMapTbdColumn = document.querySelectorAll('.statistics-map-tbd__column');
+let matchAnalyticsColumn = document.querySelectorAll('.match-analytics__column');
+if (statisticsMapTbdColumn.length > 0) {
+  function checkClassListColumn() {
+    for (let index = 0; index < statisticsMapTbdColumn.length; index++) {
+      const elementStatisticsMapTbdColumn = statisticsMapTbdColumn[index];
+      if (window.innerWidth <= 959.98 && elementStatisticsMapTbdColumn.dataset.mobile == 'false') {
+        elementStatisticsMapTbdColumn.dataset.mobile = 'true';
+        elementStatisticsMapTbdColumn.classList.add('_tabs-block');
+        let tabsWrraper = document.querySelectorAll('._tabs-wrapper');
+        for (let index = 0; index < tabsWrraper.length; index++) {
+          let tab = tabsWrraper[index];
+          let tabs_items = tab.querySelectorAll('._tabs-item');
+          let tabs_blocks = tab.getElementsByClassName('_tabs-block');
+          for (let index = 0; index < tabs_items.length; index++) {
+            let tabs_item = tabs_items[index];
+            tabs_item.addEventListener('click', function (e) {
+              for (let index = 0; index < tabs_items.length; index++) {
+                let tabs_item = tabs_items[index];
+                tabs_item.classList.remove('_active');
+                tabs_blocks[index].classList.remove('_active');
+              }
+              tabs_item.classList.add('_active');
+              tabs_blocks[index].classList.add('_active');
+              e.preventDefault();
+            });
+          }
+        }
+      }
+      if (window.innerWidth > 959.98 && elementStatisticsMapTbdColumn.hasAttribute('data-mobile')) {
+        elementStatisticsMapTbdColumn.dataset.mobile = 'false';
+        elementStatisticsMapTbdColumn.classList.remove('_tabs-block');
+      }
+    }
+  }
+  checkClassListColumn();
+}
+if (matchAnalyticsColumn.length > 0) {
+  function checkClassListColumnAnalitics() {
+    for (let index = 0; index < matchAnalyticsColumn.length; index++) {
+      const elementMatchAnalytics = matchAnalyticsColumn[index];
+      if (window.innerWidth <= 959.98 && elementMatchAnalytics.dataset.mobile == 'false') {
+        elementMatchAnalytics.dataset.mobile = 'true';
+        elementMatchAnalytics.classList.add('_tabs-block');
+        let tabsWrraper = document.querySelectorAll('._tabs-wrapper');
+        for (let index = 0; index < tabsWrraper.length; index++) {
+          let tab = tabsWrraper[index];
+          let tabs_items = tab.querySelectorAll('._tabs-item');
+          let tabs_blocks = tab.getElementsByClassName('_tabs-block');
+          for (let index = 0; index < tabs_items.length; index++) {
+            let tabs_item = tabs_items[index];
+            tabs_item.addEventListener('click', function (e) {
+              for (let index = 0; index < tabs_items.length; index++) {
+                let tabs_item = tabs_items[index];
+                tabs_item.classList.remove('_active');
+                tabs_blocks[index].classList.remove('_active');
+              }
+              tabs_item.classList.add('_active');
+              tabs_blocks[index].classList.add('_active');
+              e.preventDefault();
+            });
+          }
+        }
+      }
+      if (window.innerWidth > 959.98 && elementMatchAnalytics.hasAttribute('data-mobile')) {
+        elementMatchAnalytics.dataset.mobile = 'false';
+        elementMatchAnalytics.classList.remove('_tabs-block');
+      }
+    }
+  }
+  checkClassListColumnAnalitics();
+}
 //========================================================================================================================================================
 let topAnalysts = document.querySelector('.top-analysts');
 let top10Bk = document.querySelector('.top-10-bk');
@@ -187,9 +279,37 @@ window.addEventListener('resize', () => {
   if (trophiesSlider) {
     mobileSliderTrophies();
   }
-  //   if (mapTbdSliderOne) {
-  //     bildMobileSliderMapOne();
-  //   }
+  if (mapsTbdItemsFirst) {
+    mobileSliderFirst();
+  }
+  if (mapsTbdItemsSecond) {
+    mobileSliderTwo();
+  }
+  if (mapsTbdItemstThird) {
+    mobileSliderThree();
+  }
+  if (mapsTbdItemsFourth) {
+    mobileSliderFour();
+  }
+
+  if (mapsTbdItems3First) {
+    mobileSlider3First();
+  }
+  if (mapsTbdItems3Second) {
+    mobileSlider3Second();
+  }
+  if (mapsTbdItems3Third) {
+    mobileSlider3Third();
+  }
+  if (mapsTbdItems3Fourth) {
+    mobileSlider3Fourth();
+  }
+  if (statisticsMapTbdColumn.length > 0) {
+    checkClassListColumn();
+  }
+  if (matchAnalyticsColumn.length > 0) {
+    checkClassListColumnAnalitics();
+  }
 });
 
 function addClassList() {
@@ -199,6 +319,7 @@ function addClassList() {
     topAnalysts.classList.add('_tabs-block');
     top10Bk.classList.add('_tabs-block');
     let tabsWrraper = document.querySelectorAll('._tabs-wrapper');
+
     for (let index = 0; index < tabsWrraper.length; index++) {
       let tab = tabsWrraper[index];
       let tabs_items = tab.querySelectorAll('._tabs-item');
@@ -225,10 +346,12 @@ function addClassList() {
     top10Bk.classList.remove('_tabs-block');
   }
 }
-
 if (topAnalysts && top10Bk) {
   addClassList();
 }
+
+//========================================================================================================================================================
+
 //========================================================================================================================================================
 const popuPlogin6 = document.querySelector('.popup_login-new-6');
 if (popuPlogin6) {
